@@ -1,0 +1,76 @@
+{
+  "source": "roneneldan/TinyStories",
+  "revision": "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64",
+  "source_files": [
+    "TinyStories-train.txt",
+    "TinyStories-valid.txt"
+  ],
+  "source_license": "CDLA-Sharing-1.0",
+  "train_documents_requested": 20000,
+  "eval_documents_requested": 2048,
+  "train_documents": 20000,
+  "removed_train_documents": 0,
+  "dev_documents": 1024,
+  "test_documents": 1024,
+  "vocab_size": 4096,
+  "selection_seed": 2026,
+  "selection_seconds": 0.1291719280416146,
+  "preparation_seconds": 8.906556166999508,
+  "source_prefix_hashes": {
+    "TinyStories-train.txt.20000.json": "9a6349bce2c08bf9b38198dd5f2cfc84f469283ffd761a439311f7985bbbc18e",
+    "TinyStories-valid.txt.2048.json": "a922234c3997309cc016307a59d323947f760c576e150573c0b6de3c5c1d4dbf"
+  },
+  "files": {
+    "tokenizer.json": {
+      "sha256": "686b0eb59956cd263bd4865fcabcbbdb596766f6c88beadfa05d0131c074d3f2"
+    },
+    "original.npy": {
+      "sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+      "tokens": 4490269,
+      "documents": 20000,
+      "bytes": 8980666
+    },
+    "original.ids.json": {
+      "sha256": "dd03c364e3f7b1d7901a9759ac0f12e12ef2d77fab3f5d2cbf63c472aa8b03f5"
+    },
+    "random_quarter.npy": {
+      "sha256": "2e0551b530277da4cf4fbf3e2bfec26bb0edd3675e12efdff8d1c532af6a6c1e",
+      "tokens": 1120397,
+      "documents": 5000,
+      "bytes": 2240922
+    },
+    "random_quarter.ids.json": {
+      "sha256": "dd8941fee66fa9c91b7b73127f71b0c53bdf372fb0b1043fb58d4f5007b1c4f9"
+    },
+    "diverse_quarter.npy": {
+      "sha256": "7269ce2e391079a437108f27fadf42bbe3007bf71c76ec9e164812b1519c8298",
+      "tokens": 1523493,
+      "documents": 5000,
+      "bytes": 3047114
+    },
+    "diverse_quarter.ids.json": {
+      "sha256": "9d3299a6fcaef948324399723393083247472c9389136f5bdd2fc401be720f41"
+    },
+    "stratified_quarter.npy": {
+      "sha256": "b5e3c5949c95aecb15a976081f40c2d384c98fa3878bd9a2eae79025cbea6135",
+      "tokens": 1122700,
+      "documents": 5000,
+      "bytes": 2245528
+    },
+    "stratified_quarter.ids.json": {
+      "sha256": "baaa98fe1417dd4d6b7900d61cd2a51302a9dcf543eba122bdca18c01363b10e"
+    },
+    "dev.npy": {
+      "sha256": "c61ff552d296845ca0251654f09e72d413048769512fb330f3d282ced1ab2749",
+      "tokens": 200909,
+      "documents": 1024,
+      "bytes": 401946
+    },
+    "test.npy": {
+      "sha256": "7eb872adef4412b94811587fba0d1519291052ecf7aa82fd5f442e0c2ae6c8f2",
+      "tokens": 202035,
+      "documents": 1024,
+      "bytes": 404198
+    }
+  }
+}

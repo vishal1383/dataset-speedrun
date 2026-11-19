@@ -1,0 +1,10 @@
+data/
+cache/
+checkpoints/
+logs/
+__pycache__/
+.pytest_cache/
+.venv/
+*.pt
+*.tmp
+results/smoke*/
