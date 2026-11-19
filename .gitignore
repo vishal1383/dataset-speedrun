@@ -2,6 +2,7 @@ data/
 cache/
 checkpoints/
 logs/
+runs/
 __pycache__/
 .pytest_cache/
 .venv/

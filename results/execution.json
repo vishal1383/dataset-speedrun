@@ -1,0 +1,41 @@
+{
+  "run_date": "2026-11-18",
+  "date_timezone": "America/Los_Angeles",
+  "container_image": "nvcr.io/nvidia/pytorch:26.03-py3",
+  "container_digest": "sha256:3c90e38f5ec51e51d1c73bd7eb3d83674a254f451147c5cadc4344314258a112",
+  "protocol_commit": "243e602751ad4d9f134bfea5fd94c0c8ed8ff739",
+  "workers": [
+    {
+      "physical_host": "spark-a5a1",
+      "container_hostname": "43d6657f2a9d",
+      "container_exit_code": 0,
+      "completed_runs": [
+        "diverse_quarter-seed17",
+        "original-seed17",
+        "random_quarter-seed42",
+        "stratified_quarter-seed42"
+      ],
+      "train_seconds": 53.01683095598128,
+      "experiment_seconds": 59.10539651702857,
+      "gpu": "NVIDIA GB10",
+      "driver_version": "580.142"
+    },
+    {
+      "physical_host": "spark-664c",
+      "container_hostname": "b0e9b7f8c604",
+      "container_exit_code": 0,
+      "completed_runs": [
+        "diverse_quarter-seed42",
+        "original-seed42",
+        "random_quarter-seed17",
+        "stratified_quarter-seed17"
+      ],
+      "train_seconds": 46.231563367298804,
+      "experiment_seconds": 52.00481696706265,
+      "gpu": "NVIDIA GB10",
+      "driver_version": "580.173.02"
+    }
+  ],
+  "verified_image_id_on_both_hosts": "sha256:254d6786d7e27b390aa91a8461a15dcf0c8c561f69fe36a3786681f4fff37236",
+  "remote_image_note": "The second host loaded the same image ID without repository digest metadata."
+}

@@ -1,0 +1,22 @@
+{
+  "completed_runs": 8,
+  "invariant_tests_passed": 3,
+  "gpu_smoke_runs_passed": 2,
+  "independent_preparation_all_artifact_hashes_match": true,
+  "trainer_matches_experiment_source": true,
+  "data_reproduction_files": [
+    "dev.npy",
+    "diverse_quarter.ids.json",
+    "diverse_quarter.npy",
+    "original.ids.json",
+    "original.npy",
+    "random_quarter.ids.json",
+    "random_quarter.npy",
+    "stratified_quarter.ids.json",
+    "stratified_quarter.npy",
+    "test.npy",
+    "tokenizer.json"
+  ],
+  "main_experiment_tokens_per_run": 3276800,
+  "all_workers_exited_successfully": true
+}

@@ -1,0 +1,150 @@
+{
+  "status": "complete",
+  "track": "tinystories-v0",
+  "recipe": "stratified_quarter",
+  "seed": 17,
+  "config": {
+    "track": "tinystories-v0",
+    "vocab_size": 4096,
+    "layers": 6,
+    "width": 256,
+    "heads": 4,
+    "sequence_length": 256,
+    "batch_size": 32,
+    "updates": 400,
+    "eval_every": 50,
+    "dev_sequences": 128,
+    "test_sequences": 512,
+    "target_loss": 3.5,
+    "muon_lr": 0.02,
+    "adamw_lr": 0.001,
+    "weight_decay": 0.01,
+    "warmup_updates": 20,
+    "minimum_lr_ratio": 0.1,
+    "gradient_clip": 1.0,
+    "precision": "bfloat16",
+    "compile": false,
+    "seeds": [
+      17,
+      42
+    ],
+    "recipes": [
+      "original",
+      "random_quarter",
+      "diverse_quarter",
+      "stratified_quarter"
+    ]
+  },
+  "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+  "train_source_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+  "git_revision": "243e602751ad4d9f134bfea5fd94c0c8ed8ff739",
+  "data_manifest_sha256": "cfe2d504621c3fc80a53bb17ee98275fb38d137ce4822d8e9e693157d94b860f",
+  "train_artifact": {
+    "sha256": "b5e3c5949c95aecb15a976081f40c2d384c98fa3878bd9a2eae79025cbea6135",
+    "tokens": 1122700,
+    "documents": 5000,
+    "bytes": 2245528
+  },
+  "initial_state_sha256": "ce6dc3a3b3c483e2fd7d6a5e82b57f71243ec949e4236fe53aeff4853a23ddf4",
+  "parameters": 6884608,
+  "train_sequences": 4385,
+  "final_dev_loss": 2.8073426485061646,
+  "test_loss": 3.1674649715423584,
+  "first_crossing": {
+    "step": 150,
+    "tokens_seen": 1228800,
+    "dev_loss": 3.355305790901184,
+    "train_loss": 3.5214500427246094,
+    "train_seconds": 4.455461493402254,
+    "elapsed_seconds": 4.829618953983299
+  },
+  "train_seconds": 11.58792024460854,
+  "setup_seconds": 0.7384032809641212,
+  "experiment_seconds": 12.98987519700313,
+  "curve": [
+    {
+      "step": 0,
+      "tokens_seen": 0,
+      "dev_loss": 8.356111526489258,
+      "train_loss": null,
+      "train_seconds": 0.0,
+      "elapsed_seconds": 0.27609729900723323
+    },
+    {
+      "step": 50,
+      "tokens_seen": 409600,
+      "dev_loss": 4.067067503929138,
+      "train_loss": 4.298250198364258,
+      "train_seconds": 1.6032541181193665,
+      "elapsed_seconds": 1.9119770849938504
+    },
+    {
+      "step": 100,
+      "tokens_seen": 819200,
+      "dev_loss": 3.6292803287506104,
+      "train_loss": 3.921473979949951,
+      "train_seconds": 3.029577871377114,
+      "elapsed_seconds": 3.371361267985776
+    },
+    {
+      "step": 150,
+      "tokens_seen": 1228800,
+      "dev_loss": 3.355305790901184,
+      "train_loss": 3.5214500427246094,
+      "train_seconds": 4.455461493402254,
+      "elapsed_seconds": 4.829618953983299
+    },
+    {
+      "step": 200,
+      "tokens_seen": 1638400,
+      "dev_loss": 3.1232782006263733,
+      "train_loss": 3.1413774490356445,
+      "train_seconds": 5.88318175758468,
+      "elapsed_seconds": 6.289737262006383
+    },
+    {
+      "step": 250,
+      "tokens_seen": 2048000,
+      "dev_loss": 2.975152015686035,
+      "train_loss": 3.071505546569824,
+      "train_seconds": 7.309468341642059,
+      "elapsed_seconds": 7.748423342010938
+    },
+    {
+      "step": 300,
+      "tokens_seen": 2457600,
+      "dev_loss": 2.891319751739502,
+      "train_loss": 2.762012004852295,
+      "train_seconds": 8.734582652628887,
+      "elapsed_seconds": 9.205942378030159
+    },
+    {
+      "step": 350,
+      "tokens_seen": 2867200,
+      "dev_loss": 2.8359212279319763,
+      "train_loss": 2.7224414348602295,
+      "train_seconds": 10.160641362715978,
+      "elapsed_seconds": 10.664425808005035
+    },
+    {
+      "step": 400,
+      "tokens_seen": 3276800,
+      "dev_loss": 2.8073426485061646,
+      "train_loss": 2.834481716156006,
+      "train_seconds": 11.58792024460854,
+      "elapsed_seconds": 12.1241034619743
+    }
+  ],
+  "hardware": {
+    "host": "b0e9b7f8c604",
+    "machine": "aarch64",
+    "device": "NVIDIA GB10"
+  },
+  "software": {
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "numpy": "2.1.0",
+    "python": "3.12.3"
+  },
+  "peak_cuda_allocated_bytes": 973007360
+}

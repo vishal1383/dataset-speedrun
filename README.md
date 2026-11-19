@@ -14,7 +14,7 @@ It is not a submission to the NanoGPT leaderboard. Its loss values are not compa
 
 | Setting | Fixed value |
 |---|---|
-| Model | 6 decoder blocks, width 256, 4 attention heads |
+| Model | 6,884,608 parameters; 6 decoder blocks, width 256, 4 attention heads |
 | Tokenizer | Byte-level BPE, vocabulary 4,096, trained on the original training pool |
 | Context | 256 tokens |
 | Batch | 32 sequences; 8,192 target tokens per update |
@@ -48,7 +48,24 @@ The smaller pools are sampled repeatedly; they do not receive fewer optimizer up
 The diversity score still favors longer documents. This is a heuristic baseline, not a validated quality measure.
 Quarter refers to document count. The recipes do not have equal storage sizes.
 
-Results will be added after all eight runs finish and pass the comparison checks.
+All eight runs completed on two DGX Sparks. Each Spark ran four experiments.
+
+| Recipe | Final dev loss, mean ± sample SD | Audit test loss, mean ± sample SD | Target update, both seeds |
+|---|---:|---:|---:|
+| `original` | **2.6656 ± 0.0060** | **3.0192 ± 0.0047** | 150 |
+| `random_quarter` | 2.7840 ± 0.0002 | 3.1702 ± 0.0080 | 150 |
+| `diverse_quarter` | 2.9079 ± 0.0077 | 3.1735 ± 0.0122 | 150 |
+| `stratified_quarter` | 2.8130 ± 0.0080 | 3.1742 ± 0.0095 | 150 |
+
+**The full training pool wins at the fixed update budget. These subset recipes show no speedup at the registered target.**
+The smaller pools reduce storage, but they increase final held-out loss.
+Every run crosses the 3.5-nat target at update 150, within the 50-update evaluation resolution.
+We retain this target rather than changing it after seeing the results.
+
+![Development loss across updates](results/loss_curves.png)
+
+Read the [experiment report](results/REPORT.md), [per-run table](results/summary.csv), and raw `result.json` files under [results](results/).
+The sample standard deviation uses two seeds. It is not a confidence interval.
 
 ## Run it
 
@@ -70,15 +87,15 @@ Inside the container:
 ```bash
 python prepare.py
 python -m unittest discover -s tests -v
-python train.py --recipe original --seed 17 --output results/original-seed17
+python train.py --recipe original --seed 17 --output runs/demo-original-seed17
 ```
 
-For the full suite, start from an empty `results/` directory.
+For the full suite, use a fresh output directory. Published results remain under `results/`.
 Run worker 0 on one GPU and worker 1 on the other GPU:
 
 ```bash
-python run_suite.py --worker 0
-python run_suite.py --worker 1
+python run_suite.py --worker 0 --output-root runs/reproduction --log-dir logs/reproduction
+python run_suite.py --worker 1 --output-root runs/reproduction --log-dir logs/reproduction
 ```
 
 Use separate checkouts and caches on separate machines.
@@ -86,7 +103,7 @@ Copy the prepared `data/tinystories-v0/` directory to the second machine before 
 Merge the eight result directories afterward, then run:
 
 ```bash
-python report.py
+python report.py --results runs/reproduction
 ```
 
 The launcher refuses to overwrite run directories. Inspect failed runs before choosing a new output directory.

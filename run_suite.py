@@ -14,14 +14,16 @@ def main():
     parser.add_argument("--worker", type=int, choices=[0, 1], required=True)
     parser.add_argument("--config", default="configs/tinystories-v0.json")
     parser.add_argument("--data", default="data/tinystories-v0")
+    parser.add_argument("--output-root", type=Path, default=Path("runs"))
+    parser.add_argument("--log-dir", type=Path, default=Path("logs"))
     args = parser.parse_args()
     config = json.loads(Path(args.config).read_text())
     if len(config["seeds"]) != 2:
         raise ValueError("This launch plan requires two seeds.")
-    Path("logs").mkdir(exist_ok=True)
-    lock = Path(f"logs/worker-{args.worker}.lock").open("w")
+    args.log_dir.mkdir(parents=True, exist_ok=True)
+    lock = (args.log_dir / f"worker-{args.worker}.lock").open("w")
     fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
-    status_path = Path(f"logs/worker-{args.worker}.json")
+    status_path = args.log_dir / f"worker-{args.worker}.json"
     completed = []
 
     def status(state, active=None):
@@ -31,13 +33,13 @@ def main():
     for i, recipe in enumerate(config["recipes"]):
         seed = config["seeds"][(args.worker + i) % 2]
         name = f"{recipe}-seed{seed}"
-        output = Path("results") / name
+        output = args.output_root / name
         if output.exists():
             raise FileExistsError(f"Refusing to overwrite or duplicate {output}")
         command = [sys.executable, "-u", "train.py", "--config", args.config, "--data", args.data,
                    "--recipe", recipe, "--seed", str(seed), "--output", str(output)]
         status("running", name)
-        with (Path("logs") / f"{name}.log").open("x") as log:
+        with (args.log_dir / f"{name}.log").open("x") as log:
             proc = subprocess.run(command, stdout=log, stderr=subprocess.STDOUT)
         if proc.returncode:
             status("failed", name)
