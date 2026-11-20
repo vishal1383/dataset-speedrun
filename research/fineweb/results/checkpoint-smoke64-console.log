@@ -1,0 +1,7 @@
+/workspace/runs/fineweb-v1/checkpoint-smoke64/upstream.log
+parameter_count:162354816
+initial_state_sha256:f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d
+step:0/3250 val_loss:10.82584 train_time:0.000s step_avg:nanms
+step:1/3250 train_time:13.768s step_avg:13768.14ms
+step:2/3250 train_time:25.753s step_avg:12876.32ms
+step:2/3250 val_loss:8.78785 train_time:25.769s step_avg:12884.43ms

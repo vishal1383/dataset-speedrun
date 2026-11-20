@@ -8,7 +8,11 @@ Muon updates hidden matrices. AdamW updates embeddings, the output head, and nor
 
 This is an independent benchmark inspired by [NanoGPT speedrun](https://github.com/KellerJordan/modded-nanogpt)
 and [DataComp-LM](https://www.datacomp.ai/dclm/).
-It is not a submission to the NanoGPT leaderboard. Its loss values are not comparable to FineWeb loss values.
+It is not a submission to the NanoGPT leaderboard. TinyStories loss values are not comparable to FineWeb loss values.
+
+A new [FineWeb data track](research/fineweb/README.md) freezes the upstream modded-nanoGPT optimization baseline.
+It compares FineWeb and FineWeb-Edu at 3,250 updates with the same 162.35M-parameter learner and canonical 3.28 validation target.
+The first paired experiment is registered in [the frozen run plan](research/fineweb/plan.json). No FineWeb improvement is claimed yet.
 
 ## Enter the dataset compression challenge
 

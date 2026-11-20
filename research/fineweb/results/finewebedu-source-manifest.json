@@ -1,0 +1,106 @@
+{
+  "dataset": "kjj0/finewebedu10B-gpt2",
+  "revision": "440d9d739f970c5d80492e12e81d63d60622ca30",
+  "files": {
+    "finewebedu_train_000001.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "56c89ff62b84a8645ad7d9b3d2fbe33cb588e0d774b7b966e263fd1b945bd39a"
+    },
+    "finewebedu_train_000002.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "cb55ac9f5265711b520e1c4211365088878eb52caae2970c301b828efd29968c"
+    },
+    "finewebedu_train_000003.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "762c5047b3ed48f1be3443e8a432444326c0761e241fbb13a40dee8ee3587789"
+    },
+    "finewebedu_train_000004.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "8e9b00de8b4c09a2a8bcaa172794d08cb24d5754593f3a763b3b8c8f2bb36d61"
+    },
+    "finewebedu_train_000005.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "950fe36fe8da760a3a43e4d453688be53d024f79a47c2fa5849a874079ab214b"
+    },
+    "finewebedu_train_000006.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "15548cdfa19ed43f557e88868b176d646dd6e19a5b8f668f599f2443e56a0857"
+    },
+    "finewebedu_train_000007.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "8f16839352c418446ec4c84ae5a0214b986838d7c1ff11076a5b2aef0924dfcf"
+    },
+    "finewebedu_train_000008.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "bf746b971c4f8da135712e05b8256528cc414225914a5819c15e8d2f8d22f408"
+    },
+    "finewebedu_train_000009.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "155c54b3e9bf586c2282bd64341c0e664e0028051c682cbec93040d3f7c89ae2"
+    },
+    "finewebedu_train_000010.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "f2746af3cc9b36b333072a1e88b8ccf8e48ce13b569b3e84bb732a54e32c6a57"
+    },
+    "finewebedu_train_000011.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "9e68d499d66b3bcd449b9a42ee044d2817a5f4096e6f454234c4fa0a40a8af76"
+    },
+    "finewebedu_train_000012.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "bd0d5d69718bccd712a5fbc6d2005110377ec4b091aa820f4d3c735774e45c45"
+    },
+    "finewebedu_train_000013.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "9150bcca9fb61bfecbca13f95222c714a3aca74e445514b9e86dcc2667599ac9"
+    },
+    "finewebedu_train_000014.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "839cbe37b2f0de4903182c6497b1693f8940ecc134ddf1889c43520a0ed17771"
+    },
+    "finewebedu_train_000015.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "8ace0b86ba2eef1d98fc77376f11c3357c177ed31334c5a4e1a50c01009b4edb"
+    },
+    "finewebedu_train_000016.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "7c95cec904caccf19cbb69cf765e332d49089b091a4cc269601780e3a277666c"
+    },
+    "finewebedu_train_000017.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "61c3c4986b1026f382bc63b658d1816f57f3228aea368b5b60d70931867d29f3"
+    },
+    "finewebedu_train_000018.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "4649b6155785364c273a0c2013257e5d035255b650f86de06a989fa162ebd32b"
+    },
+    "finewebedu_train_000019.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "1d4f4a11ae059c870bedf219de038c39aedfadaf732a1c03751df9a7b317fe67"
+    },
+    "finewebedu_train_000020.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "76dc8f3dfaa13cbfc9ea54fa4bbf5cb9407d8219773b123f2322cb84dfeec114"
+    }
+  }
+}

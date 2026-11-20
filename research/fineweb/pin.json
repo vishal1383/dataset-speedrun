@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/KellerJordan/modded-nanogpt",
+  "commit": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+  "source_path": "records/track_3_optimization/train_gpt_simple.py",
+  "source_sha256": "d39470e5b0535baf9c6caf7dbcd15efa79d8eacc9badf6e7c45b536e8537deec",
+  "dataset": "kjj0/fineweb10B-gpt2",
+  "dataset_revision": "889765ea1f903759787add96995d81171b632d0c",
+  "train_shards": 20,
+  "validation_tokens": 10485760,
+  "target_loss": 3.28,
+  "global_batch_tokens": 524288,
+  "context": 1024,
+  "schedule_updates": 3250,
+  "architecture": {
+    "vocab_size": 50304,
+    "num_layers": 12,
+    "model_dim": 768
+  },
+  "reference_result": "Optimization track result 36: tuned Muon + auxiliary AdamW",
+  "main_track_eligible": false,
+  "reason": "Upstream tracks require unchanged training data. This sibling track freezes the optimizer and changes training data.",
+  "candidate_dataset": "kjj0/finewebedu10B-gpt2",
+  "candidate_dataset_revision": "440d9d739f970c5d80492e12e81d63d60622ca30"
+}

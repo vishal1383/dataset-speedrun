@@ -1,0 +1,222 @@
+{
+  "name": "repetition-filter",
+  "construction": "Train-only document filtering; no teacher or validation access.",
+  "source_dataset": "kjj0/fineweb10B-gpt2",
+  "source_revision": "889765ea1f903759787add96995d81171b632d0c",
+  "source_files": {
+    "fineweb_train_000001.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "771fa4a99b9fe0946ffb6e848b4ba5c6a9b0fe87860ebf03bc2c1c7e45f8178e"
+    },
+    "fineweb_train_000002.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "d4ba8d2d740905a836a4222d2aff01750560e7d49a51a745a1b3235520aec2cd"
+    },
+    "fineweb_train_000003.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "f70fa272369730fd9e39f1848bfe4daa3289b6e490c1e7762777f00ea8b66246"
+    },
+    "fineweb_train_000004.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "d8d88850f89fe2030e866380e90d544167467d407080403b830b903543925835"
+    },
+    "fineweb_train_000005.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "36cef3fc41863eb6731b41e986edde38e368853ee6deb87b928990bf445a119c"
+    },
+    "fineweb_train_000006.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "d80e5b209983e636655fc738fdf281f0132f0298bf4c0848f7e7a6bea6ca06f0"
+    },
+    "fineweb_train_000007.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "fa9f94dce61686b5467bc6cd3078424203db23ac254d804a6d8d5d440afc1e11"
+    },
+    "fineweb_train_000008.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "308e6937af5d78b7489a8aac3a3951dced5b46103e613f8bc4eb543f5092526c"
+    },
+    "fineweb_train_000009.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "1635300891634346ecff3a78d6e489a69c647885f0dcd249fe3eb76fac683458"
+    },
+    "fineweb_train_000010.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "72e88f66104dacca163eeb3a00fe40a45a821d2ecd4fb9ce343808996e5d2f5e"
+    },
+    "fineweb_train_000011.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "99edff412654ca6e06d4b3ca563acd8937ee6042f49d009526b8f1074f4d7300"
+    },
+    "fineweb_train_000012.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "92a2dc78e3971ac2a36ef3e9f19c92533bc35ef2dd735bb6759e7b864e301084"
+    },
+    "fineweb_train_000013.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "6cc3884bf19a2d9b4a12d52e4861276da2e3c6614ce97e6bfa0769d701f7a4c5"
+    },
+    "fineweb_train_000014.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "6bc06a838d5a258fb51a3c2a3d14fd784f83b173f408d8d2d3f85b3290094a96"
+    },
+    "fineweb_train_000015.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "09ad252e5d641862f89c31e4f0fa9559933d3e2bc6f657fc05f63166c2d74741"
+    },
+    "fineweb_train_000016.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "56e97975654bb7a1f08f1397dd7894146dd7f8c36bc9fdd71da9675c43ab9a85"
+    },
+    "fineweb_train_000017.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "a51e60d3f9fce16a9dbcb20e5333e1c8e379acf3a703e63b1fecfef49aa17458"
+    },
+    "fineweb_train_000018.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "8a35ee9b00834e085e20383711d1fa13efe9d05d3d20161cebd60d73ac935fe9"
+    },
+    "fineweb_train_000019.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "e4c82c17c1805a8d946580bb09f10575add3fb56dc3305729d75eae083fa2856"
+    },
+    "fineweb_train_000020.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "bbdb7866974ce4389c888fce7394a2c05e71cb6a0f1ada2e2a37520a03302b6c"
+    }
+  },
+  "files": {
+    "fineweb_train_000001.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "771fa4a99b9fe0946ffb6e848b4ba5c6a9b0fe87860ebf03bc2c1c7e45f8178e"
+    },
+    "fineweb_train_000002.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "d4ba8d2d740905a836a4222d2aff01750560e7d49a51a745a1b3235520aec2cd"
+    },
+    "fineweb_train_000003.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "dadaa756cc79a567162f3c9cace9cc4dfc5d90c54fca324eeb8019b0a4146777"
+    },
+    "fineweb_train_000004.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "91a3cf0a2bded06df389a6c666cb8643de98bb1f5eaa7b5fa676df0fb8cb668a"
+    },
+    "fineweb_train_000005.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "fada9eaadf250b641350540582083f9056359f94d3a7d57184acb4c3e1d93af8"
+    },
+    "fineweb_train_000006.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "ad29af3c50e5af2c55f079158038f9af11978ceb432a2fbe189217725065b899"
+    },
+    "fineweb_train_000007.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "0efbf58a30458034691fa3f0174fd013ae1381effeabca5d5371d3e90f8180ce"
+    },
+    "fineweb_train_000008.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "930b9db29c8deacc4e890b429721685c6d8f58d9702f6dc3719ca8db5317b62d"
+    },
+    "fineweb_train_000009.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "85cab74ff8e7fbae4be2aa0a48e95bf41dbfd756f84330c98240b116d6055ebe"
+    },
+    "fineweb_train_000010.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "0e5b218dd29b9c0bfe4cf54d0431b81258e44de62f1c73d51c25f51b82f11dde"
+    },
+    "fineweb_train_000011.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "e824f084cace453db08cc6616bfa172104dae9a2fbd0798e2c0b28bfc9525532"
+    },
+    "fineweb_train_000012.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "ee52c6edb69ed975107868c05dbd4245d18c57a0108e024bfeb35c02d9677d39"
+    },
+    "fineweb_train_000013.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "265b37fdce7e93f5ae84e717e7ba7a554c16d20c3c148a575f8787d6605f359e"
+    },
+    "fineweb_train_000014.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "37589047d8c88e60799f6aada63d3bd0e18b87993ca69eb5f840c56ffb76633c"
+    },
+    "fineweb_train_000015.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "ba90f1fe56c7a3f43c5aba98ef3be05077987c9b5f79d14de1b0885604c1172e"
+    },
+    "fineweb_train_000016.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "afb06db2b521f645152563df0580b90fbaf49e411349fbe9a240ae50a74af724"
+    },
+    "fineweb_train_000017.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "5b979845289d30cd751c61a004df9c323c1e3504b6b3df663996b35d01586eae"
+    },
+    "fineweb_train_000018.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "1311462953acce1f7a0508f54e6be8c9afc5593dec1cc4fe3d13d4dfd1f0fa52"
+    },
+    "fineweb_train_000019.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "aec18f839a7294930b6c3f9c60c261186ea18528988d55ceb9f4b932d7372785"
+    },
+    "fineweb_train_000020.bin": {
+      "bytes": 199933672,
+      "tokens": 99966324,
+      "sha256": "203ce4be7450d596e0fab79d95b7d6f89442b7f1a17db962715678f9764c7ddc"
+    }
+  },
+  "kept_documents": 2890442,
+  "removed_documents": 16,
+  "kept_tokens": 1999966324,
+  "removed_tokens": 33676,
+  "available_updates_without_repetition": 3800,
+  "construction_seconds": 34.57503647002159,
+  "thresholds": {
+    "min_document_tokens": 128,
+    "adjacent_repeat_fraction_gt": 0.2,
+    "prefix128_unique_fraction_lt": 0.1
+  },
+  "status": "complete"
+}

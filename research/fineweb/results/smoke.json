@@ -1,0 +1,130 @@
+[
+  {
+    "name": "smoke64",
+    "upstream": {
+      "repository": "https://github.com/KellerJordan/modded-nanogpt",
+      "commit": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+      "source_path": "records/track_3_optimization/train_gpt_simple.py",
+      "source_sha256": "d39470e5b0535baf9c6caf7dbcd15efa79d8eacc9badf6e7c45b536e8537deec",
+      "dataset": "kjj0/fineweb10B-gpt2",
+      "dataset_revision": "889765ea1f903759787add96995d81171b632d0c",
+      "train_shards": 20,
+      "validation_tokens": 10485760,
+      "target_loss": 3.28,
+      "global_batch_tokens": 524288,
+      "context": 1024,
+      "schedule_updates": 3250,
+      "architecture": {
+        "vocab_size": 50304,
+        "num_layers": 12,
+        "model_dim": 768
+      },
+      "reference_result": "Optimization track result 36: tuned Muon + auxiliary AdamW",
+      "main_track_eligible": false,
+      "reason": "Upstream tracks require unchanged training data. This sibling track freezes the optimizer and changes training data."
+    },
+    "seed": 17,
+    "updates": 2,
+    "schedule_updates": 3250,
+    "validation_tokens": 65536,
+    "global_batch_tokens": 524288,
+    "microbatch_sequences": 64,
+    "compile_model": true,
+    "smoke": true,
+    "source_sha256": "8721b779fa514aab362a1dab5ab2ad920f6075374e398ae8b5cfee054ddb3798",
+    "launcher_sha256": "8b74140f2c7d1ece1752e3999a09e1a351a6c3d07245d4e3bd23ab87b691f6c0",
+    "training_files": {
+      "data/fineweb10B/fineweb_train_000001.bin": {
+        "bytes": 200001024,
+        "sha256": "771fa4a99b9fe0946ffb6e848b4ba5c6a9b0fe87860ebf03bc2c1c7e45f8178e"
+      }
+    },
+    "validation_files": {
+      "data/fineweb10B/fineweb_val_000000.bin": {
+        "bytes": 200001024,
+        "sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640"
+      }
+    },
+    "main_speedrun_record_eligible": false,
+    "status": "complete",
+    "exit_code": 0,
+    "elapsed_seconds": 77.43817774002673,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 10.82584,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 2,
+        "loss": 8.78785,
+        "train_seconds": 55.961
+      }
+    ],
+    "initial_state_sha256": "f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d"
+  },
+  {
+    "name": "checkpoint-smoke64",
+    "upstream": {
+      "repository": "https://github.com/KellerJordan/modded-nanogpt",
+      "commit": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+      "source_path": "records/track_3_optimization/train_gpt_simple.py",
+      "source_sha256": "d39470e5b0535baf9c6caf7dbcd15efa79d8eacc9badf6e7c45b536e8537deec",
+      "dataset": "kjj0/fineweb10B-gpt2",
+      "dataset_revision": "889765ea1f903759787add96995d81171b632d0c",
+      "train_shards": 20,
+      "validation_tokens": 10485760,
+      "target_loss": 3.28,
+      "global_batch_tokens": 524288,
+      "context": 1024,
+      "schedule_updates": 3250,
+      "architecture": {
+        "vocab_size": 50304,
+        "num_layers": 12,
+        "model_dim": 768
+      },
+      "reference_result": "Optimization track result 36: tuned Muon + auxiliary AdamW",
+      "main_track_eligible": false,
+      "reason": "Upstream tracks require unchanged training data. This sibling track freezes the optimizer and changes training data."
+    },
+    "seed": 17,
+    "updates": 2,
+    "schedule_updates": 3250,
+    "validation_tokens": 65536,
+    "global_batch_tokens": 524288,
+    "microbatch_sequences": 64,
+    "compile_model": true,
+    "smoke": true,
+    "source_sha256": "2ecba62c90cd4017f492f0c82db0d0244949f7d392fe832c60335d7940d5e562",
+    "launcher_sha256": "47c739c5705d2af05bfb49ba5f2c0f1af96780c9678f18a12e87c76b4551f15d",
+    "training_files": {
+      "data/fineweb10B/fineweb_train_000001.bin": {
+        "bytes": 200001024,
+        "sha256": "771fa4a99b9fe0946ffb6e848b4ba5c6a9b0fe87860ebf03bc2c1c7e45f8178e"
+      }
+    },
+    "validation_files": {
+      "data/fineweb10B/fineweb_val_000000.bin": {
+        "bytes": 200001024,
+        "sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640"
+      }
+    },
+    "main_speedrun_record_eligible": false,
+    "status": "complete",
+    "exit_code": 0,
+    "elapsed_seconds": 40.68922060698969,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 10.82584,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 2,
+        "loss": 8.78785,
+        "train_seconds": 25.769
+      }
+    ],
+    "initial_state_sha256": "f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d"
+  }
+]

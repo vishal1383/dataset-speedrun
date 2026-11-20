@@ -1,0 +1,8 @@
+/workspace/runs/fineweb-v1/smoke64/upstream.log
+parameter_count:162354816
+initial_state_sha256:f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d
+[rank0]:W1120 07:28:20.316000 31 torch/_inductor/utils.py:1689] [0/0] Not enough SMs to use max_autotune_gemm mode
+step:0/3250 val_loss:10.82584 train_time:0.000s step_avg:nanms
+step:1/3250 train_time:43.719s step_avg:43719.45ms
+step:2/3250 train_time:55.944s step_avg:27972.10ms
+step:2/3250 val_loss:8.78785 train_time:55.961s step_avg:27980.30ms

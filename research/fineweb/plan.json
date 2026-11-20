@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "track": "open-curation-data-only",
+  "output": "runs/fineweb-v1/paired17",
+  "hardware": "spark-a5a1 / NVIDIA GB10",
+  "container": "nvcr.io/nvidia/pytorch:26.03-py3",
+  "target_loss": 3.28,
+  "validation": {
+    "path": "data/fineweb10B/fineweb_val_000000.bin",
+    "sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640"
+  },
+  "source_sha256": {
+    "research/fineweb/launch.py": "47c739c5705d2af05bfb49ba5f2c0f1af96780c9678f18a12e87c76b4551f15d",
+    "research/fineweb/run_pair.py": "e2450b8466207365d1518dbd0d5bfa6b0e657a8ec8caa6233304d6f1baff3a20",
+    "research/fineweb/pin.json": "daf6a35a1d2277a96e4532920eb8aaf7961aa44c21802fdeef267dc2a35dd066",
+    "research/fineweb/prepare.py": "668b75d76ec81d7e0f9bc5dd455d3b7239ef7a03c41f2d93a0b6c8562dc69b6c",
+    "research/fineweb/build_edu.py": "7e26f7482730f20e5e73aff4a0be58534243b049cb187e8549e55a952c9ddab9",
+    "research/fineweb/build_candidate.py": "a1d8f98a698e22fa78f63b861a9c1c54914598d60e5bfcecebac9030f661efcd",
+    "research/fineweb/upstream/train_gpt_simple.py": "d39470e5b0535baf9c6caf7dbcd15efa79d8eacc9badf6e7c45b536e8537deec"
+  },
+  "runs": [
+    {
+      "name": "fineweb-seed17",
+      "manifest": "data/fineweb10B/manifest.json",
+      "manifest_sha256": "413af17513730009c4c6c67f175ec7ef2a9531b9ce931053284be19f8481ff4b",
+      "train_pattern": "data/fineweb10B/fineweb_train_*.bin",
+      "seed": 17,
+      "updates": 3250
+    },
+    {
+      "name": "finewebedu-seed17",
+      "manifest": "runs/fineweb-v1/finewebedu-decontaminated/manifest.json",
+      "manifest_sha256": "ecad938923140f631667a69f64689a019cb4a8e6f350bcefb3ac441268cfb114",
+      "train_pattern": "runs/fineweb-v1/finewebedu-decontaminated/fineweb_train_*.bin",
+      "seed": 17,
+      "updates": 3250
+    }
+  ],
+  "selection": "FineWeb-Edu selected before full validation, after a training-only repetition-filter diagnostic. Exact validation-document exclusion only; no validation-loss optimization.",
+  "interpretation": "One paired pilot. A record requires fresh-seed confirmation and a common update budget.",
+  "training_token_exposures_per_run": 1703936000
+}
