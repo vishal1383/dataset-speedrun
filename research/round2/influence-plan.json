@@ -1,0 +1,38 @@
+[
+  {
+    "name": "influence-f0.500",
+    "method": "influence",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "influence_norm-f0.500",
+    "method": "influence_norm",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "influence-f0.750",
+    "method": "influence",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "influence_norm-f0.750",
+    "method": "influence_norm",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "influence-f0.875",
+    "method": "influence",
+    "fraction": 0.875,
+    "seed": 17
+  },
+  {
+    "name": "influence_norm-f0.875",
+    "method": "influence_norm",
+    "fraction": 0.875,
+    "seed": 17
+  }
+]

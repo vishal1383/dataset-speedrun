@@ -1,0 +1,56 @@
+[
+  {
+    "name": "hard400-f0.500",
+    "method": "hard400",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "hard1600-f0.500",
+    "method": "hard1600",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "progress-f0.500",
+    "method": "progress",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "hard400-f0.750",
+    "method": "hard400",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "hard1600-f0.750",
+    "method": "hard1600",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "progress-f0.750",
+    "method": "progress",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "hard400-f0.875",
+    "method": "hard400",
+    "fraction": 0.875,
+    "seed": 17
+  },
+  {
+    "name": "hard1600-f0.875",
+    "method": "hard1600",
+    "fraction": 0.875,
+    "seed": 17
+  },
+  {
+    "name": "progress-f0.875",
+    "method": "progress",
+    "fraction": 0.875,
+    "seed": 17
+  }
+]

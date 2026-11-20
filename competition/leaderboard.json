@@ -1,0 +1,10 @@
+{
+  "track": "data-only",
+  "score": "uncompressed artifact bytes, subject to matched quality at 400 updates",
+  "records": [],
+  "reference": {
+    "name": "full-data",
+    "artifact_bytes": 8980666,
+    "description": "Fixed 20,000-document TinyStories training pool. Quality is measured with matched controls in each audit cohort."
+  }
+}

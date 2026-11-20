@@ -28,26 +28,39 @@ def select(scores, method, fraction):
     rng = np.random.default_rng(5819)
     if method == "random":
         ids = rng.choice(n, k, replace=False)
-    elif method in ("easy400", "easy1600", "learnable", "middle"):
+    elif method in ("easy400", "easy1600", "learnable", "middle", "hard400", "hard1600", "progress", "influence", "influence_norm"):
         score = {"easy400": weak, "easy1600": strong,
                  "learnable": 2 * strong - weak,
-                 "middle": np.abs(weak - np.median(weak))}[method]
+                 "middle": np.abs(weak - np.median(weak)), "hard400": -weak,
+                 "hard1600": -strong, "progress": strong - weak}
+        if method.startswith("influence"):
+            influence = scores["influence"]
+            score = -influence / (weak if method == "influence_norm" else 1)
+        else:
+            score = score[method]
         ids = np.argsort(score, kind="stable")[:k]
-    elif method in ("stratified", "coverage_easy", "coverage_learnable"):
+    elif method in ("stratified", "coverage_easy", "coverage_learnable", "cluster_random", "cluster_influence", "coverage_influence"):
         # Preserve source position and teacher-difficulty coverage.
         buckets = []
-        for section in np.array_split(np.arange(n), 16):
-            buckets.extend(np.array_split(section[np.argsort(strong[section])], 10))
+        if method.startswith("cluster"):
+            labels = np.load(RUN / "clusters.npy")
+            buckets = [np.flatnonzero(labels == i) for i in np.unique(labels)]
+        else:
+            for section in np.array_split(np.arange(n), 16):
+                buckets.extend(np.array_split(section[np.argsort(strong[section])], 10))
         quotas = np.array([len(b) * fraction for b in buckets])
         sizes = np.floor(quotas).astype(int)
         for i in np.argsort(-(quotas - sizes))[:k - sizes.sum()]:
             sizes[i] += 1
         parts = []
         for bucket, count in zip(buckets, sizes):
-            if method == "stratified":
+            if method in ("stratified", "cluster_random"):
                 parts.append(rng.choice(bucket, count, replace=False))
             else:
-                score = weak[bucket] if method == "coverage_easy" else 2 * strong[bucket] - weak[bucket]
+                if "influence" in method:
+                    score = -scores["influence"][bucket] / weak[bucket]
+                else:
+                    score = weak[bucket] if method == "coverage_easy" else 2 * strong[bucket] - weak[bucket]
                 parts.append(bucket[np.argsort(score)[:count]])
         ids = np.concatenate(parts)
     else:
@@ -73,13 +86,13 @@ def prepare_scores():
                                     "source_teachers": [400, 1600], "additional_teacher_training": False})
 
 
-def worker(worker_id, plan):
+def worker(worker_id, plan, workers=2):
     RUN.mkdir(exist_ok=True, parents=True)
     plan = json.loads(Path(plan).read_text())
     scores = np.load(RUN / "scores.npz")
     full = load_sequences(DATA / "original.npy", 256).numpy().astype(np.uint16)
     history = []
-    for spec in plan[worker_id::2]:
+    for spec in plan[worker_id::workers]:
         name, seed = spec["name"], spec["seed"]
         out = RUN / "search" / f"{name}-s{seed}"
         if (out / "result.json").exists():
@@ -106,12 +119,13 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--scores", action="store_true")
     p.add_argument("--worker", type=int, choices=[0, 1])
+    p.add_argument("--workers", type=int, default=2)
     p.add_argument("--plan", type=Path)
     args = p.parse_args()
     if args.scores:
         prepare_scores()
     else:
-        worker(args.worker, args.plan)
+        worker(args.worker, args.plan, args.workers)
 
 
 if __name__ == "__main__":
