@@ -1,0 +1,12 @@
+{
+  "source_documents": [
+    2048,
+    4096
+  ],
+  "documents_after_exact_dedup": 2048,
+  "tokens": 443351,
+  "audit_sha256": "8fe1126fd7d3e69ecc3dd6821a5c00530815e3c317f5ac5de916a28b1debf649",
+  "tokenizer_sha256": "686b0eb59956cd263bd4865fcabcbbdb596766f6c88beadfa05d0131c074d3f2",
+  "evaluation_tokens": 131072,
+  "selection_access": "No audit loss is exposed to the search code."
+}

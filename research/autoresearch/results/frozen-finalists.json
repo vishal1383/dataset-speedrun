@@ -1,0 +1,44 @@
+{
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "audit_used_for_selection": false,
+  "data_selection_reason": "Smallest two-seed artifact with mean development loss no worse than the registered full-pool baseline.",
+  "reference_development_loss": 2.665601462125778,
+  "reference_artifact_bytes": 8980666,
+  "candidates": {
+    "selected_data": {
+      "name": "easy-f0.50000",
+      "artifact": "runs/autoresearch-v1/artifacts/easy-f0.50000.npy",
+      "artifact_bytes": 4507908,
+      "fraction": 0.5,
+      "method": "easy",
+      "artifact_sha256": "86279293d37ddba7061206627852ef5dfe0f386afc656337dc491079cd51b874"
+    },
+    "gradient_latents": {
+      "name": "gradient-r4-s1",
+      "rank": 4,
+      "stride": 1,
+      "artifact": "runs/autoresearch-v1/artifacts/gradient-r4-s1.pt",
+      "artifact_bytes": 8318649,
+      "final_dev_loss": 10.055078506469727,
+      "audit_accessed": false,
+      "fits_data_byte_budget": true,
+      "history_sha256": "f47778b8b006adf83cd1c334e1847f6515ffb0442e470bdf3c647a5534773696",
+      "artifact_sha256": "82bb79ad03d2508e83db284308cc287cd6a36696a255b996b1135b51839172c5"
+    },
+    "distilled_targets": {
+      "name": "distill-f0.12500-a0.875",
+      "fraction": 0.125,
+      "alpha": 0.875,
+      "artifact": "runs/autoresearch-v1/artifacts/distill-f0.12500.npz",
+      "artifact_bytes": 4494378,
+      "audit_accessed": false,
+      "history_sha256": "9b517aaabed76c77587cec4144d5cb285bc0f69d21c89bc03ef640073dbe4b3c",
+      "artifact_sha256": "ef22acf123c0ffa54e9c8a217406f05c1c938f131315202d778ed052f12e9c91"
+    }
+  },
+  "audit_manifest_sha256": "ee626a25561160f78a4ba570e06bc6e3ea78f6f8d82d1dbbb3a920abf479d606"
+}
