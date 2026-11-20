@@ -1,0 +1,27 @@
+{
+  "name": "influence-f0.750",
+  "artifact_sha256": "da04cd446e9cea2e44ec58bc123edf160126861c2bf8c0d16c6faf9f3c5aae9f",
+  "artifact_bytes": 6761798,
+  "baseline_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+  "baseline_bytes": 8980666,
+  "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+  "submission_sha256": "e1596e2845331349dd40be60257e3d781fdcfa48bdd9fc93fb1381980ad4ab05",
+  "seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008
+  ],
+  "protocol_sha256": "b9d8b8fed77c65913ef3cbad95df0661f42c8055d96f2afa108219336d13a0b7",
+  "judge_sha256": "66b97a645f376730f35790b414cc29a88455037dda79cc000f705cf1aff6baea",
+  "source_hashes": {
+    "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+    "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+    "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+  }
+}

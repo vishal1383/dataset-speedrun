@@ -8,6 +8,8 @@ import statistics
 from competition.runner import ROOT, train, write, read_tokens
 from train import file_hash
 
+ENGINE_HASH = "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c"
+
 
 def validate_submission(path):
     path = Path(path).resolve()
@@ -47,6 +49,7 @@ def summarize(output):
                                    (candidate, frozen["artifact_sha256"])]:
             if (row["artifact_sha256"] != artifact_hash or
                     row["evaluation_sha256"] != frozen["evaluation_sha256"] or
+                    row["source_hashes"] != frozen["source_hashes"] or
                     row["seed"] != seed or row["updates"] != 400 or row["status"] != "complete"):
                 raise ValueError("Result does not match the frozen submission.")
         for key in ("initial_state_sha256", "source_hashes", "evaluation_windows", "host", "torch", "cuda", "gpu"):
@@ -93,6 +96,8 @@ def main():
     if not 0 <= args.worker < args.workers:
         raise ValueError("Invalid worker assignment.")
     spec, artifact = validate_submission(args.submission)
+    if file_hash(ROOT / "research/autoresearch/engine.py") != ENGINE_HASH:
+        raise ValueError("Registered setup and evaluation helpers changed.")
     baseline = ROOT / "data/tinystories-v0/original.npy"
     seeds = [int(s) for s in args.seeds.split(",")]
     if len(seeds) != len(set(seeds)) or len(seeds) < 8:
@@ -102,7 +107,10 @@ def main():
               "baseline_bytes": baseline.stat().st_size, "evaluation_sha256": file_hash(args.evaluation),
               "submission_sha256": file_hash(args.submission), "seeds": seeds,
               "protocol_sha256": file_hash(ROOT / "research/round2/protocol.json"),
-              "judge_sha256": file_hash(__file__)}
+              "judge_sha256": file_hash(__file__),
+              "source_hashes": {name: file_hash(ROOT / name) for name in
+                  ["train.py", "competition/runner.py", "research/autoresearch/engine.py",
+                   "configs/tinystories-v0.json"]}}
     args.output.mkdir(parents=True, exist_ok=True)
     frozen_path = args.output / "frozen.json"
     if frozen_path.exists():

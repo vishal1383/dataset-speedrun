@@ -1,0 +1,20 @@
+{
+  "finalist": "influence-f0.750",
+  "development_seeds": [
+    17,
+    42
+  ],
+  "artifact_sha256": "da04cd446e9cea2e44ec58bc123edf160126861c2bf8c0d16c6faf9f3c5aae9f",
+  "selection_ids_sha256": "6d9b5c8f258cabfa081f84b53949ad1a677317fce1166d719a23c0503ae2bc06",
+  "scores_sha256": "cad4a37dc751a8e7f4414cc76c67abf3defc4a633292681cb2a3d596e640aa1f",
+  "audit_accessed": false,
+  "candidate_dev": {
+    "17": 3.026155471801758,
+    "42": 3.020503044128418
+  },
+  "control_dev": {
+    "17": 3.0338621139526367,
+    "42": 3.0294692516326904
+  },
+  "protocol_sha256": "b9d8b8fed77c65913ef3cbad95df0661f42c8055d96f2afa108219336d13a0b7"
+}

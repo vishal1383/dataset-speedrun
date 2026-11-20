@@ -1,6 +1,6 @@
 # Dataset Speedrun
 
-**Change the data. Keep the learner fixed. Reach the same validation loss in fewer updates.**
+**Same model. Same optimizer. 400 updates. How small can the training dataset get?**
 
 This repository tests data selection and training-signal compression for language models.
 The first track uses a small GPT trained from random initialization on TinyStories.
@@ -10,15 +10,34 @@ This is an independent benchmark inspired by [NanoGPT speedrun](https://github.c
 and [DataComp-LM](https://www.datacomp.ai/dclm/).
 It is not a submission to the NanoGPT leaderboard. Its loss values are not comparable to FineWeb loss values.
 
+## Enter the dataset compression challenge
+
+Submit a smaller token array that matches the full-data model's held-out loss after 400 updates.
+The main track fixes the architecture, tokenizer, loss, optimizer, batch size, and learning-rate schedule.
+The reference artifact contains 4,490,269 tokens and occupies 8,980,666 bytes.
+Smaller artifacts win only after paired quality checks across at least eight training seeds.
+
+Read the [rules, submission format, and judging command](competition/README.md).
+Use [the starter builder](competition/build.py) to create your first submission.
+The [record registry](competition/leaderboard.json) credits verified results.
+
+```bash
+python -m competition.build --fraction 0.75 --output submissions/my-subset.json
+python -m competition.judge --submission submissions/my-subset.json \
+  --evaluation data/round2/audit.npy --output runs/my-subset-judge
+```
+
+Prepare the original training data and the round-two evaluation arrays first, as explained in the competition instructions.
+The published audit is for reproduction. New records require an artifact frozen before a new audit cohort is assigned.
+Teacher targets and gradient latents remain separate experimental tracks.
+Storage savings and end-to-end compute savings are reported separately.
+
 ## Autoresearch update: November 19, 2026
 
 I completed an adaptive search over dataset subsets, sparse teacher targets, and low-rank gradient latents.
 The campaign contains 44 search trials and 12 fresh-seed confirmations across two DGX Sparks.
 The half-sized pool improved development loss but worsened fresh-audit loss: **3.0031 → 3.1014**.
 No compressed candidate preserved fresh-audit quality.
-
-A first-step QKV diagnostic found 8.3% raw-gradient error but 97.3% Muon-update error after rank-8 compression.
-The optimizer's update geometry matters when compressing a training signal.
 
 Read the [autoresearch methods, results, and reproduction instructions](research/autoresearch/README.md).
 The initial baseline results below remain unchanged.
@@ -151,6 +170,9 @@ Data artifacts remain subject to the source dataset's [CDLA-Sharing-1.0 license]
 The code uses the MIT license.
 
 ## What counts as a result
+
+The following rules describe the historical `tinystories-v0` pilot.
+New compression submissions use the [paired competition rules](competition/README.md).
 
 The primary fixed-budget metric is final development cross-entropy.
 The speedrun metric is the first scheduled development evaluation at or below the target.

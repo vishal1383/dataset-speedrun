@@ -8,7 +8,7 @@ import unittest
 import numpy as np
 
 from competition.runner import read_tokens
-from competition.judge import paired_statistics, validate_submission
+from competition.judge import paired_statistics, validate_submission, summarize
 from train import file_hash
 
 
@@ -47,6 +47,30 @@ class SubmissionTests(unittest.TestCase):
         self.assertLess(gain["upper_95_one_sided"], 0)
         uncertain = paired_statistics([-.1, .1] * 4)
         self.assertGreater(uncertain["upper_95_one_sided"], .01)
+
+    def test_judge_rejects_changed_learner_in_completed_cohort(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            frozen = {"name": "example", "seeds": list(range(8)), "baseline_sha256": "base",
+                      "artifact_sha256": "candidate", "evaluation_sha256": "eval",
+                      "artifact_bytes": 50, "baseline_bytes": 100, "source_hashes": {"train": "fixed"}}
+            (root / "frozen.json").write_text(json.dumps(frozen))
+            for seed in range(8):
+                for name, loss, digest in [("original", 3.0, "base"), ("candidate", 2.98, "candidate")]:
+                    out = root / f"{name}-s{seed}"
+                    out.mkdir()
+                    row = {"artifact_sha256": digest, "evaluation_sha256": "eval", "seed": seed,
+                           "updates": 400, "status": "complete", "initial_state_sha256": str(seed),
+                           "source_hashes": {"train": "fixed"}, "evaluation_windows": 20,
+                           "host": "gpu", "torch": "fixed", "cuda": "fixed", "gpu": "fixed", "loss": loss}
+                    (out / "result.json").write_text(json.dumps(row))
+            self.assertTrue(summarize(root)["record"])
+            path = root / "candidate-s3/result.json"
+            row = json.loads(path.read_text())
+            row["source_hashes"] = {"train": "changed"}
+            path.write_text(json.dumps(row))
+            with self.assertRaises(ValueError):
+                summarize(root)
 
 
 if __name__ == "__main__":

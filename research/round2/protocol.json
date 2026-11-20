@@ -9,7 +9,8 @@
   "evaluation_sampling_seed": 19381,
   "strict_success": "Candidate artifact is smaller; paired mean audit loss difference is <=0 at 400 updates.",
   "evidence_requirement": "One-sided paired 95% Student-t upper bound <=0.01 nats/token across eight training seeds.",
-  "selection": "Freeze one finalist before audit access. Require two search seeds and prefer smallest artifact with mean development loss <= matched full-pool mean.",
+  "selection": "Freeze one finalist before audit access. Require two search seeds and prefer smallest artifact with development loss <= its matched full-pool control on BOTH seeds. Break equal-size ties by mean development loss.",
+  "pre_audit_amendment": "After development search, require improvement on both seeds rather than only the mean. The 68.75% subset improved the mean but regressed on seed 42. No reserved-audit loss was accessed before this amendment.",
   "accounting": "Uncompressed uint16 serialized token payload. No external assets during training. Report construction cost separately.",
   "initial_search": "Random, teacher-loss, learnability, and stratified coverage selection across 50%,75%,87.5% pools. Adaptive refinements use development loss only.",
   "audit_policy": "No candidate search may read the new audit. A failed audit becomes development evidence; further confirmation needs another reserved split."

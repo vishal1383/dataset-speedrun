@@ -1,0 +1,23 @@
+{
+  "name": "influence-f0.750",
+  "track": "data-only",
+  "artifact": "runs/round2/artifacts/influence-f0.750.npy",
+  "artifact_sha256": "da04cd446e9cea2e44ec58bc123edf160126861c2bf8c0d16c6faf9f3c5aae9f",
+  "source": "TinyStories fixed 20,000-document training pool; development gradients from exposed validation documents [0,4096)",
+  "license": "CDLA-Sharing-1.0",
+  "construction": {
+    "method": "Select top 75% by mean standardized training/development gradient alignment at teacher steps 50 and 400",
+    "teacher": "Same architecture, seed 271, 400 updates; checkpoints at 50 and 400, reused from first campaign",
+    "teacher_training_seconds": 13.320215069688857,
+    "scoring": {
+      "seconds": 25.98334114596946,
+      "method": "Mean standardized symmetric finite-difference gradient alignment at teacher steps 50 and 400",
+      "development_access": true,
+      "audit_access": false
+    },
+    "search_runs": 62,
+    "search_train_seconds": 782.6315040819463,
+    "previous_campaign": "44 earlier search trials and their teacher construction also informed this campaign",
+    "audit_access": false
+  }
+}

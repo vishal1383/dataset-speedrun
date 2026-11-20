@@ -1,0 +1,32 @@
+[
+  {
+    "name": "cluster_influence-f0.750",
+    "method": "cluster_influence",
+    "fraction": 0.75,
+    "seed": 42
+  },
+  {
+    "name": "cluster_influence-f0.875",
+    "method": "cluster_influence",
+    "fraction": 0.875,
+    "seed": 42
+  },
+  {
+    "name": "coverage_influence-f0.750",
+    "method": "coverage_influence",
+    "fraction": 0.75,
+    "seed": 42
+  },
+  {
+    "name": "cluster_influence-f0.625",
+    "method": "cluster_influence",
+    "fraction": 0.625,
+    "seed": 17
+  },
+  {
+    "name": "cluster_influence-f0.688",
+    "method": "cluster_influence",
+    "fraction": 0.6875,
+    "seed": 17
+  }
+]

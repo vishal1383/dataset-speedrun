@@ -1,0 +1,32 @@
+[
+  {
+    "name": "influence-f0.750",
+    "method": "influence",
+    "fraction": 0.75,
+    "seed": 42
+  },
+  {
+    "name": "influence-f0.875",
+    "method": "influence",
+    "fraction": 0.875,
+    "seed": 42
+  },
+  {
+    "name": "influence-f0.625",
+    "method": "influence",
+    "fraction": 0.625,
+    "seed": 17
+  },
+  {
+    "name": "influence-f0.688",
+    "method": "influence",
+    "fraction": 0.6875,
+    "seed": 17
+  },
+  {
+    "name": "influence-f0.812",
+    "method": "influence",
+    "fraction": 0.8125,
+    "seed": 17
+  }
+]
