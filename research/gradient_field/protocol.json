@@ -1,0 +1,20 @@
+{
+  "track": "experimental-state-dependent-gradient-field-v1",
+  "question": "Can a small learned parameter-space loss reach full-data quality sooner with the fixed optimizers?",
+  "status": "development; no new compression record claimed",
+  "learner": "Original GPT, Muon/AdamW, clipping, and 400-update LR schedule remain fixed. The training objective changes.",
+  "representation": "Compressed teacher endpoint defines a quadratic or Huber potential over student weights.",
+  "important_control": "Direct loading of the same decoded endpoint tests whether the method only reconstructs a compressed checkpoint.",
+  "teacher": {"seed": 271, "updates": 400, "path": "runs/autoresearch-v1/teacher/checkpoint-400.pt", "training_data": "original training pool only"},
+  "development": "data/round2/dev.npy",
+  "development_seeds": [17, 42],
+  "initial_candidates": ["q4", "q8", "fp16", "rank8", "rank32", "rank64"],
+  "potentials": ["quadratic", "huber"],
+  "evaluation_steps": [0, 10, 20, 50, 100, 150, 200, 300, 400],
+  "comparisons": ["same-step full-data loss", "updates to full-data 400-update quality", "training-loop seconds", "artifact bytes", "direct-load loss and runtime"],
+  "quality_tolerance_nats": 0.01,
+  "construction_cost": "Report teacher training, encoding, and search separately. Student-only speed is not end-to-end acceleration.",
+  "audit_policy": "Do not select on the published round2 audit. Freeze any finalist before evaluating fresh documents beyond 8191.",
+  "compute": "Local Sparks only. Reserve seed 42 for spark-664c; its configured SSH address is currently unreachable.",
+  "scope": "This changes the objective and belongs outside the official token-data leaderboard. A teacher endpoint is a model-compression representation."
+}

@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-11-20T07:13:04.956459+00:00",
+  "artifact": "runs/gradient-field-strong-v1/artifacts/q4.pt",
+  "evaluation": "data/gradient-field-v1/audit.npy",
+  "field": "quadratic",
+  "updates": 200,
+  "teacher_updates": 1600,
+  "selection": "Smallest artifact meeting full-data development final loss + 0.01; earliest measured crossing. q4 quadratic crosses at 200; q4 Huber at 300.",
+  "development_seeds_completed": [
+    17
+  ],
+  "amendment": "Seed 42 search deferred because the second Spark is unreachable. Freeze after seed 17; confirm independently on fresh seeds and fresh text.",
+  "worker_seeds": {
+    "0": [
+      1009,
+      1010,
+      1011,
+      1012
+    ],
+    "1": [
+      1013,
+      1014,
+      1015,
+      1016
+    ]
+  },
+  "worker1_state": "Reserved; cannot submit until spark-664c is reachable.",
+  "quality_rule": "Report all paired deltas. Mean <= 0 and one-sided 95% upper <= 0.01 for this experimental comparison.",
+  "input_sha256": {
+    "research/gradient_field/experiment.py": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "research/gradient_field/confirm.py": "2b7889af6f559752f82adc5cd0e02a62760c950b61908c0f7736fbf88df4b456",
+    "research/gradient_field/protocol.json": "908a13a7586f810f893cede11680907c373136e714cdab1a1924ac93a18b2690",
+    "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+    "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+    "runs/gradient-field-strong-v1/artifacts/q4.pt": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+    "data/gradient-field-v1/audit.npy": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "trigger": "The 400-update teacher has dev loss 3.0452; the seed-17 full-data reference has loss 3.0339.",
+  "decision": "Test a stronger training-only teacher to separate endpoint quality from gradient-field convergence.",
+  "teacher_updates": 1600,
+  "teacher_seed": 271,
+  "teacher_train_seconds": 45.47765235492261,
+  "kinds": [
+    "q4",
+    "q8"
+  ],
+  "potentials": [
+    "quadratic",
+    "huber"
+  ],
+  "development_seeds": [
+    17,
+    42
+  ],
+  "teacher_cost_is_not_student_cost": true,
+  "audit_accessed_for_selection": false,
+  "scope": "Checkpoint coding through a state-dependent loss. Not a token-data leaderboard entry."
+}

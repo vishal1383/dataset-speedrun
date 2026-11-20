@@ -1,0 +1,447 @@
+{
+  "runs": [
+    {
+      "mode": "full-data",
+      "seed": 17,
+      "kind": null,
+      "field": null,
+      "updates": 400,
+      "curve": [
+        {
+          "step": 0,
+          "loss": 8.364136695861816,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 10,
+          "loss": 7.183285713195801,
+          "train_seconds": 0.5269090521032922
+        },
+        {
+          "step": 20,
+          "loss": 5.748956680297852,
+          "train_seconds": 0.868650144955609
+        },
+        {
+          "step": 50,
+          "loss": 4.3645920753479,
+          "train_seconds": 1.8596440089168027
+        },
+        {
+          "step": 100,
+          "loss": 3.9136250019073486,
+          "train_seconds": 3.524193095974624
+        },
+        {
+          "step": 150,
+          "loss": 3.6326420307159424,
+          "train_seconds": 5.198961423884612
+        },
+        {
+          "step": 200,
+          "loss": 3.417255401611328,
+          "train_seconds": 6.861435100669041
+        },
+        {
+          "step": 300,
+          "loss": 3.1515588760375977,
+          "train_seconds": 10.174435553664807
+        },
+        {
+          "step": 400,
+          "loss": 3.0338621139526367,
+          "train_seconds": 13.534167624486145
+        }
+      ],
+      "final_loss": 3.0338621139526367,
+      "train_seconds": 13.534167624486145,
+      "decode_seconds": 8.975970558822155e-06,
+      "wall_seconds": 17.43139170302311,
+      "initial_state_sha256": "ce6dc3a3b3c483e2fd7d6a5e82b57f71243ec949e4236fe53aeff4853a23ddf4",
+      "evaluation_sha256": "a55c0d306b587dd0d095586c0f7d00f713efc5738d415c5bd18ac328461e263a",
+      "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+      "artifact_bytes": 8980666,
+      "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+      "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+      "host": "47a4a22e901e",
+      "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+      "cuda": "13.2",
+      "gpu": "NVIDIA GB10",
+      "training_objective_changed": false,
+      "training_token_exposures": 3276800,
+      "training_data_read_by_candidate": true,
+      "status": "complete",
+      "run": "runs/gradient-field-strong-v1/search/full-17",
+      "matched_control_initialization": true,
+      "control_final_loss": 3.0338621139526367,
+      "loss_gap_at_400": 0.0,
+      "first_observed_quality_crossing": {
+        "step": 400,
+        "loss": 3.0338621139526367,
+        "train_seconds": 13.534167624486145
+      },
+      "observed_student_speedup": 1.0
+    },
+    {
+      "mode": "compressed-target-potential",
+      "seed": 17,
+      "kind": "q4",
+      "field": "huber",
+      "updates": 400,
+      "curve": [
+        {
+          "step": 0,
+          "loss": 8.364136695861816,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 10,
+          "loss": 8.358907699584961,
+          "train_seconds": 0.12312478391686454
+        },
+        {
+          "step": 20,
+          "loss": 8.34109115600586,
+          "train_seconds": 0.21653924888232723
+        },
+        {
+          "step": 50,
+          "loss": 7.342065334320068,
+          "train_seconds": 0.5019069127738476
+        },
+        {
+          "step": 100,
+          "loss": 4.947652816772461,
+          "train_seconds": 0.9921816806891002
+        },
+        {
+          "step": 150,
+          "loss": 3.7117919921875,
+          "train_seconds": 1.467585027741734
+        },
+        {
+          "step": 200,
+          "loss": 3.0900425910949707,
+          "train_seconds": 1.931892595719546
+        },
+        {
+          "step": 300,
+          "loss": 2.6883933544158936,
+          "train_seconds": 2.8522697633598
+        },
+        {
+          "step": 400,
+          "loss": 2.625253200531006,
+          "train_seconds": 3.7180195077089593
+        }
+      ],
+      "final_loss": 2.625253200531006,
+      "train_seconds": 3.7180195077089593,
+      "decode_seconds": 0.010658699960913509,
+      "wall_seconds": 6.595358167018276,
+      "initial_state_sha256": "ce6dc3a3b3c483e2fd7d6a5e82b57f71243ec949e4236fe53aeff4853a23ddf4",
+      "evaluation_sha256": "a55c0d306b587dd0d095586c0f7d00f713efc5738d415c5bd18ac328461e263a",
+      "artifact_sha256": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+      "artifact_bytes": 3568901,
+      "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+      "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+      "host": "47a4a22e901e",
+      "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+      "cuda": "13.2",
+      "gpu": "NVIDIA GB10",
+      "training_objective_changed": true,
+      "training_token_exposures": 0,
+      "training_data_read_by_candidate": false,
+      "status": "complete",
+      "run": "runs/gradient-field-strong-v1/search/q4-huber-17",
+      "matched_control_initialization": true,
+      "control_final_loss": 3.0338621139526367,
+      "loss_gap_at_400": -0.40860891342163086,
+      "first_observed_quality_crossing": {
+        "step": 300,
+        "loss": 2.6883933544158936,
+        "train_seconds": 2.8522697633598
+      },
+      "observed_student_speedup": 4.745051747329719
+    },
+    {
+      "mode": "compressed-target-potential",
+      "seed": 17,
+      "kind": "q4",
+      "field": "quadratic",
+      "updates": 400,
+      "curve": [
+        {
+          "step": 0,
+          "loss": 8.364136695861816,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 10,
+          "loss": 8.3477144241333,
+          "train_seconds": 0.15640718210488558
+        },
+        {
+          "step": 20,
+          "loss": 8.344260215759277,
+          "train_seconds": 0.28611949615878984
+        },
+        {
+          "step": 50,
+          "loss": 7.219857215881348,
+          "train_seconds": 0.6912309403414838
+        },
+        {
+          "step": 100,
+          "loss": 4.181974411010742,
+          "train_seconds": 1.3369990923674777
+        },
+        {
+          "step": 150,
+          "loss": 3.298743724822998,
+          "train_seconds": 1.812047825253103
+        },
+        {
+          "step": 200,
+          "loss": 2.7954440116882324,
+          "train_seconds": 2.290604591369629
+        },
+        {
+          "step": 300,
+          "loss": 2.6043224334716797,
+          "train_seconds": 3.18916209123563
+        },
+        {
+          "step": 400,
+          "loss": 2.577296733856201,
+          "train_seconds": 4.13494426116813
+        }
+      ],
+      "final_loss": 2.577296733856201,
+      "train_seconds": 4.13494426116813,
+      "decode_seconds": 0.00968523498158902,
+      "wall_seconds": 6.982225230021868,
+      "initial_state_sha256": "ce6dc3a3b3c483e2fd7d6a5e82b57f71243ec949e4236fe53aeff4853a23ddf4",
+      "evaluation_sha256": "a55c0d306b587dd0d095586c0f7d00f713efc5738d415c5bd18ac328461e263a",
+      "artifact_sha256": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+      "artifact_bytes": 3568901,
+      "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+      "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+      "host": "47a4a22e901e",
+      "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+      "cuda": "13.2",
+      "gpu": "NVIDIA GB10",
+      "training_objective_changed": true,
+      "training_token_exposures": 0,
+      "training_data_read_by_candidate": false,
+      "status": "complete",
+      "run": "runs/gradient-field-strong-v1/search/q4-quadratic-17",
+      "matched_control_initialization": true,
+      "control_final_loss": 3.0338621139526367,
+      "loss_gap_at_400": -0.45656538009643555,
+      "first_observed_quality_crossing": {
+        "step": 200,
+        "loss": 2.7954440116882324,
+        "train_seconds": 2.290604591369629
+      },
+      "observed_student_speedup": 5.908556926620676
+    },
+    {
+      "mode": "compressed-target-potential",
+      "seed": 17,
+      "kind": "q8",
+      "field": "huber",
+      "updates": 400,
+      "curve": [
+        {
+          "step": 0,
+          "loss": 8.364136695861816,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 10,
+          "loss": 8.363870620727539,
+          "train_seconds": 0.09382605203427374
+        },
+        {
+          "step": 20,
+          "loss": 8.357439041137695,
+          "train_seconds": 0.18655585608212277
+        },
+        {
+          "step": 50,
+          "loss": 7.322641372680664,
+          "train_seconds": 0.46260606619762257
+        },
+        {
+          "step": 100,
+          "loss": 4.784748077392578,
+          "train_seconds": 0.9197565020876937
+        },
+        {
+          "step": 150,
+          "loss": 3.566159725189209,
+          "train_seconds": 1.3747554640867747
+        },
+        {
+          "step": 200,
+          "loss": 2.9524729251861572,
+          "train_seconds": 1.8375968468608335
+        },
+        {
+          "step": 300,
+          "loss": 2.5614709854125977,
+          "train_seconds": 2.8023058156250045
+        },
+        {
+          "step": 400,
+          "loss": 2.50376558303833,
+          "train_seconds": 3.7382875745533966
+        }
+      ],
+      "final_loss": 2.50376558303833,
+      "train_seconds": 3.7382875745533966,
+      "decode_seconds": 0.009045630053151399,
+      "wall_seconds": 6.504014375968836,
+      "initial_state_sha256": "ce6dc3a3b3c483e2fd7d6a5e82b57f71243ec949e4236fe53aeff4853a23ddf4",
+      "evaluation_sha256": "a55c0d306b587dd0d095586c0f7d00f713efc5738d415c5bd18ac328461e263a",
+      "artifact_sha256": "10ab229bb96f7682d294f157746654f80309d65ce782ef9fe87862d40451007a",
+      "artifact_bytes": 7011269,
+      "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+      "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+      "host": "47a4a22e901e",
+      "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+      "cuda": "13.2",
+      "gpu": "NVIDIA GB10",
+      "training_objective_changed": true,
+      "training_token_exposures": 0,
+      "training_data_read_by_candidate": false,
+      "status": "complete",
+      "run": "runs/gradient-field-strong-v1/search/q8-huber-17",
+      "matched_control_initialization": true,
+      "control_final_loss": 3.0338621139526367,
+      "loss_gap_at_400": -0.5300965309143066,
+      "first_observed_quality_crossing": {
+        "step": 200,
+        "loss": 2.9524729251861572,
+        "train_seconds": 1.8375968468608335
+      },
+      "observed_student_speedup": 7.365145215397252
+    },
+    {
+      "mode": "compressed-target-potential",
+      "seed": 17,
+      "kind": "q8",
+      "field": "quadratic",
+      "updates": 400,
+      "curve": [
+        {
+          "step": 0,
+          "loss": 8.364136695861816,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 10,
+          "loss": 8.352303504943848,
+          "train_seconds": 0.12907177791930735
+        },
+        {
+          "step": 20,
+          "loss": 8.327207565307617,
+          "train_seconds": 0.25879180390620604
+        },
+        {
+          "step": 50,
+          "loss": 7.146964073181152,
+          "train_seconds": 0.6477590946597047
+        },
+        {
+          "step": 100,
+          "loss": 4.106126308441162,
+          "train_seconds": 1.2887913466547616
+        },
+        {
+          "step": 150,
+          "loss": 3.1765027046203613,
+          "train_seconds": 1.9409268146846443
+        },
+        {
+          "step": 200,
+          "loss": 2.6706621646881104,
+          "train_seconds": 2.584774181654211
+        },
+        {
+          "step": 300,
+          "loss": 2.4932188987731934,
+          "train_seconds": 3.8646872797980905
+        },
+        {
+          "step": 400,
+          "loss": 2.4683616161346436,
+          "train_seconds": 5.116927328228485
+        }
+      ],
+      "final_loss": 2.4683616161346436,
+      "train_seconds": 5.116927328228485,
+      "decode_seconds": 0.00856524205300957,
+      "wall_seconds": 7.836889304977376,
+      "initial_state_sha256": "ce6dc3a3b3c483e2fd7d6a5e82b57f71243ec949e4236fe53aeff4853a23ddf4",
+      "evaluation_sha256": "a55c0d306b587dd0d095586c0f7d00f713efc5738d415c5bd18ac328461e263a",
+      "artifact_sha256": "10ab229bb96f7682d294f157746654f80309d65ce782ef9fe87862d40451007a",
+      "artifact_bytes": 7011269,
+      "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+      "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+      "host": "47a4a22e901e",
+      "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+      "cuda": "13.2",
+      "gpu": "NVIDIA GB10",
+      "training_objective_changed": true,
+      "training_token_exposures": 0,
+      "training_data_read_by_candidate": false,
+      "status": "complete",
+      "run": "runs/gradient-field-strong-v1/search/q8-quadratic-17",
+      "matched_control_initialization": true,
+      "control_final_loss": 3.0338621139526367,
+      "loss_gap_at_400": -0.5655004978179932,
+      "first_observed_quality_crossing": {
+        "step": 200,
+        "loss": 2.6706621646881104,
+        "train_seconds": 2.584774181654211
+      },
+      "observed_student_speedup": 5.2361121991030215
+    }
+  ],
+  "artifacts": [
+    {
+      "kind": "q4",
+      "artifact_bytes": 3568901,
+      "artifact_sha256": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+      "teacher_sha256": "bd6a6d8ef24f73fb5d4ca90ebf864cb867ee62be60b2a28937e2120e9c4bb4e5",
+      "teacher_updates": 1600,
+      "teacher_train_seconds": 45.47765235492261,
+      "construction_seconds": 0.11864844197407365,
+      "direct_load_seconds": 0.017458454007282853,
+      "direct_load_dev_loss": 2.424123525619507
+    },
+    {
+      "kind": "q8",
+      "artifact_bytes": 7011269,
+      "artifact_sha256": "10ab229bb96f7682d294f157746654f80309d65ce782ef9fe87862d40451007a",
+      "teacher_sha256": "bd6a6d8ef24f73fb5d4ca90ebf864cb867ee62be60b2a28937e2120e9c4bb4e5",
+      "teacher_updates": 1600,
+      "teacher_train_seconds": 45.47765235492261,
+      "construction_seconds": 0.027405578992329538,
+      "direct_load_seconds": 0.00895518099423498,
+      "direct_load_dev_loss": 2.332409381866455
+    }
+  ],
+  "completed_runs": 5,
+  "summed_training_seconds": 30.242346296145115,
+  "interpretation": "Development only. An endpoint potential encodes a checkpoint. Direct loading is a required control.",
+  "quality_rule": "First measured loss <= same-seed full-data final loss + 0.01 nats. No interpolation between evaluations."
+}
