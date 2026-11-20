@@ -1,0 +1,15 @@
+{
+  "search_runs": 62,
+  "confirmation_runs": 16,
+  "search_train_seconds": 782.6315040819463,
+  "confirmation_train_seconds": 198.93221874628216,
+  "search_run_seconds": 880.7604961001198,
+  "confirmation_run_seconds": 245.9103305809549,
+  "influence_scoring": {
+    "seconds": 25.98334114596946,
+    "method": "Mean standardized symmetric finite-difference gradient alignment at teacher steps 50 and 400",
+    "development_access": true,
+    "audit_access": false
+  },
+  "exclusions": "Image startup, downloads, source development, transfers, previous campaign, and other subset construction costs are excluded from training-loop totals."
+}

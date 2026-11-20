@@ -1,0 +1,36 @@
+1/4
+
+Dataset Speedrun: same model, same optimizer, 400 updates. Your job: shrink the training data.
+
+First record: 8.98 → 6.76 MB, matching held-out loss across 8 seeds.
+
+Can you get it below 4 MB?
+
+https://github.com/vishal1383/dataset-speedrun
+
+2/4
+
+The game: submit a training dataset. We train the same 6.9M-parameter language model from scratch and compare it with full-data controls.
+
+Smallest dataset that passes the held-out quality test wins.
+
+The first track uses TinyStories and fits on one GPU.
+
+3/4
+
+The first record selects examples whose gradients align with improving development loss.
+
+Fresh-audit loss: 2.9745 → 2.9742. Eight matched seeds. The 95% upper bound on loss increase is 0.0042 nats.
+
+This saves dataset storage; student training still uses 400 updates.
+
+4/4
+
+Inspired by Keller Jordan's nanoGPT speedrun: a clear target, cheap attempts, reproducible records, credit to contributors.
+
+The repo includes a starter submission, paired judge, complete results, and failed experiments.
+
+Beat 6,761,798 bytes. Submit your artifact + code.
+
+Attachment for post 1: research/round2/results/record.png
+Draft only. No post has been sent.

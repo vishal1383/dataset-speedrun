@@ -1,7 +1,33 @@
 {
   "track": "data-only",
   "score": "uncompressed artifact bytes, subject to matched quality at 400 updates",
-  "records": [],
+  "records": [
+    {
+      "rank": 1,
+      "name": "influence75",
+      "contributor": "vishal1383",
+      "artifact_bytes": 6761798,
+      "compression_ratio": 1.3281476317393688,
+      "candidate_loss": 2.9741704761981964,
+      "full_data_loss": 2.9745093882083893,
+      "seeds": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "paired_upper_95_nats": 0.0041463941381195794,
+      "freeze_commit": "38ebfc5",
+      "artifact_sha256": "da04cd446e9cea2e44ec58bc123edf160126861c2bf8c0d16c6faf9f3c5aae9f",
+      "manifest": "submissions/round2-influence75.json",
+      "evidence": "research/round2/results/confirmation-summary.json",
+      "artifact_release": "https://github.com/vishal1383/dataset-speedrun/releases/tag/compression-record-v1"
+    }
+  ],
   "reference": {
     "name": "full-data",
     "artifact_bytes": 8980666,

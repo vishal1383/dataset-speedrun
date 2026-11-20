@@ -1,0 +1,90 @@
+{
+  "name": "influence-f0.750",
+  "track": "data-only",
+  "updates": 400,
+  "seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008
+  ],
+  "pairs": [
+    {
+      "seed": 1001,
+      "baseline_loss": 2.979419708251953,
+      "candidate_loss": 2.97151517868042,
+      "delta": -0.007904529571533203,
+      "host": "4ef30402516b"
+    },
+    {
+      "seed": 1002,
+      "baseline_loss": 2.969085216522217,
+      "candidate_loss": 2.968264102935791,
+      "delta": -0.0008211135864257812,
+      "host": "c9dacc7d049c"
+    },
+    {
+      "seed": 1003,
+      "baseline_loss": 2.971348285675049,
+      "candidate_loss": 2.9723877906799316,
+      "delta": 0.0010395050048828125,
+      "host": "4ef30402516b"
+    },
+    {
+      "seed": 1004,
+      "baseline_loss": 2.971439838409424,
+      "candidate_loss": 2.9729976654052734,
+      "delta": 0.0015578269958496094,
+      "host": "c9dacc7d049c"
+    },
+    {
+      "seed": 1005,
+      "baseline_loss": 2.9814040660858154,
+      "candidate_loss": 2.9710097312927246,
+      "delta": -0.01039433479309082,
+      "host": "4ef30402516b"
+    },
+    {
+      "seed": 1006,
+      "baseline_loss": 2.968019485473633,
+      "candidate_loss": 2.9797589778900146,
+      "delta": 0.011739492416381836,
+      "host": "c9dacc7d049c"
+    },
+    {
+      "seed": 1007,
+      "baseline_loss": 2.9814019203186035,
+      "candidate_loss": 2.982682228088379,
+      "delta": 0.0012803077697753906,
+      "host": "4ef30402516b"
+    },
+    {
+      "seed": 1008,
+      "baseline_loss": 2.97395658493042,
+      "candidate_loss": 2.974748134613037,
+      "delta": 0.0007915496826171875,
+      "host": "c9dacc7d049c"
+    }
+  ],
+  "paired_delta": {
+    "mean": -0.0003389120101928711,
+    "standard_error": 0.002367442626166132,
+    "upper_95_one_sided": 0.0041463941381195794,
+    "lower_95_one_sided": -0.004824218158505322
+  },
+  "baseline_loss": 2.9745093882083893,
+  "candidate_loss": 2.9741704761981964,
+  "artifact_bytes": 6761798,
+  "baseline_bytes": 8980666,
+  "compression_ratio": 1.3281476317393688,
+  "strict_quality_pass": true,
+  "evidence_pass": true,
+  "record": true,
+  "frozen_sha256": "b754d22c3627ee762d144e535998ee4fd4b1441e7579806d030d658a963d9d83",
+  "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+  "interpretation": "Mean loss must not increase; the one-sided confidence bound must exclude harm above 0.01 nats. This is not proof of exactly equal population loss."
+}

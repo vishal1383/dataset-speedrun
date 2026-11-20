@@ -1,0 +1,68 @@
+{
+  "freeze_commit": "38ebfc5",
+  "hosts": {
+    "spark-a5a1": [
+      "152533b24018",
+      "d0d6508a3e79",
+      "440c9b1a832c",
+      "63f75106db95",
+      "4ef30402516b"
+    ],
+    "spark-664c": [
+      "0f0ad0b48bf5",
+      "b96a416f37aa",
+      "b4e6d5f7f1db",
+      "5b046d520334",
+      "c9dacc7d049c"
+    ]
+  },
+  "container_training_totals": {
+    "b4e6d5f7f1db": {
+      "runs": 9,
+      "training_seconds": 101.14039124309784
+    },
+    "5b046d520334": {
+      "runs": 5,
+      "training_seconds": 56.56088767183246
+    },
+    "0f0ad0b48bf5": {
+      "runs": 13,
+      "training_seconds": 148.56909931392875
+    },
+    "152533b24018": {
+      "runs": 13,
+      "training_seconds": 192.0967072925996
+    },
+    "b96a416f37aa": {
+      "runs": 9,
+      "training_seconds": 102.99831253098091
+    },
+    "d0d6508a3e79": {
+      "runs": 6,
+      "training_seconds": 88.62635926535586
+    },
+    "440c9b1a832c": {
+      "runs": 5,
+      "training_seconds": 66.14048923895461
+    },
+    "63f75106db95": {
+      "runs": 2,
+      "training_seconds": 26.4992575251963
+    },
+    "4ef30402516b": {
+      "runs": 8,
+      "training_seconds": 107.62410309910774
+    },
+    "c9dacc7d049c": {
+      "runs": 8,
+      "training_seconds": 91.30811564717442
+    }
+  },
+  "confirmation_processes": {
+    "dataset-round2-judge0": "exited 0",
+    "dataset-round2-judge1": "exited 0"
+  },
+  "tests": "10 passed, including CUDA checks",
+  "artifact_reconstruction": "Exact SHA-256 match from published indices",
+  "all_campaign_training_finished": true
+}

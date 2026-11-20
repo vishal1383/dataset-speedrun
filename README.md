@@ -32,7 +32,27 @@ The published audit is for reproduction. New records require an artifact frozen 
 Teacher targets and gradient latents remain separate experimental tracks.
 Storage savings and end-to-end compute savings are reported separately.
 
-## Autoresearch update: November 19, 2026
+## First verified compression record
+
+**8.98 MB → 6.76 MB, with matched held-out loss after 400 updates.**
+
+| Entry | Training artifact | Mean fresh-audit loss | Confirmation |
+|---|---:|---:|---|
+| Full-data reference | 8,980,666 bytes | 2.974509 | 8 seeds |
+| `influence75` | **6,761,798 bytes** | **2.974170** | 8 paired seeds |
+
+Gradient-alignment selection retained 75% of training windows.
+The resulting artifact is 24.7% smaller after accounting for explicit window boundaries.
+The one-sided 95% upper bound on loss increase is 0.00415 nats, below the registered 0.01-nat limit.
+This is a storage record at fixed training budget. It does not claim a training-time speedup.
+
+[Method and evidence](research/round2/README.md) · [Artifact release](https://github.com/vishal1383/dataset-speedrun/releases/tag/compression-record-v1) · [Enter the challenge](competition/README.md)
+
+![First compression record](research/round2/results/record.png)
+
+The first target for contributors is to beat **6,761,798 bytes** under the same quality rule.
+
+## First campaign: November 19, 2026
 
 I completed an adaptive search over dataset subsets, sparse teacher targets, and low-rank gradient latents.
 The campaign contains 44 search trials and 12 fresh-seed confirmations across two DGX Sparks.

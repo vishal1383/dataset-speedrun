@@ -1,0 +1,706 @@
+[
+  {
+    "seed": 1001,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "c74e176bc1d59481a46c94d9f47cc7df2e6eb919d527b6de5dfe48230312483f",
+    "artifact_sha256": "da04cd446e9cea2e44ec58bc123edf160126861c2bf8c0d16c6faf9f3c5aae9f",
+    "artifact_bytes": 6761798,
+    "artifact_tokens": 3380835,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.97151517868042,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.8659634590148926
+      },
+      {
+        "step": 200,
+        "loss": 3.344315767288208
+      },
+      {
+        "step": 300,
+        "loss": 3.084200382232666
+      },
+      {
+        "step": 400,
+        "loss": 2.97151517868042
+      }
+    ],
+    "train_seconds": 13.422782176814508,
+    "elapsed_seconds": 16.57583466300275,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "4ef30402516b",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1002,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "6a5799de6a2576b75c2a0a3fc52377966fc327047352af6507958d09dcc0e3a8",
+    "artifact_sha256": "da04cd446e9cea2e44ec58bc123edf160126861c2bf8c0d16c6faf9f3c5aae9f",
+    "artifact_bytes": 6761798,
+    "artifact_tokens": 3380835,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.968264102935791,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.8685731887817383
+      },
+      {
+        "step": 200,
+        "loss": 3.345277786254883
+      },
+      {
+        "step": 300,
+        "loss": 3.0831198692321777
+      },
+      {
+        "step": 400,
+        "loss": 2.968263864517212
+      }
+    ],
+    "train_seconds": 11.377072999603115,
+    "elapsed_seconds": 13.992355894995853,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "c9dacc7d049c",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1003,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "c3528b583a51ce3fad6375e0321388fbe8f3576f8db2bb01c3a335837f8f9a08",
+    "artifact_sha256": "da04cd446e9cea2e44ec58bc123edf160126861c2bf8c0d16c6faf9f3c5aae9f",
+    "artifact_bytes": 6761798,
+    "artifact_tokens": 3380835,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.9723877906799316,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.860666513442993
+      },
+      {
+        "step": 200,
+        "loss": 3.351161479949951
+      },
+      {
+        "step": 300,
+        "loss": 3.086360454559326
+      },
+      {
+        "step": 400,
+        "loss": 2.9723877906799316
+      }
+    ],
+    "train_seconds": 13.296967345289886,
+    "elapsed_seconds": 16.338953002006747,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "4ef30402516b",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1004,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "1e236e357291339a444d1021bd60db823dd5b9d40bbdabdcb8f7e37505675bc6",
+    "artifact_sha256": "da04cd446e9cea2e44ec58bc123edf160126861c2bf8c0d16c6faf9f3c5aae9f",
+    "artifact_bytes": 6761798,
+    "artifact_tokens": 3380835,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.9729976654052734,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.863260269165039
+      },
+      {
+        "step": 200,
+        "loss": 3.351804256439209
+      },
+      {
+        "step": 300,
+        "loss": 3.0858240127563477
+      },
+      {
+        "step": 400,
+        "loss": 2.9729976654052734
+      }
+    ],
+    "train_seconds": 11.38435811776435,
+    "elapsed_seconds": 13.998227189003956,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "c9dacc7d049c",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1005,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "a86cbe3dece25eee6e3f259fd55a956c4bdbfff55c646103a04f98e5c68a1819",
+    "artifact_sha256": "da04cd446e9cea2e44ec58bc123edf160126861c2bf8c0d16c6faf9f3c5aae9f",
+    "artifact_bytes": 6761798,
+    "artifact_tokens": 3380835,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.9710097312927246,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.868208169937134
+      },
+      {
+        "step": 200,
+        "loss": 3.3434548377990723
+      },
+      {
+        "step": 300,
+        "loss": 3.085902690887451
+      },
+      {
+        "step": 400,
+        "loss": 2.9710097312927246
+      }
+    ],
+    "train_seconds": 13.546032491431106,
+    "elapsed_seconds": 16.608918591984548,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "4ef30402516b",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1006,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "76926b94fe11a62f49b83656eacd7215bc4af8aede2f688219b1734e2ba19d80",
+    "artifact_sha256": "da04cd446e9cea2e44ec58bc123edf160126861c2bf8c0d16c6faf9f3c5aae9f",
+    "artifact_bytes": 6761798,
+    "artifact_tokens": 3380835,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.9797589778900146,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.8597354888916016
+      },
+      {
+        "step": 200,
+        "loss": 3.360630512237549
+      },
+      {
+        "step": 300,
+        "loss": 3.093301296234131
+      },
+      {
+        "step": 400,
+        "loss": 2.9797589778900146
+      }
+    ],
+    "train_seconds": 11.315229544998147,
+    "elapsed_seconds": 13.940247084014118,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "c9dacc7d049c",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1007,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "916b453a3f1a11d9e348b7f14a9435158ceb073964b2b12cb3f067510c0b1e55",
+    "artifact_sha256": "da04cd446e9cea2e44ec58bc123edf160126861c2bf8c0d16c6faf9f3c5aae9f",
+    "artifact_bytes": 6761798,
+    "artifact_tokens": 3380835,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.982682228088379,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.8742733001708984
+      },
+      {
+        "step": 200,
+        "loss": 3.3623266220092773
+      },
+      {
+        "step": 300,
+        "loss": 3.0986809730529785
+      },
+      {
+        "step": 400,
+        "loss": 2.982682466506958
+      }
+    ],
+    "train_seconds": 13.299487559706904,
+    "elapsed_seconds": 16.32012233696878,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "4ef30402516b",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1008,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "3ad0be75836663cb0d7ada952f21f3dc1630ffe8b4b5291f7267774ee0f983c9",
+    "artifact_sha256": "da04cd446e9cea2e44ec58bc123edf160126861c2bf8c0d16c6faf9f3c5aae9f",
+    "artifact_bytes": 6761798,
+    "artifact_tokens": 3380835,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.974748134613037,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.8635332584381104
+      },
+      {
+        "step": 200,
+        "loss": 3.3516697883605957
+      },
+      {
+        "step": 300,
+        "loss": 3.0901999473571777
+      },
+      {
+        "step": 400,
+        "loss": 2.974748134613037
+      }
+    ],
+    "train_seconds": 11.314644083788153,
+    "elapsed_seconds": 13.9257188240299,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "c9dacc7d049c",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1001,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "c74e176bc1d59481a46c94d9f47cc7df2e6eb919d527b6de5dfe48230312483f",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "artifact_tokens": 4490269,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.979419708251953,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.8761677742004395
+      },
+      {
+        "step": 200,
+        "loss": 3.357001781463623
+      },
+      {
+        "step": 300,
+        "loss": 3.095158100128174
+      },
+      {
+        "step": 400,
+        "loss": 2.979419708251953
+      }
+    ],
+    "train_seconds": 13.788631086761598,
+    "elapsed_seconds": 17.562643701967318,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "4ef30402516b",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1002,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "6a5799de6a2576b75c2a0a3fc52377966fc327047352af6507958d09dcc0e3a8",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "artifact_tokens": 4490269,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.969085216522217,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.8710498809814453
+      },
+      {
+        "step": 200,
+        "loss": 3.3481874465942383
+      },
+      {
+        "step": 300,
+        "loss": 3.086254119873047
+      },
+      {
+        "step": 400,
+        "loss": 2.969085454940796
+      }
+    ],
+    "train_seconds": 11.907119056675583,
+    "elapsed_seconds": 15.269328669004608,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "c9dacc7d049c",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1003,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "c3528b583a51ce3fad6375e0321388fbe8f3576f8db2bb01c3a335837f8f9a08",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "artifact_tokens": 4490269,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.971348285675049,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.8689212799072266
+      },
+      {
+        "step": 200,
+        "loss": 3.3582839965820312
+      },
+      {
+        "step": 300,
+        "loss": 3.0882558822631836
+      },
+      {
+        "step": 400,
+        "loss": 2.971348285675049
+      }
+    ],
+    "train_seconds": 13.257005218067206,
+    "elapsed_seconds": 16.28729290695628,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "4ef30402516b",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1004,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "1e236e357291339a444d1021bd60db823dd5b9d40bbdabdcb8f7e37505675bc6",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "artifact_tokens": 4490269,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.971439838409424,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.869877815246582
+      },
+      {
+        "step": 200,
+        "loss": 3.3588008880615234
+      },
+      {
+        "step": 300,
+        "loss": 3.088507652282715
+      },
+      {
+        "step": 400,
+        "loss": 2.971439838409424
+      }
+    ],
+    "train_seconds": 11.377144584315829,
+    "elapsed_seconds": 13.998288863047492,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "c9dacc7d049c",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1005,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "a86cbe3dece25eee6e3f259fd55a956c4bdbfff55c646103a04f98e5c68a1819",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "artifact_tokens": 4490269,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.9814040660858154,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.874237060546875
+      },
+      {
+        "step": 200,
+        "loss": 3.3641881942749023
+      },
+      {
+        "step": 300,
+        "loss": 3.0964627265930176
+      },
+      {
+        "step": 400,
+        "loss": 2.9814043045043945
+      }
+    ],
+    "train_seconds": 13.635145538835786,
+    "elapsed_seconds": 16.74328667501686,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "4ef30402516b",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1006,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "76926b94fe11a62f49b83656eacd7215bc4af8aede2f688219b1734e2ba19d80",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "artifact_tokens": 4490269,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.968019485473633,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.8712427616119385
+      },
+      {
+        "step": 200,
+        "loss": 3.3498663902282715
+      },
+      {
+        "step": 300,
+        "loss": 3.086421489715576
+      },
+      {
+        "step": 400,
+        "loss": 2.9680192470550537
+      }
+    ],
+    "train_seconds": 11.320836372033227,
+    "elapsed_seconds": 13.94327422697097,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "c9dacc7d049c",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1007,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "916b453a3f1a11d9e348b7f14a9435158ceb073964b2b12cb3f067510c0b1e55",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "artifact_tokens": 4490269,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.9814019203186035,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.872340679168701
+      },
+      {
+        "step": 200,
+        "loss": 3.3621394634246826
+      },
+      {
+        "step": 300,
+        "loss": 3.09781551361084
+      },
+      {
+        "step": 400,
+        "loss": 2.9814019203186035
+      }
+    ],
+    "train_seconds": 13.378051682200748,
+    "elapsed_seconds": 16.469479980005417,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "4ef30402516b",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  },
+  {
+    "seed": 1008,
+    "updates": 400,
+    "target_tokens": 3276800,
+    "initial_state_sha256": "3ad0be75836663cb0d7ada952f21f3dc1630ffe8b4b5291f7267774ee0f983c9",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "artifact_tokens": 4490269,
+    "evaluation_sha256": "984811fdbf41e9ddcff516e03ac4a733e9ff253c810f56b0a74a534c610b8d08",
+    "evaluation_windows": 2048,
+    "loss": 2.97395658493042,
+    "curve": [
+      {
+        "step": 100,
+        "loss": 3.871960401535034
+      },
+      {
+        "step": 200,
+        "loss": 3.350353240966797
+      },
+      {
+        "step": 300,
+        "loss": 3.0924246311187744
+      },
+      {
+        "step": 400,
+        "loss": 2.97395658493042
+      }
+    ],
+    "train_seconds": 11.311710887996014,
+    "elapsed_seconds": 13.936357971979305,
+    "source_hashes": {
+      "train.py": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+      "competition/runner.py": "5636b0ae8c5957573c3c448b9b0a233dc3524e6b8ee69a8791559ea96075b085",
+      "research/autoresearch/engine.py": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+      "configs/tinystories-v0.json": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98"
+    },
+    "host": "c9dacc7d049c",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "mode": "data-only",
+    "status": "complete"
+  }
+]
