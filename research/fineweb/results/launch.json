@@ -1,0 +1,41 @@
+{
+  "observed_at_utc": "2026-11-20T07:42:53.172770+00:00",
+  "source_commit": "1c50bc238ece97b67ddd4e739b94a3682da3f080",
+  "container_name": "dataset-fineweb-pair17",
+  "container_image_digest": "nvcr.io/nvidia/pytorch@sha256:3c90e38f5ec51e51d1c73bd7eb3d83674a254f451147c5cadc4344314258a112",
+  "host": "spark-a5a1",
+  "queue": {
+    "status": "running",
+    "pid": 1,
+    "plan_sha256": "8cac1e7bccd68f8f18187c8de763df7bc17e058b05b7f39d10256c827bc16b57",
+    "started_unix": 1795160419.9606867,
+    "completed": [],
+    "active": "fineweb-seed17",
+    "command": [
+      "/usr/bin/python",
+      "/workspace/research/fineweb/launch.py",
+      "--output",
+      "/workspace/runs/fineweb-v1/paired17/fineweb-seed17",
+      "--train-pattern",
+      "data/fineweb10B/fineweb_train_*.bin",
+      "--seed",
+      "17",
+      "--updates",
+      "3250",
+      "--microbatch",
+      "64"
+    ]
+  },
+  "baseline_progress": {
+    "step": 3,
+    "planned_updates": 3250,
+    "train_seconds": 41.78,
+    "elapsed_seconds": 137.70862335298443,
+    "status": "running",
+    "child_pid": 8
+  },
+  "initial_validation_loss": 10.82583,
+  "initial_state_sha256": "f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d",
+  "verification": "Eight adapter and data integrity tests passed. Two GPU smoke runs reproduced initialization and two-update loss. Full validation and initial training updates succeeded.",
+  "interpretation": "Launch snapshot only. Neither full run has finished at this observation. No FineWeb improvement is claimed."
+}
