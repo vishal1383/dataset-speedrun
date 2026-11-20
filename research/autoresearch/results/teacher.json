@@ -1,0 +1,78 @@
+{
+  "seed": 271,
+  "updates": 400,
+  "initial_state_sha256": "8642bb91cd81caca25ac97b1380e0e17f0042c9b2412cfc52cf7e1d47730d102",
+  "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+  "engine_sha256": "d44a80208148cc5bcdaf719cd33a6b3d99fbafaf38e9c13b59382a408f4ab80c",
+  "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+  "protocol_sha256": "bd56e78a1cbad7fade5c25c5ba964de6bb9ca687517330449ac6865d524df171",
+  "mode": "data",
+  "gradient_scale": 1.0,
+  "curve": [
+    {
+      "step": 0,
+      "dev_loss": 8.345569610595703,
+      "train_seconds": 0.0,
+      "elapsed_seconds": 1.1137837790302
+    },
+    {
+      "step": 50,
+      "dev_loss": 4.081707954406738,
+      "train_seconds": 1.8329888997250237,
+      "elapsed_seconds": 3.0109978039981797
+    },
+    {
+      "step": 100,
+      "dev_loss": 3.594080924987793,
+      "train_seconds": 3.484266179788392,
+      "elapsed_seconds": 4.699944278982002
+    },
+    {
+      "step": 150,
+      "dev_loss": 3.2989583015441895,
+      "train_seconds": 5.1253897655406035,
+      "elapsed_seconds": 6.378019983996637
+    },
+    {
+      "step": 200,
+      "dev_loss": 3.073941230773926,
+      "train_seconds": 6.767440242751036,
+      "elapsed_seconds": 8.056490126007702
+    },
+    {
+      "step": 250,
+      "dev_loss": 2.9228999614715576,
+      "train_seconds": 8.3951518847025,
+      "elapsed_seconds": 9.721326561004389
+    },
+    {
+      "step": 300,
+      "dev_loss": 2.802124261856079,
+      "train_seconds": 10.037312539876439,
+      "elapsed_seconds": 11.401759364991449
+    },
+    {
+      "step": 350,
+      "dev_loss": 2.7261104583740234,
+      "train_seconds": 11.679738818784244,
+      "elapsed_seconds": 13.08091392100323
+    },
+    {
+      "step": 400,
+      "dev_loss": 2.6810860633850098,
+      "train_seconds": 13.320215069688857,
+      "elapsed_seconds": 14.770090272009838
+    }
+  ],
+  "final_dev_loss": 2.6810860633850098,
+  "first_crossing": 150,
+  "train_seconds": 13.320215069688857,
+  "capture_seconds": 0.0016622670809738338,
+  "audit_accessed": false,
+  "train_token_exposures": 3276800,
+  "software": {
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2"
+  },
+  "total_seconds": 14.77035182598047
+}

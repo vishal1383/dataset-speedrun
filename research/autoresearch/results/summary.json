@@ -1,0 +1,82 @@
+[
+  {
+    "candidate": "original",
+    "artifact_bytes": 8980666,
+    "compression_ratio": 1.0,
+    "dev_loss_mean": 2.673752546310425,
+    "audit_loss_mean": 3.00312074025472,
+    "audit_loss_sample_sd": 0.010347575277681438,
+    "paired_audit_delta_mean": 0.0,
+    "paired_audit_deltas": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "threshold_steps": [
+      150,
+      150,
+      150
+    ],
+    "train_seconds_mean": 13.092419360337468
+  },
+  {
+    "candidate": "selected_data",
+    "artifact_bytes": 4507908,
+    "compression_ratio": 1.9922025915346986,
+    "dev_loss_mean": 2.6508766810099282,
+    "audit_loss_mean": 3.1013755003611245,
+    "audit_loss_sample_sd": 0.011077541627843834,
+    "paired_audit_delta_mean": 0.09825476010640462,
+    "paired_audit_deltas": [
+      0.09714078903198242,
+      0.10293841361999512,
+      0.09468507766723633
+    ],
+    "threshold_steps": [
+      150,
+      150,
+      150
+    ],
+    "train_seconds_mean": 11.965097321488429
+  },
+  {
+    "candidate": "gradient_latents",
+    "artifact_bytes": 8318649,
+    "compression_ratio": 1.0795822735158076,
+    "dev_loss_mean": 9.969828923543295,
+    "audit_loss_mean": 9.99105453491211,
+    "audit_loss_sample_sd": 0.10028215210172611,
+    "paired_audit_delta_mean": 6.98793379465739,
+    "paired_audit_deltas": [
+      6.884540319442749,
+      7.054335832595825,
+      7.024925231933594
+    ],
+    "threshold_steps": [
+      null,
+      null,
+      null
+    ],
+    "train_seconds_mean": 2.4760422323985645
+  },
+  {
+    "candidate": "distilled_targets",
+    "artifact_bytes": 4494378,
+    "compression_ratio": 1.9981999733889761,
+    "dev_loss_mean": 2.8313069343566895,
+    "audit_loss_mean": 3.210157871246338,
+    "audit_loss_sample_sd": 0.002876898835096917,
+    "paired_audit_delta_mean": 0.20703713099161783,
+    "paired_audit_deltas": [
+      0.22152185440063477,
+      0.20377802848815918,
+      0.19581151008605957
+    ],
+    "threshold_steps": [
+      150,
+      150,
+      150
+    ],
+    "train_seconds_mean": 13.693337588823246
+  }
+]

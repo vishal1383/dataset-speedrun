@@ -1,0 +1,11 @@
+{
+  "name": "gradient-r4-s1",
+  "rank": 4,
+  "stride": 1,
+  "artifact": "runs/autoresearch-v1/artifacts/gradient-r4-s1.pt",
+  "artifact_bytes": 8318649,
+  "final_dev_loss": 10.055078506469727,
+  "audit_accessed": false,
+  "fits_data_byte_budget": true,
+  "history_sha256": "f47778b8b006adf83cd1c334e1847f6515ffb0442e470bdf3c647a5534773696"
+}

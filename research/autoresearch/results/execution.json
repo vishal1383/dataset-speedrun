@@ -1,0 +1,26 @@
+{
+  "run_date": "2026-11-19",
+  "date_timezone": "America/Los_Angeles",
+  "source_models": 3,
+  "search_trials": 44,
+  "fresh_seed_confirmations": 12,
+  "total_distinct_training_or_replay_runs": 59,
+  "workers": {
+    "spark-a5a1": {
+      "training_or_replay_runs": 28,
+      "summed_train_seconds": 359.11010739172343,
+      "summed_recorded_run_seconds": 373.93173158779973,
+      "summed_capture_seconds": 0.04171440290519968
+    },
+    "spark-664c": {
+      "training_or_replay_runs": 31,
+      "summed_train_seconds": 270.9958543544635,
+      "summed_recorded_run_seconds": 288.8107189650764,
+      "summed_capture_seconds": 1.8239299030974507
+    }
+  },
+  "all_worker_containers_exited_successfully": true,
+  "all_six_invariant_tests_passed": true,
+  "baseline_engine_absolute_loss_difference": 5.960464477539063e-08,
+  "control_note": "All three reserved control checkpoints trained on spark-a5a1. A confirmation record physical_host identifies the audit execution host."
+}

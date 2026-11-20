@@ -1,0 +1,25 @@
+{
+  "release_tag": "autoresearch-v1",
+  "source_dataset": "roneneldan/TinyStories",
+  "source_license": "CDLA-Sharing-1.0",
+  "artifacts": [
+    {
+      "candidate": "selected_data",
+      "filename": "easy-f0.50000.npy",
+      "bytes": 4507908,
+      "sha256": "86279293d37ddba7061206627852ef5dfe0f386afc656337dc491079cd51b874"
+    },
+    {
+      "candidate": "gradient_latents",
+      "filename": "gradient-r4-s1.pt",
+      "bytes": 8318649,
+      "sha256": "82bb79ad03d2508e83db284308cc287cd6a36696a255b996b1135b51839172c5"
+    },
+    {
+      "candidate": "distilled_targets",
+      "filename": "distill-f0.12500.npz",
+      "bytes": 4494378,
+      "sha256": "ef22acf123c0ffa54e9c8a217406f05c1c938f131315202d778ed052f12e9c91"
+    }
+  ]
+}

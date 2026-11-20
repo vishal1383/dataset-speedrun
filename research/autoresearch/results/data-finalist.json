@@ -1,0 +1,13 @@
+{
+  "method": "easy",
+  "fraction": 0.7071067811865476,
+  "artifact": "runs/autoresearch-v1/artifacts/easy-f0.70711.npy",
+  "name": "easy-f0.70711",
+  "mean_selection_dev_loss": 2.642653226852417,
+  "selection_seeds": [
+    17,
+    42
+  ],
+  "audit_accessed": false,
+  "history_sha256": "415e8e1fce9f859861218edfdc9c66e1978157627f2a5b71f960e18661e94497"
+}

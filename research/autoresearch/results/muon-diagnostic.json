@@ -1,0 +1,77 @@
+{
+  "scope": "First optimizer update, seed 17, first transformer block; diagnostic only.",
+  "rows": [
+    {
+      "parameter": "blocks.0.qkv.weight",
+      "rank": 1,
+      "raw_relative_error": 0.30804550647735596,
+      "muon_update_relative_error": 1.0027308464050293
+    },
+    {
+      "parameter": "blocks.0.qkv.weight",
+      "rank": 4,
+      "raw_relative_error": 0.1081824079155922,
+      "muon_update_relative_error": 0.9937631487846375
+    },
+    {
+      "parameter": "blocks.0.qkv.weight",
+      "rank": 8,
+      "raw_relative_error": 0.08292283862829208,
+      "muon_update_relative_error": 0.9728964567184448
+    },
+    {
+      "parameter": "blocks.0.proj.weight",
+      "rank": 1,
+      "raw_relative_error": 0.3240184187889099,
+      "muon_update_relative_error": 1.0034246444702148
+    },
+    {
+      "parameter": "blocks.0.proj.weight",
+      "rank": 4,
+      "raw_relative_error": 0.10751200467348099,
+      "muon_update_relative_error": 0.992156982421875
+    },
+    {
+      "parameter": "blocks.0.proj.weight",
+      "rank": 8,
+      "raw_relative_error": 0.0816754475235939,
+      "muon_update_relative_error": 0.9673606157302856
+    },
+    {
+      "parameter": "blocks.0.up.weight",
+      "rank": 1,
+      "raw_relative_error": 0.6600435376167297,
+      "muon_update_relative_error": 1.000797986984253
+    },
+    {
+      "parameter": "blocks.0.up.weight",
+      "rank": 4,
+      "raw_relative_error": 0.4644792973995209,
+      "muon_update_relative_error": 0.9948577880859375
+    },
+    {
+      "parameter": "blocks.0.up.weight",
+      "rank": 8,
+      "raw_relative_error": 0.3985903859138489,
+      "muon_update_relative_error": 0.9897499084472656
+    },
+    {
+      "parameter": "blocks.0.down.weight",
+      "rank": 1,
+      "raw_relative_error": 0.4480745196342468,
+      "muon_update_relative_error": 1.0020685195922852
+    },
+    {
+      "parameter": "blocks.0.down.weight",
+      "rank": 4,
+      "raw_relative_error": 0.2892361581325531,
+      "muon_update_relative_error": 0.9980971813201904
+    },
+    {
+      "parameter": "blocks.0.down.weight",
+      "rank": 8,
+      "raw_relative_error": 0.2413981407880783,
+      "muon_update_relative_error": 0.989483654499054
+    }
+  ]
+}

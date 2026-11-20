@@ -1,0 +1,73 @@
+{
+  "seed": 271,
+  "alpha": 0,
+  "mode": "teacher",
+  "updates": 1600,
+  "initial_state_sha256": "8642bb91cd81caca25ac97b1380e0e17f0042c9b2412cfc52cf7e1d47730d102",
+  "curve": [
+    {
+      "step": 0,
+      "dev_loss": 8.345569610595703,
+      "train_seconds": 0.0
+    },
+    {
+      "step": 400,
+      "dev_loss": 2.6303696632385254,
+      "train_seconds": 11.514137313875835
+    },
+    {
+      "step": 800,
+      "dev_loss": 2.229255199432373,
+      "train_seconds": 22.831628814688884
+    },
+    {
+      "step": 1200,
+      "dev_loss": 2.0279383659362793,
+      "train_seconds": 34.15448935824679
+    },
+    {
+      "step": 1600,
+      "dev_loss": 1.9497807025909424,
+      "train_seconds": 45.47765235492261
+    }
+  ],
+  "final_dev_loss": 1.9497807025909424,
+  "train_seconds": 45.47765235492261,
+  "first_crossing": 400,
+  "audit_accessed": false,
+  "source_sha256": "500456fbdce7484b46399642adf5f509573d64b61fd9f9c5283d55b210dd7d99",
+  "training_config": {
+    "track": "tinystories-v0",
+    "vocab_size": 4096,
+    "layers": 6,
+    "width": 256,
+    "heads": 4,
+    "sequence_length": 256,
+    "batch_size": 32,
+    "updates": 1600,
+    "eval_every": 50,
+    "dev_sequences": 128,
+    "test_sequences": 512,
+    "target_loss": 3.5,
+    "muon_lr": 0.02,
+    "adamw_lr": 0.001,
+    "weight_decay": 0.01,
+    "warmup_updates": 20,
+    "minimum_lr_ratio": 0.1,
+    "gradient_clip": 1.0,
+    "precision": "bfloat16",
+    "compile": false,
+    "seeds": [
+      17,
+      42
+    ],
+    "recipes": [
+      "original",
+      "random_quarter",
+      "diverse_quarter",
+      "stratified_quarter"
+    ]
+  },
+  "teacher_target_format": "top2 uint16 IDs + uint8 probabilities; residual mass on gold",
+  "total_seconds": 46.86320959002478
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "artifact_bytes": 2247578,
+    "sha256": "b8d1c70bc866842132392447392e3ec33e0455945242ef944fda291cce1c6e1c",
+    "construction_seconds": 0.5680840070126578,
+    "fraction": 0.0625,
+    "sequences": 1096
+  },
+  {
+    "artifact_bytes": 4494378,
+    "sha256": "ef22acf123c0ffa54e9c8a217406f05c1c938f131315202d778ed052f12e9c91",
+    "construction_seconds": 0.9803364500403404,
+    "fraction": 0.125,
+    "sequences": 2192
+  }
+]

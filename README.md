@@ -10,6 +10,19 @@ This is an independent benchmark inspired by [NanoGPT speedrun](https://github.c
 and [DataComp-LM](https://www.datacomp.ai/dclm/).
 It is not a submission to the NanoGPT leaderboard. Its loss values are not comparable to FineWeb loss values.
 
+## Autoresearch update: November 19, 2026
+
+I completed an adaptive search over dataset subsets, sparse teacher targets, and low-rank gradient latents.
+The campaign contains 44 search trials and 12 fresh-seed confirmations across two DGX Sparks.
+The half-sized pool improved development loss but worsened fresh-audit loss: **3.0031 → 3.1014**.
+No compressed candidate preserved fresh-audit quality.
+
+A first-step QKV diagnostic found 8.3% raw-gradient error but 97.3% Muon-update error after rank-8 compression.
+The optimizer's update geometry matters when compressing a training signal.
+
+Read the [autoresearch methods, results, and reproduction instructions](research/autoresearch/README.md).
+The initial baseline results below remain unchanged.
+
 ## First track: `tinystories-v0`
 
 | Setting | Fixed value |
@@ -162,10 +175,10 @@ Future competitive submissions need fresh audit data and additional seeds.
 Selection, repetition, and synthetic text are eligible. Declare source data, artifact size, and construction compute.
 Do not optimize against audit text or audit loss.
 
-**Gradient compression, planned:** submit a bounded artifact that supplies gradients to the fixed optimizer.
-This track needs separate rules for artifact bytes, initialization dependence, construction cost, and online computation.
+**Gradient compression, experimental:** submit a bounded artifact that supplies gradients to the fixed optimizer.
+The [autoresearch campaign](research/autoresearch/README.md) records artifact bytes, initialization dependence, construction cost, and online computation.
 Full unrestricted gradients can encode trained weights. They do not establish learning efficiency by themselves.
-This initial release contains data-only experiments. It does not claim gradient-distillation results.
+The original baseline suite contains data-only experiments. The later gradient-replay experiments failed the quality target.
 
 ## Related work
 

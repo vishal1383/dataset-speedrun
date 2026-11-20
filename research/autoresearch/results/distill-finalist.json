@@ -1,0 +1,9 @@
+{
+  "name": "distill-f0.12500-a0.875",
+  "fraction": 0.125,
+  "alpha": 0.875,
+  "artifact": "runs/autoresearch-v1/artifacts/distill-f0.12500.npz",
+  "artifact_bytes": 4494378,
+  "audit_accessed": false,
+  "history_sha256": "9b517aaabed76c77587cec4144d5cb285bc0f69d21c89bc03ef640073dbe4b3c"
+}

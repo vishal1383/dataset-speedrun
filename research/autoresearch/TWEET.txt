@@ -1,0 +1,7 @@
+8.3% gradient error. 97.3% Muon-update error.
+
+Rank-8 compression, first-step QKV probe.
+
+I built an autoresearch benchmark for data, teacher targets and gradient latents. Same model + optimizer. Fresh audits. Failures included.
+
+https://github.com/vishal1383/dataset-speedrun
