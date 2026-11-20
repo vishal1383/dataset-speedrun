@@ -1,0 +1,22 @@
+{
+  "name": "compression-search-v1",
+  "date": "2026-11-19",
+  "training_config": "configs/tinystories-v0.json",
+  "search_seed": 17,
+  "confirmation_seeds": [101, 202, 303],
+  "teacher_seed": 271,
+  "teacher_checkpoints": [50, 400],
+  "student_updates": 400,
+  "development_target": 3.5,
+  "strict_success": "Mean fresh-audit loss no greater than the full-pool control at the same 400 updates; artifact smaller than the full training token array.",
+  "secondary_noninferiority_margin_nats": 0.02,
+  "audit_source_document_range": [2048, 4096],
+  "audit_sequences": 512,
+  "selection": "Choose candidates by development loss and artifact bytes only; freeze finalists before audit evaluation.",
+  "gradient_track": "Replay compressed gradients through the unchanged Muon/AdamW optimizers. Report known-initialization and unseen-initialization results separately.",
+  "gradient_knots": [1, 2, 3, 5, 8, 12, 16, 20, 25, 30, 40, 50, 60, 75, 90, 110, 130, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400],
+  "gradient_max_rank": 8,
+  "max_initial_candidates": 24,
+  "max_adaptive_candidates": 12,
+  "tweet_policy": "Draft only. Claim compression or acceleration only when supported by the corresponding measured comparison."
+}
