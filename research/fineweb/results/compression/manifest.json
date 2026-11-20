@@ -1,0 +1,216 @@
+{
+  "method": "75% feature-mean coreset after exact-block deduplication; noisy easy-to-hard curriculum; sparse conditional target codebook",
+  "seed": 20261120,
+  "block_tokens": 8192,
+  "source_tokens": 2000000000,
+  "source_files": {
+    "fineweb_train_000001.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "771fa4a99b9fe0946ffb6e848b4ba5c6a9b0fe87860ebf03bc2c1c7e45f8178e"
+    },
+    "fineweb_train_000002.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "d4ba8d2d740905a836a4222d2aff01750560e7d49a51a745a1b3235520aec2cd"
+    },
+    "fineweb_train_000003.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "f70fa272369730fd9e39f1848bfe4daa3289b6e490c1e7762777f00ea8b66246"
+    },
+    "fineweb_train_000004.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "d8d88850f89fe2030e866380e90d544167467d407080403b830b903543925835"
+    },
+    "fineweb_train_000005.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "36cef3fc41863eb6731b41e986edde38e368853ee6deb87b928990bf445a119c"
+    },
+    "fineweb_train_000006.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "d80e5b209983e636655fc738fdf281f0132f0298bf4c0848f7e7a6bea6ca06f0"
+    },
+    "fineweb_train_000007.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "fa9f94dce61686b5467bc6cd3078424203db23ac254d804a6d8d5d440afc1e11"
+    },
+    "fineweb_train_000008.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "308e6937af5d78b7489a8aac3a3951dced5b46103e613f8bc4eb543f5092526c"
+    },
+    "fineweb_train_000009.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "1635300891634346ecff3a78d6e489a69c647885f0dcd249fe3eb76fac683458"
+    },
+    "fineweb_train_000010.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "72e88f66104dacca163eeb3a00fe40a45a821d2ecd4fb9ce343808996e5d2f5e"
+    },
+    "fineweb_train_000011.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "99edff412654ca6e06d4b3ca563acd8937ee6042f49d009526b8f1074f4d7300"
+    },
+    "fineweb_train_000012.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "92a2dc78e3971ac2a36ef3e9f19c92533bc35ef2dd735bb6759e7b864e301084"
+    },
+    "fineweb_train_000013.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "6cc3884bf19a2d9b4a12d52e4861276da2e3c6614ce97e6bfa0769d701f7a4c5"
+    },
+    "fineweb_train_000014.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "6bc06a838d5a258fb51a3c2a3d14fd784f83b173f408d8d2d3f85b3290094a96"
+    },
+    "fineweb_train_000015.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "09ad252e5d641862f89c31e4f0fa9559933d3e2bc6f657fc05f63166c2d74741"
+    },
+    "fineweb_train_000016.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "56e97975654bb7a1f08f1397dd7894146dd7f8c36bc9fdd71da9675c43ab9a85"
+    },
+    "fineweb_train_000017.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "a51e60d3f9fce16a9dbcb20e5333e1c8e379acf3a703e63b1fecfef49aa17458"
+    },
+    "fineweb_train_000018.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "8a35ee9b00834e085e20383711d1fa13efe9d05d3d20161cebd60d73ac935fe9"
+    },
+    "fineweb_train_000019.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "e4c82c17c1805a8d946580bb09f10575add3fb56dc3305729d75eae083fa2856"
+    },
+    "fineweb_train_000020.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "bbdb7866974ce4389c888fce7394a2c05e71cb6a0f1ada2e2a37520a03302b6c"
+    }
+  },
+  "selected_blocks": 183105,
+  "unique_source_blocks": 244140,
+  "text_tokens": 1499996160,
+  "text_payload_bytes": 3000007680,
+  "latent_bytes": 6292460,
+  "latent_contexts": 262144,
+  "latent_sample_stride": 32,
+  "latent_topk": 4,
+  "latent_minimum_support": 16,
+  "mean_group_feature_error": 0.014688088411126359,
+  "validation_access": false,
+  "feature_gradient_claim": "Lexical feature matching is a proxy, not a neural-gradient estimate.",
+  "latent_fit": "Empirical categorical maximum likelihood on sampled training trigrams; top-four retained probabilities, remaining mass stays on gold.",
+  "construction_seconds": 36.25693403900368,
+  "files": {
+    "text/fineweb_train_000001.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "adf3dff8db57aff659283bf2edc7bf13d6710d5343a5d2411c5db5ce8f50b448"
+    },
+    "text/fineweb_train_000002.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "5938004841f9cb39089bbb1db9238bf7a29a9f7b02b4e5f8eac324cb89746f96"
+    },
+    "text/fineweb_train_000003.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "5498901b7ebf35452acbaa5d5c00a2bd55cc08ded0d7b12ae4398881d9295cc3"
+    },
+    "text/fineweb_train_000004.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "a90a8db1bc172f877fcd0efc506f65e5c98abdad505e615015bbf98ba82873cd"
+    },
+    "text/fineweb_train_000005.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "027b44e4acd193da7c0e5fe4100418cdf74291987209a79f93c676e03199f931"
+    },
+    "text/fineweb_train_000006.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "8823400c028fe2f607c5274ba80372db8ebd4ed2ca2c11d7114cfb2309849930"
+    },
+    "text/fineweb_train_000007.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "374d4af72222afd9dc1027e2c6474ea61310351f79d0d8b509461c22536f0f4d"
+    },
+    "text/fineweb_train_000008.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "0ae400700627e5d4188c598209e212c01d321d94bbb52bea5ce4b2e8fc6805c3"
+    },
+    "text/fineweb_train_000009.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "57110252ad31c65352ccffcbb91d29a63c95f3a5e44fc307a0d35e6bba7898e9"
+    },
+    "text/fineweb_train_000010.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "bbaaf3511ed5aee48c5493424d3ff864505eee199c5a7a38b1e463d470016f54"
+    },
+    "text/fineweb_train_000011.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "c946b17ac8629f12531ac1af2ba19f727f3766d1269adbd47ef5f71027cce5b7"
+    },
+    "text/fineweb_train_000012.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "71a449b2a83e22175049373cc813e4f6ac90483b12241e92062c21f25164377d"
+    },
+    "text/fineweb_train_000013.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "5e5f497cc0d65a7744528697115a178f70ec433886edb9968e8a9a9e41a3c98e"
+    },
+    "text/fineweb_train_000014.bin": {
+      "bytes": 200001024,
+      "tokens": 100000000,
+      "sha256": "d1d682891cb5816e0b9f8c1247c85a6a0090cea957c488fbda48e419b028c863"
+    },
+    "text/fineweb_train_000015.bin": {
+      "bytes": 199993344,
+      "tokens": 99996160,
+      "sha256": "b9a3d61fda33a4cfbe819fab7b8aa0310c7a961dc7fbf02eb7dcc087a3ce455a"
+    },
+    "latent.npz": {
+      "bytes": 6292460,
+      "sha256": "95d6670512ab3b93b808f29ef191aa2b910e7ec7f92db66ebf60aec863e7dc9f"
+    },
+    "selected-blocks.npy": {
+      "bytes": 2929808,
+      "sha256": "3ad80e20722a287e4823c23daa3e236af6bc5368e385081d9d5a1e25fe45e175"
+    },
+    "replay.json": {
+      "bytes": 1641,
+      "sha256": "a9ef7e0cc8ac9e5ad31ce380c45e7a71889d4fe1e72bf9b7dbe31b37901897f1"
+    }
+  },
+  "replay_logical_bytes": 3600003072,
+  "available_updates": 3420,
+  "status": "complete",
+  "text_artifact_bytes": 3000009321,
+  "latent_arm_artifact_bytes": 3006301781
+}

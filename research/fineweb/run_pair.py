@@ -1,5 +1,10 @@
 """Execute one frozen data-only comparison sequentially on the local Spark."""
 
+# Superseded on 2026-11-20: the user requested text and latent compression.
+# The running controller has its original code in memory. This source change
+# makes its frozen-source check reject the pending FineWeb-Edu run after the
+# baseline finishes. compression_queue.py owns subsequent experiments.
+
 import json
 import os
 from pathlib import Path

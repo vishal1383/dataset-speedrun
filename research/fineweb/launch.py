@@ -69,6 +69,7 @@ def main():
     p.add_argument("--microbatch", type=int, default=64)
     p.add_argument("--eager", action="store_true")
     p.add_argument("--smoke", action="store_true")
+    p.add_argument("--latent-codebook", type=Path)
     args = p.parse_args()
     if not 1 <= args.updates <= 3250 or 512 % args.microbatch:
         raise ValueError("Updates must be in [1,3250]; microbatch must divide 512.")
@@ -90,6 +91,11 @@ def main():
         raise ValueError("Expected exactly one upstream validation shard.")
     source = render(upstream.read_text(), args.output, args.train_pattern, args.seed, args.updates,
                     args.validation_tokens, args.microbatch, not args.eager)
+    if args.latent_codebook:
+        from latent import render_latent
+        args.latent_codebook = args.latent_codebook.resolve()
+        source = render_latent(source, args.latent_codebook, ROOT)
+        (args.output / "latent.py").write_bytes((HERE / "latent.py").read_bytes())
     generated = args.output / "train.py"
     generated.write_text(source)
     (args.output / "launcher.py").write_bytes(Path(__file__).read_bytes())
@@ -101,6 +107,12 @@ def main():
                      "training_files": {str(p.relative_to(ROOT)): {"bytes": p.stat().st_size, "sha256": digest(p)} for p in training},
                      "validation_files": {str(p.relative_to(ROOT)): {"bytes": p.stat().st_size, "sha256": digest(p)} for p in validation},
                      "main_speedrun_record_eligible": False, "status": "running"}
+    configuration["objective"] = "compressed_conditional_soft_targets" if args.latent_codebook else "original_hard_token_ce"
+    if args.latent_codebook:
+        configuration["latent"] = {"path": str(args.latent_codebook.relative_to(ROOT)),
+                                   "bytes": args.latent_codebook.stat().st_size,
+                                   "sha256": digest(args.latent_codebook), "adapter_sha256": digest(HERE / "latent.py"),
+                                   "strength": "0.25 * (1 - step / 3250)", "validation_objective": "original_hard_token_ce"}
     record = args.output / "result.json"
     record.write_text(json.dumps(configuration, indent=2) + "\n")
     start = time.perf_counter()

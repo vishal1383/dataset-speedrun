@@ -11,8 +11,10 @@ and [DataComp-LM](https://www.datacomp.ai/dclm/).
 It is not a submission to the NanoGPT leaderboard. TinyStories loss values are not comparable to FineWeb loss values.
 
 A new [FineWeb data track](research/fineweb/README.md) freezes the upstream modded-nanoGPT optimization baseline.
-It compares FineWeb and FineWeb-Edu at 3,250 updates with the same 162.35M-parameter learner and canonical 3.28 validation target.
-The first paired experiment is registered in [the frozen run plan](research/fineweb/plan.json). No FineWeb improvement is claimed yet.
+It now compares original FineWeb, a 25% smaller text coreset with a curriculum, and that coreset plus compressed latent supervision.
+All arms use the same 162.35M-parameter model, optimizer, 3,250 updates, and canonical FineWeb evaluation.
+The latent arm changes training targets; the text arm preserves the original objective.
+Read the [methods and frozen execution plan](research/fineweb/COMPRESSION.md). No FineWeb improvement is claimed yet.
 
 ## Enter the dataset compression challenge
 

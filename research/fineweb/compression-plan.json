@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "output": "runs/fineweb-compression-v1/comparison",
+  "baseline": "runs/fineweb-v1/paired17/fineweb-seed17",
+  "baseline_launcher_sha256": "47c739c5705d2af05bfb49ba5f2c0f1af96780c9678f18a12e87c76b4551f15d",
+  "baseline_training_files": {
+    "data/fineweb10B/fineweb_train_000001.bin": "771fa4a99b9fe0946ffb6e848b4ba5c6a9b0fe87860ebf03bc2c1c7e45f8178e",
+    "data/fineweb10B/fineweb_train_000002.bin": "d4ba8d2d740905a836a4222d2aff01750560e7d49a51a745a1b3235520aec2cd",
+    "data/fineweb10B/fineweb_train_000003.bin": "f70fa272369730fd9e39f1848bfe4daa3289b6e490c1e7762777f00ea8b66246",
+    "data/fineweb10B/fineweb_train_000004.bin": "d8d88850f89fe2030e866380e90d544167467d407080403b830b903543925835",
+    "data/fineweb10B/fineweb_train_000005.bin": "36cef3fc41863eb6731b41e986edde38e368853ee6deb87b928990bf445a119c",
+    "data/fineweb10B/fineweb_train_000006.bin": "d80e5b209983e636655fc738fdf281f0132f0298bf4c0848f7e7a6bea6ca06f0",
+    "data/fineweb10B/fineweb_train_000007.bin": "fa9f94dce61686b5467bc6cd3078424203db23ac254d804a6d8d5d440afc1e11",
+    "data/fineweb10B/fineweb_train_000008.bin": "308e6937af5d78b7489a8aac3a3951dced5b46103e613f8bc4eb543f5092526c",
+    "data/fineweb10B/fineweb_train_000009.bin": "1635300891634346ecff3a78d6e489a69c647885f0dcd249fe3eb76fac683458",
+    "data/fineweb10B/fineweb_train_000010.bin": "72e88f66104dacca163eeb3a00fe40a45a821d2ecd4fb9ce343808996e5d2f5e",
+    "data/fineweb10B/fineweb_train_000011.bin": "99edff412654ca6e06d4b3ca563acd8937ee6042f49d009526b8f1074f4d7300",
+    "data/fineweb10B/fineweb_train_000012.bin": "92a2dc78e3971ac2a36ef3e9f19c92533bc35ef2dd735bb6759e7b864e301084",
+    "data/fineweb10B/fineweb_train_000013.bin": "6cc3884bf19a2d9b4a12d52e4861276da2e3c6614ce97e6bfa0769d701f7a4c5",
+    "data/fineweb10B/fineweb_train_000014.bin": "6bc06a838d5a258fb51a3c2a3d14fd784f83b173f408d8d2d3f85b3290094a96",
+    "data/fineweb10B/fineweb_train_000015.bin": "09ad252e5d641862f89c31e4f0fa9559933d3e2bc6f657fc05f63166c2d74741",
+    "data/fineweb10B/fineweb_train_000016.bin": "56e97975654bb7a1f08f1397dd7894146dd7f8c36bc9fdd71da9675c43ab9a85",
+    "data/fineweb10B/fineweb_train_000017.bin": "a51e60d3f9fce16a9dbcb20e5333e1c8e379acf3a703e63b1fecfef49aa17458",
+    "data/fineweb10B/fineweb_train_000018.bin": "8a35ee9b00834e085e20383711d1fa13efe9d05d3d20161cebd60d73ac935fe9",
+    "data/fineweb10B/fineweb_train_000019.bin": "e4c82c17c1805a8d946580bb09f10575add3fb56dc3305729d75eae083fa2856",
+    "data/fineweb10B/fineweb_train_000020.bin": "bbdb7866974ce4389c888fce7394a2c05e71cb6a0f1ada2e2a37520a03302b6c"
+  },
+  "artifact": "runs/fineweb-compression-v1/artifact",
+  "artifact_manifest_sha256": "eec9709275a2bd5dd9f761b33c8b6ae515037148e7af60c19067dc7440b7445f",
+  "validation": {
+    "path": "data/fineweb10B/fineweb_val_000000.bin",
+    "sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640"
+  },
+  "source_sha256": {
+    "research/fineweb/launch.py": "1f974658b95a298d0ec2a173a803920b8d4bb0fac184481dc052dd449727f913",
+    "research/fineweb/latent.py": "8a5be4d41f30d302c5de55f350bfc0bc89dc735d9ce7fbab66493433cd45ecca",
+    "research/fineweb/compress.py": "0ad02a5909f9f9f105aa327b1697b2b143412678335075f124eeec15d42fee99",
+    "research/fineweb/compression_queue.py": "b40f39409ae87b67683bce24f190ef02b6ffc6f2faccd4dc66319f6efdd9df09",
+    "research/fineweb/run_pair.py": "77ccacb40b6a4d21c432f6b0e2de15aca53533005edafc9f2ce3e50dcdea4686",
+    "research/fineweb/pin.json": "daf6a35a1d2277a96e4532920eb8aaf7961aa44c21802fdeef267dc2a35dd066",
+    "research/fineweb/prepare.py": "668b75d76ec81d7e0f9bc5dd455d3b7239ef7a03c41f2d93a0b6c8562dc69b6c",
+    "research/fineweb/build_candidate.py": "a1d8f98a698e22fa78f63b861a9c1c54914598d60e5bfcecebac9030f661efcd",
+    "research/fineweb/upstream/train_gpt_simple.py": "d39470e5b0535baf9c6caf7dbcd15efa79d8eacc9badf6e7c45b536e8537deec"
+  },
+  "seed": 17,
+  "updates": 3250,
+  "arms": [
+    "original FineWeb baseline",
+    "75% lexical coreset with curriculum",
+    "same compressed text plus conditional soft-target codebook"
+  ],
+  "primary_metric": "Final canonical FineWeb loss at 3250 identical optimizer updates. Lower than paired baseline is the pilot success criterion.",
+  "secondary_metric": "Final loss <= 3.28, common-step curves, total artifact bytes, construction and student cost.",
+  "hypothesis": "Compression removes redundant exposures. Conditional targets recover some alternatives from discarded contexts and smooth early gradients. Neither improvement is assumed.",
+  "latent_objective_changed": true,
+  "latent_method": "Sparse conditional target codebook fitted by categorical maximum likelihood, not meta-learned input embeddings or checkpoint reconstruction.",
+  "supersedes": "FineWeb-Edu pending run in plan.json, at explicit user direction. Original baseline continues unchanged; original controller will reject changed source before the Edu run.",
+  "selection_evidence": "Training data only. Baseline progress was already visible; no candidate validation result was used.",
+  "gpu_smoke_gate": "Both arms must pass two updates with finite, decreasing reduced-slice loss and paired initialization before full runs."
+}

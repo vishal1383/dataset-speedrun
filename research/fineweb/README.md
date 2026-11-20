@@ -1,6 +1,12 @@
 # FineWeb data track with a fixed modded-nanoGPT learner
 
 This track changes training data while preserving a published modded-nanoGPT learner.
+
+**Current experiment:** original FineWeb versus text compression and latent supervision.
+Read [COMPRESSION.md](COMPRESSION.md) and the [frozen compression plan](compression-plan.json).
+The text artifact is 25% smaller. The latent arm adds a 6.29 MB conditional target table.
+The earlier FineWeb-Edu arm was canceled before training at the user's request.
+The baseline already in progress remains the reference. The construction history below is retained for audit.
 It uses the upstream optimization benchmark's tuned Muon+AdamW baseline, identified as result 36.
 The source commit, source hash, and dataset revisions are recorded in [pin.json](pin.json).
 The upstream source and MIT license are preserved under [upstream](upstream/).
@@ -28,7 +34,7 @@ and [optimization benchmark](https://github.com/KellerJordan/modded-nanogpt/tree
 | Hardware | `spark-a5a1`, NVIDIA GB10, using the existing NVIDIA PyTorch container |
 
 The reference trains on the first 20 upstream FineWeb training shards, containing 2 billion tokens.
-The first substantial candidate uses the first 20 upstream FineWeb-Edu training shards.
+The superseded open-curation candidate used the first 20 upstream FineWeb-Edu training shards.
 Both runs use the canonical FineWeb validation array. FineWeb-Edu validation data is not downloaded or used.
 The candidate excludes exact token-document matches against the entire 100-million-token canonical validation shard.
 Document reconstruction crosses shard boundaries before exclusion. Near-duplicate exclusion is not implemented.
@@ -47,7 +53,7 @@ No full validation loss was used to select FineWeb-Edu.
 
 ## What counts as a win
 
-The first experiment is a paired 3,250-update pilot with seed 17.
+The current compression experiment uses three matched 3,250-update arms with seed 17.
 Report the final validation losses, paired difference, token exposures, and complete curves.
 One favorable pair is preliminary evidence. It does not establish a compression or speed record.
 
@@ -72,7 +78,8 @@ Report decoder construction and execution costs separately. No uncharged teacher
 Soft input embeddings, soft targets, learned sample weights, gradient injection, and parameter-target potentials change the learner interface or objective.
 Those methods require separate experimental tracks and matched controls.
 In particular, the earlier compressed-checkpoint potential is not a data-only entry here.
-This bridge provides the token-artifact interface. It does not yet implement meta-learned latent data distillation.
+The separate latent arm now implements compressed conditional soft targets, as specified in [COMPRESSION.md](COMPRESSION.md).
+It does not implement meta-learned input embeddings.
 
 ## Verification and run commands
 
@@ -81,7 +88,8 @@ It saves the complete generated trainer, launcher, source pin, shard hashes, ini
 AST tests verify that all model and optimizer definitions remain identical to upstream.
 Separate tests verify the original optimizer assignments, initialization block, batch size, and learning-rate schedule.
 System changes add deterministic seeds, paths, run limits, progress records, and checkpoints after validation.
-No learning-rate, loss, optimizer, gradient-scaling, or architecture change is permitted.
+The text arm permits no learning-rate, loss, optimizer, gradient-scaling, or architecture change.
+The separate latent arm changes only the training target distribution and adds its documented strength schedule.
 
 Use the container from the root README. Keep caches in this repository's ignored `cache/` directory.
 
@@ -94,7 +102,8 @@ python research/fineweb/launch.py --output runs/fineweb-edu --seed 17 \
   --train-pattern 'runs/fineweb-v1/finewebedu-decontaminated/fineweb_train_*.bin'
 ```
 
-The sequential queue uses [run_pair.py](run_pair.py) and its frozen [plan.json](plan.json).
+The superseded Edu queue used [run_pair.py](run_pair.py) and its historical [plan.json](plan.json).
+The current queue uses [compression_queue.py](compression_queue.py) and [compression-plan.json](compression-plan.json).
 It checks source and data hashes before each run. It refuses duplicate run directories and stops on failure.
 It writes `queue-status.json`, per-run `progress.json`, full logs, and a final `comparison.json`.
 Each successful validation writes `latest.pt`, including model, optimizer, and RNG state.

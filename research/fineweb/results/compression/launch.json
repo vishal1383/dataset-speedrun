@@ -1,0 +1,34 @@
+{
+  "observed_at_utc": "2026-11-20T16:33:38.863146+00:00",
+  "container_name": "dataset-fineweb-compression-queue",
+  "container_status": "running",
+  "queue": {
+    "status": "waiting_for_baseline",
+    "pid": 1,
+    "plan_sha256": "a782d747280a8d1aa8572af7398ec5098d03a7a92a3c92e778d108b9fd8e6b99",
+    "started_unix": 1795192324.2354589,
+    "completed": [],
+    "active": "runs/fineweb-v1/paired17/fineweb-seed17",
+    "updated_unix": 1795192328.8162956
+  },
+  "baseline_progress": {
+    "step": 2503,
+    "planned_updates": 3250,
+    "train_seconds": 30224.557,
+    "elapsed_seconds": 31985.17291107599,
+    "status": "running",
+    "child_pid": 8
+  },
+  "verification": "17 tests passed, including exact latent gradients, original learner boundaries, compiled CPU autograd, and artifact mutation rejection. Full GPU smoke tests are mandatory queued gates.",
+  "construction_status": "complete",
+  "pending_gpu_work": [
+    "text smoke",
+    "latent smoke",
+    "text 3250 updates",
+    "latent 3250 updates"
+  ],
+  "core_text_bytes": 3000009321,
+  "core_text_plus_latent_bytes": 3006301781,
+  "all_frozen_artifact_files_plus_manifest_bytes": 3009239342,
+  "interpretation": "Live queue is waiting for the retained baseline. No compression-arm training result exists at this observation."
+}
