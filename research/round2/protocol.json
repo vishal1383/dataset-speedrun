@@ -1,0 +1,16 @@
+{
+  "name": "coverage-compression-v2",
+  "learner": "configs/tinystories-v0.json",
+  "updates": 400,
+  "search_seeds": [17, 42],
+  "confirmation_seeds": [1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008],
+  "development": "1024 uniformly sampled windows from previously exposed validation documents [0,4096)",
+  "audit": "2048 uniformly sampled windows from new validation documents [4096,8192)",
+  "evaluation_sampling_seed": 19381,
+  "strict_success": "Candidate artifact is smaller; paired mean audit loss difference is <=0 at 400 updates.",
+  "evidence_requirement": "One-sided paired 95% Student-t upper bound <=0.01 nats/token across eight training seeds.",
+  "selection": "Freeze one finalist before audit access. Require two search seeds and prefer smallest artifact with mean development loss <= matched full-pool mean.",
+  "accounting": "Uncompressed uint16 serialized token payload. No external assets during training. Report construction cost separately.",
+  "initial_search": "Random, teacher-loss, learnability, and stratified coverage selection across 50%,75%,87.5% pools. Adaptive refinements use development loss only.",
+  "audit_policy": "No candidate search may read the new audit. A failed audit becomes development evidence; further confirmation needs another reserved split."
+}

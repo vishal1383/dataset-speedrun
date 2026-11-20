@@ -1,0 +1,154 @@
+[
+  {
+    "name": "original",
+    "seed": 17
+  },
+  {
+    "name": "original",
+    "seed": 42
+  },
+  {
+    "name": "easy400-f0.500",
+    "method": "easy400",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "stratified-f0.500",
+    "method": "stratified",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "easy1600-f0.500",
+    "method": "easy1600",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "random-f0.500",
+    "method": "random",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "learnable-f0.500",
+    "method": "learnable",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "coverage_easy-f0.500",
+    "method": "coverage_easy",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "middle-f0.500",
+    "method": "middle",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "coverage_learnable-f0.500",
+    "method": "coverage_learnable",
+    "fraction": 0.5,
+    "seed": 17
+  },
+  {
+    "name": "easy400-f0.750",
+    "method": "easy400",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "stratified-f0.750",
+    "method": "stratified",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "easy1600-f0.750",
+    "method": "easy1600",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "random-f0.750",
+    "method": "random",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "learnable-f0.750",
+    "method": "learnable",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "coverage_easy-f0.750",
+    "method": "coverage_easy",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "middle-f0.750",
+    "method": "middle",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "coverage_learnable-f0.750",
+    "method": "coverage_learnable",
+    "fraction": 0.75,
+    "seed": 17
+  },
+  {
+    "name": "easy400-f0.875",
+    "method": "easy400",
+    "fraction": 0.875,
+    "seed": 17
+  },
+  {
+    "name": "stratified-f0.875",
+    "method": "stratified",
+    "fraction": 0.875,
+    "seed": 17
+  },
+  {
+    "name": "easy1600-f0.875",
+    "method": "easy1600",
+    "fraction": 0.875,
+    "seed": 17
+  },
+  {
+    "name": "random-f0.875",
+    "method": "random",
+    "fraction": 0.875,
+    "seed": 17
+  },
+  {
+    "name": "learnable-f0.875",
+    "method": "learnable",
+    "fraction": 0.875,
+    "seed": 17
+  },
+  {
+    "name": "coverage_easy-f0.875",
+    "method": "coverage_easy",
+    "fraction": 0.875,
+    "seed": 17
+  },
+  {
+    "name": "middle-f0.875",
+    "method": "middle",
+    "fraction": 0.875,
+    "seed": 17
+  },
+  {
+    "name": "coverage_learnable-f0.875",
+    "method": "coverage_learnable",
+    "fraction": 0.875,
+    "seed": 17
+  }
+]
