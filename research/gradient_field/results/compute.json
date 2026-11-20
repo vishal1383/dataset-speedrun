@@ -1,0 +1,10 @@
+{
+  "development_runs": 18,
+  "development_train_seconds": 93.80740646418417,
+  "confirmation_runs": 16,
+  "confirmation_train_seconds": 129.84065517713316,
+  "reused_400_update_teacher_train_seconds": 13.320215069688857,
+  "reused_1600_update_teacher_train_seconds": 45.47765235492261,
+  "artifact_encoding_seconds": 0.7944209279958159,
+  "scope": "Training-loop and encoding times. Process startup, evaluation, preparation, and prior campaigns are additional costs."
+}

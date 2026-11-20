@@ -1,0 +1,22 @@
+{
+  "timestamp_utc": "2026-11-20T07:17:43.488144+00:00",
+  "user_instruction": "Forget second Spark; use only the first Spark for now.",
+  "decision": "Run frozen worker 1 seeds 1013 through 1016 on spark-a5a1. Do not change the artifact, optimizer, potential, update count, audit, or seeds.",
+  "worker0": {
+    "container": "dataset-gradient-field-confirm0",
+    "state": "exited",
+    "exit_code": 0
+  },
+  "worker1": {
+    "container": "dataset-gradient-field-confirm1-local",
+    "state": "exited",
+    "exit_code": 0
+  },
+  "spark-664c": "Not used, following the user instruction. Seed-42 development search was not run.",
+  "tests": {
+    "cpu_suite": "13 passed, 2 CUDA tests skipped",
+    "cuda_followup": "Both skipped CUDA tests passed",
+    "unique_tests_passed": 15
+  },
+  "active_experiment_workers": 0
+}

@@ -1,0 +1,1090 @@
+[
+  {
+    "mode": "compressed-target-potential",
+    "seed": 1009,
+    "kind": "q4",
+    "field": "quadratic",
+    "updates": 200,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.366756439208984,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 8.35710334777832,
+        "train_seconds": 0.11897396593121812
+      },
+      {
+        "step": 20,
+        "loss": 8.260858535766602,
+        "train_seconds": 0.20807546598371118
+      },
+      {
+        "step": 50,
+        "loss": 6.983026027679443,
+        "train_seconds": 0.47844724293099716
+      },
+      {
+        "step": 100,
+        "loss": 4.1801300048828125,
+        "train_seconds": 1.0969096099724993
+      },
+      {
+        "step": 150,
+        "loss": 3.277935266494751,
+        "train_seconds": 1.7122681419714354
+      },
+      {
+        "step": 200,
+        "loss": 2.7641327381134033,
+        "train_seconds": 2.1785183699103072
+      }
+    ],
+    "final_loss": 2.7641327381134033,
+    "train_seconds": 2.1785183699103072,
+    "decode_seconds": 0.00986955699045211,
+    "wall_seconds": 6.519198886002414,
+    "initial_state_sha256": "73c68f90f2749a490ab17943e1b584a0897cae3514e771df287f4b183e78ccbc",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+    "artifact_bytes": 3568901,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "9fdc61b61517",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": true,
+    "training_token_exposures": 0,
+    "training_data_read_by_candidate": false,
+    "status": "complete"
+  },
+  {
+    "mode": "compressed-target-potential",
+    "seed": 1010,
+    "kind": "q4",
+    "field": "quadratic",
+    "updates": 200,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.382930755615234,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 8.379129409790039,
+        "train_seconds": 0.13052017602603883
+      },
+      {
+        "step": 20,
+        "loss": 8.152997970581055,
+        "train_seconds": 0.26042521093040705
+      },
+      {
+        "step": 50,
+        "loss": 6.932338714599609,
+        "train_seconds": 0.6451388507848606
+      },
+      {
+        "step": 100,
+        "loss": 4.136945724487305,
+        "train_seconds": 1.3019359626341611
+      },
+      {
+        "step": 150,
+        "loss": 3.2589011192321777,
+        "train_seconds": 1.9754238876048476
+      },
+      {
+        "step": 200,
+        "loss": 2.7575559616088867,
+        "train_seconds": 2.4440594290499575
+      }
+    ],
+    "final_loss": 2.7575559616088867,
+    "train_seconds": 2.4440594290499575,
+    "decode_seconds": 0.011058222968131304,
+    "wall_seconds": 6.758986114000436,
+    "initial_state_sha256": "1952c551bb0dcf69d3bbd240d99f2081e05de799a524ceb878923b6f512efe6d",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+    "artifact_bytes": 3568901,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "9fdc61b61517",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": true,
+    "training_token_exposures": 0,
+    "training_data_read_by_candidate": false,
+    "status": "complete"
+  },
+  {
+    "mode": "compressed-target-potential",
+    "seed": 1011,
+    "kind": "q4",
+    "field": "quadratic",
+    "updates": 200,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.389617919921875,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 8.353561401367188,
+        "train_seconds": 0.09029442409519106
+      },
+      {
+        "step": 20,
+        "loss": 8.245315551757812,
+        "train_seconds": 0.17884153610793874
+      },
+      {
+        "step": 50,
+        "loss": 7.054699420928955,
+        "train_seconds": 0.4429317551548593
+      },
+      {
+        "step": 100,
+        "loss": 4.149051666259766,
+        "train_seconds": 0.8809552270686254
+      },
+      {
+        "step": 150,
+        "loss": 3.285360813140869,
+        "train_seconds": 1.3153280587866902
+      },
+      {
+        "step": 200,
+        "loss": 2.7624120712280273,
+        "train_seconds": 1.7538618888356723
+      }
+    ],
+    "final_loss": 2.7624120712280273,
+    "train_seconds": 1.7538618888356723,
+    "decode_seconds": 0.012365146016236395,
+    "wall_seconds": 5.966662979044486,
+    "initial_state_sha256": "b8b4cba27d807822f8d7ddf06e0a8d04e8320a0410ad2a848b97547c46294a5f",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+    "artifact_bytes": 3568901,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "9fdc61b61517",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": true,
+    "training_token_exposures": 0,
+    "training_data_read_by_candidate": false,
+    "status": "complete"
+  },
+  {
+    "mode": "compressed-target-potential",
+    "seed": 1012,
+    "kind": "q4",
+    "field": "quadratic",
+    "updates": 200,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.366411209106445,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 8.344897270202637,
+        "train_seconds": 0.1164633029839024
+      },
+      {
+        "step": 20,
+        "loss": 8.246944427490234,
+        "train_seconds": 0.24514664796879515
+      },
+      {
+        "step": 50,
+        "loss": 7.072424411773682,
+        "train_seconds": 0.5932816210552119
+      },
+      {
+        "step": 100,
+        "loss": 4.132052421569824,
+        "train_seconds": 1.1049524468253367
+      },
+      {
+        "step": 150,
+        "loss": 3.2754604816436768,
+        "train_seconds": 1.6437482746550813
+      },
+      {
+        "step": 200,
+        "loss": 2.7619075775146484,
+        "train_seconds": 2.329330706910696
+      }
+    ],
+    "final_loss": 2.7619075775146484,
+    "train_seconds": 2.329330706910696,
+    "decode_seconds": 0.00910462299361825,
+    "wall_seconds": 6.52084133803146,
+    "initial_state_sha256": "9f45e59aa1973d77a34ca09c443af105ab757cb5fec088005237d9cdee3ef4dc",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+    "artifact_bytes": 3568901,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "9fdc61b61517",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": true,
+    "training_token_exposures": 0,
+    "training_data_read_by_candidate": false,
+    "status": "complete"
+  },
+  {
+    "mode": "compressed-target-potential",
+    "seed": 1013,
+    "kind": "q4",
+    "field": "quadratic",
+    "updates": 200,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.381082534790039,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 8.33834171295166,
+        "train_seconds": 0.12417482701130211
+      },
+      {
+        "step": 20,
+        "loss": 8.200227737426758,
+        "train_seconds": 0.21619696205016226
+      },
+      {
+        "step": 50,
+        "loss": 6.91023063659668,
+        "train_seconds": 0.5650996061158367
+      },
+      {
+        "step": 100,
+        "loss": 4.141819953918457,
+        "train_seconds": 1.029615116189234
+      },
+      {
+        "step": 150,
+        "loss": 3.2652883529663086,
+        "train_seconds": 1.5184182912344113
+      },
+      {
+        "step": 200,
+        "loss": 2.759678602218628,
+        "train_seconds": 2.178478292480577
+      }
+    ],
+    "final_loss": 2.759678602218628,
+    "train_seconds": 2.178478292480577,
+    "decode_seconds": 0.010943342000246048,
+    "wall_seconds": 6.506842560949735,
+    "initial_state_sha256": "9008da6734fd45aab02722b2cc49531ccbed7ab20493825e4e0973e594a598db",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+    "artifact_bytes": 3568901,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "a3527746c579",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": true,
+    "training_token_exposures": 0,
+    "training_data_read_by_candidate": false,
+    "status": "complete"
+  },
+  {
+    "mode": "compressed-target-potential",
+    "seed": 1014,
+    "kind": "q4",
+    "field": "quadratic",
+    "updates": 200,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.367188453674316,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 8.352750778198242,
+        "train_seconds": 0.13325481011997908
+      },
+      {
+        "step": 20,
+        "loss": 8.105971336364746,
+        "train_seconds": 0.2678641730453819
+      },
+      {
+        "step": 50,
+        "loss": 7.014677047729492,
+        "train_seconds": 0.648447040875908
+      },
+      {
+        "step": 100,
+        "loss": 4.1144256591796875,
+        "train_seconds": 1.2786516226478852
+      },
+      {
+        "step": 150,
+        "loss": 3.2640557289123535,
+        "train_seconds": 1.9093201095820405
+      },
+      {
+        "step": 200,
+        "loss": 2.760817050933838,
+        "train_seconds": 2.533635840343777
+      }
+    ],
+    "final_loss": 2.760817050933838,
+    "train_seconds": 2.533635840343777,
+    "decode_seconds": 0.01242946699494496,
+    "wall_seconds": 6.787729053990915,
+    "initial_state_sha256": "8da837a9b285ad59f584d29da0cda43966b4256a161ea230f2f199ab208edf16",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+    "artifact_bytes": 3568901,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "a3527746c579",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": true,
+    "training_token_exposures": 0,
+    "training_data_read_by_candidate": false,
+    "status": "complete"
+  },
+  {
+    "mode": "compressed-target-potential",
+    "seed": 1015,
+    "kind": "q4",
+    "field": "quadratic",
+    "updates": 200,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.3896484375,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 8.33273696899414,
+        "train_seconds": 0.13774214312434196
+      },
+      {
+        "step": 20,
+        "loss": 8.099540710449219,
+        "train_seconds": 0.27557844715192914
+      },
+      {
+        "step": 50,
+        "loss": 7.056950569152832,
+        "train_seconds": 0.6867233050870709
+      },
+      {
+        "step": 100,
+        "loss": 4.183711528778076,
+        "train_seconds": 1.3202064288780093
+      },
+      {
+        "step": 150,
+        "loss": 3.2736783027648926,
+        "train_seconds": 1.9332977436715737
+      },
+      {
+        "step": 200,
+        "loss": 2.761077404022217,
+        "train_seconds": 2.622952213510871
+      }
+    ],
+    "final_loss": 2.761077404022217,
+    "train_seconds": 2.622952213510871,
+    "decode_seconds": 0.009831188013777137,
+    "wall_seconds": 7.4939294119831175,
+    "initial_state_sha256": "b58feef15d554bdc848fb139e46079d7eb55f8cd3d7f252338fdc3de75661987",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+    "artifact_bytes": 3568901,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "a3527746c579",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": true,
+    "training_token_exposures": 0,
+    "training_data_read_by_candidate": false,
+    "status": "complete"
+  },
+  {
+    "mode": "compressed-target-potential",
+    "seed": 1016,
+    "kind": "q4",
+    "field": "quadratic",
+    "updates": 200,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.330604553222656,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 8.345643997192383,
+        "train_seconds": 0.1333767140749842
+      },
+      {
+        "step": 20,
+        "loss": 8.155686378479004,
+        "train_seconds": 0.2747329360572621
+      },
+      {
+        "step": 50,
+        "loss": 6.964484691619873,
+        "train_seconds": 0.6849272570689209
+      },
+      {
+        "step": 100,
+        "loss": 4.161769866943359,
+        "train_seconds": 1.3624097799765877
+      },
+      {
+        "step": 150,
+        "loss": 3.285745859146118,
+        "train_seconds": 1.9610800439259037
+      },
+      {
+        "step": 200,
+        "loss": 2.766252040863037,
+        "train_seconds": 2.635162411897909
+      }
+    ],
+    "final_loss": 2.766252040863037,
+    "train_seconds": 2.635162411897909,
+    "decode_seconds": 0.011917525960598141,
+    "wall_seconds": 7.485098776000086,
+    "initial_state_sha256": "e6ec936656f3537f4b78642dfa9e331b6fd40b3d9ea5070a9031fd3cd8e97610",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+    "artifact_bytes": 3568901,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "a3527746c579",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": true,
+    "training_token_exposures": 0,
+    "training_data_read_by_candidate": false,
+    "status": "complete"
+  },
+  {
+    "mode": "full-data",
+    "seed": 1009,
+    "kind": null,
+    "field": null,
+    "updates": 400,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.366756439208984,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 7.133652687072754,
+        "train_seconds": 0.5158766530221328
+      },
+      {
+        "step": 20,
+        "loss": 5.718577861785889,
+        "train_seconds": 0.855682514840737
+      },
+      {
+        "step": 50,
+        "loss": 4.338449954986572,
+        "train_seconds": 1.8502155658206902
+      },
+      {
+        "step": 100,
+        "loss": 3.8961074352264404,
+        "train_seconds": 3.5448571866727434
+      },
+      {
+        "step": 150,
+        "loss": 3.6120991706848145,
+        "train_seconds": 5.212762308714446
+      },
+      {
+        "step": 200,
+        "loss": 3.391897439956665,
+        "train_seconds": 6.885909105592873
+      },
+      {
+        "step": 300,
+        "loss": 3.1233811378479004,
+        "train_seconds": 10.251777076278813
+      },
+      {
+        "step": 400,
+        "loss": 3.0070128440856934,
+        "train_seconds": 13.608755499124527
+      }
+    ],
+    "final_loss": 3.0070128440856934,
+    "train_seconds": 13.608755499124527,
+    "decode_seconds": 9.391980711370707e-06,
+    "wall_seconds": 20.11840385303367,
+    "initial_state_sha256": "73c68f90f2749a490ab17943e1b584a0897cae3514e771df287f4b183e78ccbc",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "9fdc61b61517",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": false,
+    "training_token_exposures": 3276800,
+    "training_data_read_by_candidate": true,
+    "status": "complete"
+  },
+  {
+    "mode": "full-data",
+    "seed": 1010,
+    "kind": null,
+    "field": null,
+    "updates": 400,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.382930755615234,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 7.160567283630371,
+        "train_seconds": 0.3483931679511443
+      },
+      {
+        "step": 20,
+        "loss": 5.702557563781738,
+        "train_seconds": 0.6915510748513043
+      },
+      {
+        "step": 50,
+        "loss": 4.327183723449707,
+        "train_seconds": 1.7018056045635603
+      },
+      {
+        "step": 100,
+        "loss": 3.885723352432251,
+        "train_seconds": 3.3729536977480166
+      },
+      {
+        "step": 150,
+        "loss": 3.5944223403930664,
+        "train_seconds": 5.017033684358466
+      },
+      {
+        "step": 200,
+        "loss": 3.3676846027374268,
+        "train_seconds": 6.661809150420595
+      },
+      {
+        "step": 300,
+        "loss": 3.105809211730957,
+        "train_seconds": 10.034124378231354
+      },
+      {
+        "step": 400,
+        "loss": 2.9896364212036133,
+        "train_seconds": 13.425667339819483
+      }
+    ],
+    "final_loss": 2.9896364212036133,
+    "train_seconds": 13.425667339819483,
+    "decode_seconds": 4.159985110163689e-06,
+    "wall_seconds": 19.02224273898173,
+    "initial_state_sha256": "1952c551bb0dcf69d3bbd240d99f2081e05de799a524ceb878923b6f512efe6d",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "9fdc61b61517",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": false,
+    "training_token_exposures": 3276800,
+    "training_data_read_by_candidate": true,
+    "status": "complete"
+  },
+  {
+    "mode": "full-data",
+    "seed": 1011,
+    "kind": null,
+    "field": null,
+    "updates": 400,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.389617919921875,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 7.1848039627075195,
+        "train_seconds": 0.34459391894051805
+      },
+      {
+        "step": 20,
+        "loss": 5.769573211669922,
+        "train_seconds": 0.6843263879418373
+      },
+      {
+        "step": 50,
+        "loss": 4.331592082977295,
+        "train_seconds": 1.709269220882561
+      },
+      {
+        "step": 100,
+        "loss": 3.8933053016662598,
+        "train_seconds": 3.417627056769561
+      },
+      {
+        "step": 150,
+        "loss": 3.603358745574951,
+        "train_seconds": 5.100193680496886
+      },
+      {
+        "step": 200,
+        "loss": 3.372607707977295,
+        "train_seconds": 6.766442291496787
+      },
+      {
+        "step": 300,
+        "loss": 3.1129894256591797,
+        "train_seconds": 10.045730850601103
+      },
+      {
+        "step": 400,
+        "loss": 2.9987268447875977,
+        "train_seconds": 13.39378965162905
+      }
+    ],
+    "final_loss": 2.9987268447875977,
+    "train_seconds": 13.39378965162905,
+    "decode_seconds": 3.936002030968666e-06,
+    "wall_seconds": 18.85749941098038,
+    "initial_state_sha256": "b8b4cba27d807822f8d7ddf06e0a8d04e8320a0410ad2a848b97547c46294a5f",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "9fdc61b61517",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": false,
+    "training_token_exposures": 3276800,
+    "training_data_read_by_candidate": true,
+    "status": "complete"
+  },
+  {
+    "mode": "full-data",
+    "seed": 1012,
+    "kind": null,
+    "field": null,
+    "updates": 400,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.366411209106445,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 7.180302619934082,
+        "train_seconds": 0.32733996311435476
+      },
+      {
+        "step": 20,
+        "loss": 5.721437454223633,
+        "train_seconds": 0.6609934370499104
+      },
+      {
+        "step": 50,
+        "loss": 4.325821876525879,
+        "train_seconds": 1.6458531752577983
+      },
+      {
+        "step": 100,
+        "loss": 3.8846230506896973,
+        "train_seconds": 3.307351200899575
+      },
+      {
+        "step": 150,
+        "loss": 3.601783514022827,
+        "train_seconds": 4.94650431687478
+      },
+      {
+        "step": 200,
+        "loss": 3.3733224868774414,
+        "train_seconds": 6.611812632938381
+      },
+      {
+        "step": 300,
+        "loss": 3.1100914478302,
+        "train_seconds": 9.910549854976125
+      },
+      {
+        "step": 400,
+        "loss": 2.994655132293701,
+        "train_seconds": 13.202109865727834
+      }
+    ],
+    "final_loss": 2.994655132293701,
+    "train_seconds": 13.202109865727834,
+    "decode_seconds": 4.2719766497612e-06,
+    "wall_seconds": 18.657948395004496,
+    "initial_state_sha256": "9f45e59aa1973d77a34ca09c443af105ab757cb5fec088005237d9cdee3ef4dc",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "9fdc61b61517",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": false,
+    "training_token_exposures": 3276800,
+    "training_data_read_by_candidate": true,
+    "status": "complete"
+  },
+  {
+    "mode": "full-data",
+    "seed": 1013,
+    "kind": null,
+    "field": null,
+    "updates": 400,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.381082534790039,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 7.196788787841797,
+        "train_seconds": 0.5579315121867694
+      },
+      {
+        "step": 20,
+        "loss": 5.7301740646362305,
+        "train_seconds": 0.8870383691391908
+      },
+      {
+        "step": 50,
+        "loss": 4.333662033081055,
+        "train_seconds": 1.879241946095135
+      },
+      {
+        "step": 100,
+        "loss": 3.900559425354004,
+        "train_seconds": 3.514880908303894
+      },
+      {
+        "step": 150,
+        "loss": 3.6078784465789795,
+        "train_seconds": 5.203606580151245
+      },
+      {
+        "step": 200,
+        "loss": 3.3829050064086914,
+        "train_seconds": 6.8394162458134815
+      },
+      {
+        "step": 300,
+        "loss": 3.116746664047241,
+        "train_seconds": 10.082035874773283
+      },
+      {
+        "step": 400,
+        "loss": 2.999526023864746,
+        "train_seconds": 13.332713135750964
+      }
+    ],
+    "final_loss": 2.999526023864746,
+    "train_seconds": 13.332713135750964,
+    "decode_seconds": 1.1967960745096207e-05,
+    "wall_seconds": 19.832990988972597,
+    "initial_state_sha256": "9008da6734fd45aab02722b2cc49531ccbed7ab20493825e4e0973e594a598db",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "a3527746c579",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": false,
+    "training_token_exposures": 3276800,
+    "training_data_read_by_candidate": true,
+    "status": "complete"
+  },
+  {
+    "mode": "full-data",
+    "seed": 1014,
+    "kind": null,
+    "field": null,
+    "updates": 400,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.367188453674316,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 7.12010383605957,
+        "train_seconds": 0.33357075322419405
+      },
+      {
+        "step": 20,
+        "loss": 5.725556373596191,
+        "train_seconds": 0.6755230192793533
+      },
+      {
+        "step": 50,
+        "loss": 4.327008247375488,
+        "train_seconds": 1.6828562811715528
+      },
+      {
+        "step": 100,
+        "loss": 3.8822522163391113,
+        "train_seconds": 3.3766413562116213
+      },
+      {
+        "step": 150,
+        "loss": 3.592127799987793,
+        "train_seconds": 5.054063941119239
+      },
+      {
+        "step": 200,
+        "loss": 3.372068166732788,
+        "train_seconds": 6.737741635239217
+      },
+      {
+        "step": 300,
+        "loss": 3.107858180999756,
+        "train_seconds": 10.104619821242522
+      },
+      {
+        "step": 400,
+        "loss": 2.992839813232422,
+        "train_seconds": 13.777227560582105
+      }
+    ],
+    "final_loss": 2.992839813232422,
+    "train_seconds": 13.777227560582105,
+    "decode_seconds": 4.336005076766014e-06,
+    "wall_seconds": 19.305905651999637,
+    "initial_state_sha256": "8da837a9b285ad59f584d29da0cda43966b4256a161ea230f2f199ab208edf16",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "a3527746c579",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": false,
+    "training_token_exposures": 3276800,
+    "training_data_read_by_candidate": true,
+    "status": "complete"
+  },
+  {
+    "mode": "full-data",
+    "seed": 1015,
+    "kind": null,
+    "field": null,
+    "updates": 400,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.3896484375,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 7.166156768798828,
+        "train_seconds": 0.3784277950762771
+      },
+      {
+        "step": 20,
+        "loss": 5.742373943328857,
+        "train_seconds": 0.7607702460954897
+      },
+      {
+        "step": 50,
+        "loss": 4.345195770263672,
+        "train_seconds": 1.884380790987052
+      },
+      {
+        "step": 100,
+        "loss": 3.8861184120178223,
+        "train_seconds": 3.7871662548277527
+      },
+      {
+        "step": 150,
+        "loss": 3.5844027996063232,
+        "train_seconds": 5.66478186706081
+      },
+      {
+        "step": 200,
+        "loss": 3.3621153831481934,
+        "train_seconds": 7.5566617482108995
+      },
+      {
+        "step": 300,
+        "loss": 3.1034398078918457,
+        "train_seconds": 11.332492804271169
+      },
+      {
+        "step": 400,
+        "loss": 2.9884233474731445,
+        "train_seconds": 15.153955518384464
+      }
+    ],
+    "final_loss": 2.9884233474731445,
+    "train_seconds": 15.153955518384464,
+    "decode_seconds": 4.400033503770828e-06,
+    "wall_seconds": 21.248431605985388,
+    "initial_state_sha256": "b58feef15d554bdc848fb139e46079d7eb55f8cd3d7f252338fdc3de75661987",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "a3527746c579",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": false,
+    "training_token_exposures": 3276800,
+    "training_data_read_by_candidate": true,
+    "status": "complete"
+  },
+  {
+    "mode": "full-data",
+    "seed": 1016,
+    "kind": null,
+    "field": null,
+    "updates": 400,
+    "curve": [
+      {
+        "step": 0,
+        "loss": 8.330604553222656,
+        "train_seconds": 0.0
+      },
+      {
+        "step": 10,
+        "loss": 7.1522345542907715,
+        "train_seconds": 0.37382258707657456
+      },
+      {
+        "step": 20,
+        "loss": 5.716428756713867,
+        "train_seconds": 0.7685941062518395
+      },
+      {
+        "step": 50,
+        "loss": 4.331881999969482,
+        "train_seconds": 1.9280409291386604
+      },
+      {
+        "step": 100,
+        "loss": 3.8917388916015625,
+        "train_seconds": 3.8618874940439127
+      },
+      {
+        "step": 150,
+        "loss": 3.600796699523926,
+        "train_seconds": 5.768867173057515
+      },
+      {
+        "step": 200,
+        "loss": 3.3787851333618164,
+        "train_seconds": 7.697648622037377
+      },
+      {
+        "step": 300,
+        "loss": 3.1169486045837402,
+        "train_seconds": 11.496878669422586
+      },
+      {
+        "step": 400,
+        "loss": 3.0039925575256348,
+        "train_seconds": 15.270437453174964
+      }
+    ],
+    "final_loss": 3.0039925575256348,
+    "train_seconds": 15.270437453174964,
+    "decode_seconds": 4.128029104322195e-06,
+    "wall_seconds": 21.49946767295478,
+    "initial_state_sha256": "e6ec936656f3537f4b78642dfa9e331b6fd40b3d9ea5070a9031fd3cd8e97610",
+    "evaluation_sha256": "83ad624e7239db1611bfc655f69a02273665057006d9ec074ae5c5a8475ffc62",
+    "artifact_sha256": "c2aa3e02d0f7ce8a01d95405a13d1c8cc196637619ab2ddd9d68283966631e79",
+    "artifact_bytes": 8980666,
+    "source_sha256": "bc10e8e3ca5d5f713ff7b2820dbdf7173ed2c773fab7cb2cb535efbb6122dd9d",
+    "trainer_sha256": "a89bfbb7edfd297bba1cbc69dde249ddd6a9bdfe13dc1e26f32dc3c575958746",
+    "config_sha256": "5e0aac9d0607ca972a39abfc85cfd3e9bdfa7fb15639e3cc0793774112749d98",
+    "host": "a3527746c579",
+    "torch": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "cuda": "13.2",
+    "gpu": "NVIDIA GB10",
+    "training_objective_changed": false,
+    "training_token_exposures": 3276800,
+    "training_data_read_by_candidate": true,
+    "status": "complete"
+  }
+]

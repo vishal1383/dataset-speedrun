@@ -1,0 +1,8 @@
+{
+  "q4.pt": {
+    "bytes": 3568901,
+    "sha256": "a9a7aca29e4dd4e244a41cc85de85f3a5df628301e824c59061bcf7c44a951c7",
+    "source": "runs/gradient-field-strong-v1/artifacts/q4.pt",
+    "kind": "4-bit quantized teacher endpoint"
+  }
+}

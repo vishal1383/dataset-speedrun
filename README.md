@@ -222,6 +222,12 @@ The [autoresearch campaign](research/autoresearch/README.md) records artifact by
 Full unrestricted gradients can encode trained weights. They do not establish learning efficiency by themselves.
 The original baseline suite contains data-only experiments. The later gradient-replay experiments failed the quality target.
 
+The [state-dependent gradient experiment](research/gradient_field/README.md) tested compressed targets that generate gradients from current student weights.
+A 3.57 MB target reached 2.7617 fresh-audit loss in 200 updates, versus 2.9969 for full data after 400 updates.
+The eight-seed pilot used approximately 6.0× less student training time, excluding teacher construction.
+Directly loading the same compressed target achieved 2.3857 loss in approximately 11 ms.
+The artifact encodes a trained checkpoint. This result remains outside the dataset-only leaderboard.
+
 ## Related work
 
 - [NanoGPT speedrun](https://github.com/KellerJordan/modded-nanogpt): training-system speed under a loss target.
