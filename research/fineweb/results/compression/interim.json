@@ -1,0 +1,144 @@
+{
+  "observed_at_utc": "2026-11-21T03:09:37.223732+00:00",
+  "baseline_complete": true,
+  "baseline_final_loss": 3.27822,
+  "text_status": "running",
+  "text_progress": {
+    "step": 2179,
+    "planned_updates": 3250,
+    "train_seconds": 25396.358,
+    "elapsed_seconds": 26904.191904306004,
+    "status": "running",
+    "child_pid": 676
+  },
+  "text_curve": [
+    {
+      "step": 0,
+      "loss": 10.82583,
+      "train_seconds": 0.0,
+      "baseline_loss": 10.82583,
+      "delta": 0.0
+    },
+    {
+      "step": 125,
+      "loss": 4.59485,
+      "train_seconds": 1540.261,
+      "baseline_loss": 4.58594,
+      "delta": 0.008910000000000196
+    },
+    {
+      "step": 250,
+      "loss": 4.0977,
+      "train_seconds": 2992.237,
+      "baseline_loss": 4.09983,
+      "delta": -0.0021300000000001873
+    },
+    {
+      "step": 375,
+      "loss": 3.92354,
+      "train_seconds": 4443.94,
+      "baseline_loss": 3.92686,
+      "delta": -0.0033199999999999896
+    },
+    {
+      "step": 500,
+      "loss": 3.82316,
+      "train_seconds": 5895.343,
+      "baseline_loss": 3.82624,
+      "delta": -0.0030799999999997496
+    },
+    {
+      "step": 625,
+      "loss": 3.76248,
+      "train_seconds": 7348.061,
+      "baseline_loss": 3.76301,
+      "delta": -0.0005299999999999194
+    },
+    {
+      "step": 750,
+      "loss": 3.71107,
+      "train_seconds": 8800.258,
+      "baseline_loss": 3.72117,
+      "delta": -0.010099999999999998
+    },
+    {
+      "step": 875,
+      "loss": 3.676,
+      "train_seconds": 10251.209,
+      "baseline_loss": 3.68319,
+      "delta": -0.00719000000000003
+    },
+    {
+      "step": 1000,
+      "loss": 3.64465,
+      "train_seconds": 11702.714,
+      "baseline_loss": 3.65324,
+      "delta": -0.008589999999999876
+    },
+    {
+      "step": 1125,
+      "loss": 3.6114,
+      "train_seconds": 13153.998,
+      "baseline_loss": 3.62351,
+      "delta": -0.012109999999999843
+    },
+    {
+      "step": 1250,
+      "loss": 3.57997,
+      "train_seconds": 14606.033,
+      "baseline_loss": 3.59347,
+      "delta": -0.013500000000000068
+    },
+    {
+      "step": 1375,
+      "loss": 3.55504,
+      "train_seconds": 16061.467,
+      "baseline_loss": 3.56746,
+      "delta": -0.012420000000000098
+    },
+    {
+      "step": 1500,
+      "loss": 3.53197,
+      "train_seconds": 17512.001,
+      "baseline_loss": 3.53607,
+      "delta": -0.004100000000000215
+    },
+    {
+      "step": 1625,
+      "loss": 3.50893,
+      "train_seconds": 18960.414,
+      "baseline_loss": 3.51958,
+      "delta": -0.010650000000000048
+    },
+    {
+      "step": 1750,
+      "loss": 3.48716,
+      "train_seconds": 20408.836,
+      "baseline_loss": 3.4953,
+      "delta": -0.008140000000000036
+    },
+    {
+      "step": 1875,
+      "loss": 3.46787,
+      "train_seconds": 21858.154,
+      "baseline_loss": 3.47501,
+      "delta": -0.007140000000000146
+    },
+    {
+      "step": 2000,
+      "loss": 3.44954,
+      "train_seconds": 23306.202,
+      "baseline_loss": 3.45496,
+      "delta": -0.00541999999999998
+    },
+    {
+      "step": 2125,
+      "loss": 3.4288,
+      "train_seconds": 24755.358,
+      "baseline_loss": 3.43596,
+      "delta": -0.007160000000000277
+    }
+  ],
+  "latent_status": "GPU smoke passed; full run queued",
+  "interpretation": "Partial single-seed comparison. Final compression performance is pending."
+}

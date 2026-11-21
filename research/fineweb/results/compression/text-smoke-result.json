@@ -1,0 +1,134 @@
+{
+  "upstream": {
+    "repository": "https://github.com/KellerJordan/modded-nanogpt",
+    "commit": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+    "source_path": "records/track_3_optimization/train_gpt_simple.py",
+    "source_sha256": "d39470e5b0535baf9c6caf7dbcd15efa79d8eacc9badf6e7c45b536e8537deec",
+    "dataset": "kjj0/fineweb10B-gpt2",
+    "dataset_revision": "889765ea1f903759787add96995d81171b632d0c",
+    "train_shards": 20,
+    "validation_tokens": 10485760,
+    "target_loss": 3.28,
+    "global_batch_tokens": 524288,
+    "context": 1024,
+    "schedule_updates": 3250,
+    "architecture": {
+      "vocab_size": 50304,
+      "num_layers": 12,
+      "model_dim": 768
+    },
+    "reference_result": "Optimization track result 36: tuned Muon + auxiliary AdamW",
+    "main_track_eligible": false,
+    "reason": "Upstream tracks require unchanged training data. This sibling track freezes the optimizer and changes training data.",
+    "candidate_dataset": "kjj0/finewebedu10B-gpt2",
+    "candidate_dataset_revision": "440d9d739f970c5d80492e12e81d63d60622ca30"
+  },
+  "seed": 17,
+  "updates": 2,
+  "schedule_updates": 3250,
+  "validation_tokens": 65536,
+  "global_batch_tokens": 524288,
+  "microbatch_sequences": 64,
+  "compile_model": true,
+  "smoke": true,
+  "source_sha256": "39b89bf2442c4767f292218eb9bd33f71cfd0b86920faa4c584f648a0a339937",
+  "launcher_sha256": "1f974658b95a298d0ec2a173a803920b8d4bb0fac184481dc052dd449727f913",
+  "training_files": {
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000001.bin": {
+      "bytes": 200001024,
+      "sha256": "adf3dff8db57aff659283bf2edc7bf13d6710d5343a5d2411c5db5ce8f50b448"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000002.bin": {
+      "bytes": 200001024,
+      "sha256": "5938004841f9cb39089bbb1db9238bf7a29a9f7b02b4e5f8eac324cb89746f96"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000003.bin": {
+      "bytes": 200001024,
+      "sha256": "5498901b7ebf35452acbaa5d5c00a2bd55cc08ded0d7b12ae4398881d9295cc3"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000004.bin": {
+      "bytes": 200001024,
+      "sha256": "a90a8db1bc172f877fcd0efc506f65e5c98abdad505e615015bbf98ba82873cd"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000005.bin": {
+      "bytes": 200001024,
+      "sha256": "027b44e4acd193da7c0e5fe4100418cdf74291987209a79f93c676e03199f931"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000006.bin": {
+      "bytes": 200001024,
+      "sha256": "8823400c028fe2f607c5274ba80372db8ebd4ed2ca2c11d7114cfb2309849930"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000007.bin": {
+      "bytes": 200001024,
+      "sha256": "374d4af72222afd9dc1027e2c6474ea61310351f79d0d8b509461c22536f0f4d"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000008.bin": {
+      "bytes": 200001024,
+      "sha256": "0ae400700627e5d4188c598209e212c01d321d94bbb52bea5ce4b2e8fc6805c3"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000009.bin": {
+      "bytes": 200001024,
+      "sha256": "57110252ad31c65352ccffcbb91d29a63c95f3a5e44fc307a0d35e6bba7898e9"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000010.bin": {
+      "bytes": 200001024,
+      "sha256": "bbaaf3511ed5aee48c5493424d3ff864505eee199c5a7a38b1e463d470016f54"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000011.bin": {
+      "bytes": 200001024,
+      "sha256": "c946b17ac8629f12531ac1af2ba19f727f3766d1269adbd47ef5f71027cce5b7"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000012.bin": {
+      "bytes": 200001024,
+      "sha256": "71a449b2a83e22175049373cc813e4f6ac90483b12241e92062c21f25164377d"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000013.bin": {
+      "bytes": 200001024,
+      "sha256": "5e5f497cc0d65a7744528697115a178f70ec433886edb9968e8a9a9e41a3c98e"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000014.bin": {
+      "bytes": 200001024,
+      "sha256": "d1d682891cb5816e0b9f8c1247c85a6a0090cea957c488fbda48e419b028c863"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000015.bin": {
+      "bytes": 199993344,
+      "sha256": "b9a3d61fda33a4cfbe819fab7b8aa0310c7a961dc7fbf02eb7dcc087a3ce455a"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000016.bin": {
+      "bytes": 200001024,
+      "sha256": "5e5f497cc0d65a7744528697115a178f70ec433886edb9968e8a9a9e41a3c98e"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000017.bin": {
+      "bytes": 200001024,
+      "sha256": "5938004841f9cb39089bbb1db9238bf7a29a9f7b02b4e5f8eac324cb89746f96"
+    },
+    "runs/fineweb-compression-v1/artifact/stream/fineweb_train_000018.bin": {
+      "bytes": 199993344,
+      "sha256": "b9a3d61fda33a4cfbe819fab7b8aa0310c7a961dc7fbf02eb7dcc087a3ce455a"
+    }
+  },
+  "validation_files": {
+    "data/fineweb10B/fineweb_val_000000.bin": {
+      "bytes": 200001024,
+      "sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640"
+    }
+  },
+  "main_speedrun_record_eligible": false,
+  "status": "complete",
+  "objective": "original_hard_token_ce",
+  "exit_code": 0,
+  "elapsed_seconds": 43.72448978800094,
+  "curve": [
+    {
+      "step": 0,
+      "loss": 10.82584,
+      "train_seconds": 0.0
+    },
+    {
+      "step": 2,
+      "loss": 8.73469,
+      "train_seconds": 26.305
+    }
+  ],
+  "initial_state_sha256": "f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d"
+}

@@ -1,0 +1,321 @@
+{
+  "upstream": {
+    "repository": "https://github.com/KellerJordan/modded-nanogpt",
+    "commit": "4ea6b937337a4889b8cfe3f38a93d120048d8f71",
+    "source_path": "records/track_3_optimization/train_gpt_simple.py",
+    "source_sha256": "d39470e5b0535baf9c6caf7dbcd15efa79d8eacc9badf6e7c45b536e8537deec",
+    "dataset": "kjj0/fineweb10B-gpt2",
+    "dataset_revision": "889765ea1f903759787add96995d81171b632d0c",
+    "train_shards": 20,
+    "validation_tokens": 10485760,
+    "target_loss": 3.28,
+    "global_batch_tokens": 524288,
+    "context": 1024,
+    "schedule_updates": 3250,
+    "architecture": {
+      "vocab_size": 50304,
+      "num_layers": 12,
+      "model_dim": 768
+    },
+    "reference_result": "Optimization track result 36: tuned Muon + auxiliary AdamW",
+    "main_track_eligible": false,
+    "reason": "Upstream tracks require unchanged training data. This sibling track freezes the optimizer and changes training data.",
+    "candidate_dataset": "kjj0/finewebedu10B-gpt2",
+    "candidate_dataset_revision": "440d9d739f970c5d80492e12e81d63d60622ca30"
+  },
+  "seed": 17,
+  "updates": 3250,
+  "schedule_updates": 3250,
+  "validation_tokens": 10485760,
+  "global_batch_tokens": 524288,
+  "microbatch_sequences": 64,
+  "compile_model": true,
+  "smoke": false,
+  "source_sha256": "b660f61f4c3318a5c2654d12481529d15d6861cbc4b4ec76e4b403ee2a4dc967",
+  "launcher_sha256": "47c739c5705d2af05bfb49ba5f2c0f1af96780c9678f18a12e87c76b4551f15d",
+  "training_files": {
+    "data/fineweb10B/fineweb_train_000001.bin": {
+      "bytes": 200001024,
+      "sha256": "771fa4a99b9fe0946ffb6e848b4ba5c6a9b0fe87860ebf03bc2c1c7e45f8178e"
+    },
+    "data/fineweb10B/fineweb_train_000002.bin": {
+      "bytes": 200001024,
+      "sha256": "d4ba8d2d740905a836a4222d2aff01750560e7d49a51a745a1b3235520aec2cd"
+    },
+    "data/fineweb10B/fineweb_train_000003.bin": {
+      "bytes": 200001024,
+      "sha256": "f70fa272369730fd9e39f1848bfe4daa3289b6e490c1e7762777f00ea8b66246"
+    },
+    "data/fineweb10B/fineweb_train_000004.bin": {
+      "bytes": 200001024,
+      "sha256": "d8d88850f89fe2030e866380e90d544167467d407080403b830b903543925835"
+    },
+    "data/fineweb10B/fineweb_train_000005.bin": {
+      "bytes": 200001024,
+      "sha256": "36cef3fc41863eb6731b41e986edde38e368853ee6deb87b928990bf445a119c"
+    },
+    "data/fineweb10B/fineweb_train_000006.bin": {
+      "bytes": 200001024,
+      "sha256": "d80e5b209983e636655fc738fdf281f0132f0298bf4c0848f7e7a6bea6ca06f0"
+    },
+    "data/fineweb10B/fineweb_train_000007.bin": {
+      "bytes": 200001024,
+      "sha256": "fa9f94dce61686b5467bc6cd3078424203db23ac254d804a6d8d5d440afc1e11"
+    },
+    "data/fineweb10B/fineweb_train_000008.bin": {
+      "bytes": 200001024,
+      "sha256": "308e6937af5d78b7489a8aac3a3951dced5b46103e613f8bc4eb543f5092526c"
+    },
+    "data/fineweb10B/fineweb_train_000009.bin": {
+      "bytes": 200001024,
+      "sha256": "1635300891634346ecff3a78d6e489a69c647885f0dcd249fe3eb76fac683458"
+    },
+    "data/fineweb10B/fineweb_train_000010.bin": {
+      "bytes": 200001024,
+      "sha256": "72e88f66104dacca163eeb3a00fe40a45a821d2ecd4fb9ce343808996e5d2f5e"
+    },
+    "data/fineweb10B/fineweb_train_000011.bin": {
+      "bytes": 200001024,
+      "sha256": "99edff412654ca6e06d4b3ca563acd8937ee6042f49d009526b8f1074f4d7300"
+    },
+    "data/fineweb10B/fineweb_train_000012.bin": {
+      "bytes": 200001024,
+      "sha256": "92a2dc78e3971ac2a36ef3e9f19c92533bc35ef2dd735bb6759e7b864e301084"
+    },
+    "data/fineweb10B/fineweb_train_000013.bin": {
+      "bytes": 200001024,
+      "sha256": "6cc3884bf19a2d9b4a12d52e4861276da2e3c6614ce97e6bfa0769d701f7a4c5"
+    },
+    "data/fineweb10B/fineweb_train_000014.bin": {
+      "bytes": 200001024,
+      "sha256": "6bc06a838d5a258fb51a3c2a3d14fd784f83b173f408d8d2d3f85b3290094a96"
+    },
+    "data/fineweb10B/fineweb_train_000015.bin": {
+      "bytes": 200001024,
+      "sha256": "09ad252e5d641862f89c31e4f0fa9559933d3e2bc6f657fc05f63166c2d74741"
+    },
+    "data/fineweb10B/fineweb_train_000016.bin": {
+      "bytes": 200001024,
+      "sha256": "56e97975654bb7a1f08f1397dd7894146dd7f8c36bc9fdd71da9675c43ab9a85"
+    },
+    "data/fineweb10B/fineweb_train_000017.bin": {
+      "bytes": 200001024,
+      "sha256": "a51e60d3f9fce16a9dbcb20e5333e1c8e379acf3a703e63b1fecfef49aa17458"
+    },
+    "data/fineweb10B/fineweb_train_000018.bin": {
+      "bytes": 200001024,
+      "sha256": "8a35ee9b00834e085e20383711d1fa13efe9d05d3d20161cebd60d73ac935fe9"
+    },
+    "data/fineweb10B/fineweb_train_000019.bin": {
+      "bytes": 200001024,
+      "sha256": "e4c82c17c1805a8d946580bb09f10575add3fb56dc3305729d75eae083fa2856"
+    },
+    "data/fineweb10B/fineweb_train_000020.bin": {
+      "bytes": 200001024,
+      "sha256": "bbdb7866974ce4389c888fce7394a2c05e71cb6a0f1ada2e2a37520a03302b6c"
+    }
+  },
+  "validation_files": {
+    "data/fineweb10B/fineweb_val_000000.bin": {
+      "bytes": 200001024,
+      "sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640"
+    }
+  },
+  "main_speedrun_record_eligible": false,
+  "status": "complete",
+  "exit_code": 0,
+  "elapsed_seconds": 42917.52989718999,
+  "curve": [
+    {
+      "step": 0,
+      "loss": 10.82583,
+      "train_seconds": 0.0
+    },
+    {
+      "step": 125,
+      "loss": 4.58594,
+      "train_seconds": 1582.783
+    },
+    {
+      "step": 250,
+      "loss": 4.09983,
+      "train_seconds": 3175.104
+    },
+    {
+      "step": 375,
+      "loss": 3.92686,
+      "train_seconds": 4702.941
+    },
+    {
+      "step": 500,
+      "loss": 3.82624,
+      "train_seconds": 6198.9
+    },
+    {
+      "step": 625,
+      "loss": 3.76301,
+      "train_seconds": 7696.278
+    },
+    {
+      "step": 750,
+      "loss": 3.72117,
+      "train_seconds": 9192.705
+    },
+    {
+      "step": 875,
+      "loss": 3.68319,
+      "train_seconds": 10689.527
+    },
+    {
+      "step": 1000,
+      "loss": 3.65324,
+      "train_seconds": 12185.521
+    },
+    {
+      "step": 1125,
+      "loss": 3.62351,
+      "train_seconds": 13681.797
+    },
+    {
+      "step": 1250,
+      "loss": 3.59347,
+      "train_seconds": 15179.029
+    },
+    {
+      "step": 1375,
+      "loss": 3.56746,
+      "train_seconds": 16674.628
+    },
+    {
+      "step": 1500,
+      "loss": 3.53607,
+      "train_seconds": 18171.128
+    },
+    {
+      "step": 1625,
+      "loss": 3.51958,
+      "train_seconds": 19666.779
+    },
+    {
+      "step": 1750,
+      "loss": 3.4953,
+      "train_seconds": 21162.524
+    },
+    {
+      "step": 1875,
+      "loss": 3.47501,
+      "train_seconds": 22657.866
+    },
+    {
+      "step": 2000,
+      "loss": 3.45496,
+      "train_seconds": 24152.871
+    },
+    {
+      "step": 2125,
+      "loss": 3.43596,
+      "train_seconds": 25648.63
+    },
+    {
+      "step": 2250,
+      "loss": 3.41689,
+      "train_seconds": 27144.044
+    },
+    {
+      "step": 2375,
+      "loss": 3.3992,
+      "train_seconds": 28641.035
+    },
+    {
+      "step": 2500,
+      "loss": 3.38001,
+      "train_seconds": 30186.861
+    },
+    {
+      "step": 2625,
+      "loss": 3.36036,
+      "train_seconds": 31774.812
+    },
+    {
+      "step": 2750,
+      "loss": 3.34155,
+      "train_seconds": 33354.475
+    },
+    {
+      "step": 2875,
+      "loss": 3.32266,
+      "train_seconds": 34935.907
+    },
+    {
+      "step": 2925,
+      "loss": 3.31488,
+      "train_seconds": 35568.073
+    },
+    {
+      "step": 2950,
+      "loss": 3.31128,
+      "train_seconds": 35883.362
+    },
+    {
+      "step": 2975,
+      "loss": 3.30773,
+      "train_seconds": 36198.323
+    },
+    {
+      "step": 3000,
+      "loss": 3.30445,
+      "train_seconds": 36513.127
+    },
+    {
+      "step": 3025,
+      "loss": 3.30024,
+      "train_seconds": 36829.092
+    },
+    {
+      "step": 3050,
+      "loss": 3.29694,
+      "train_seconds": 37147.713
+    },
+    {
+      "step": 3075,
+      "loss": 3.29371,
+      "train_seconds": 37464.062
+    },
+    {
+      "step": 3100,
+      "loss": 3.2906,
+      "train_seconds": 37783.089
+    },
+    {
+      "step": 3125,
+      "loss": 3.28773,
+      "train_seconds": 38101.428
+    },
+    {
+      "step": 3150,
+      "loss": 3.28492,
+      "train_seconds": 38419.21
+    },
+    {
+      "step": 3175,
+      "loss": 3.28252,
+      "train_seconds": 38733.724
+    },
+    {
+      "step": 3200,
+      "loss": 3.2805,
+      "train_seconds": 39048.919
+    },
+    {
+      "step": 3225,
+      "loss": 3.27887,
+      "train_seconds": 39366.851
+    },
+    {
+      "step": 3250,
+      "loss": 3.27822,
+      "train_seconds": 39684.903
+    }
+  ],
+  "initial_state_sha256": "f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d"
+}

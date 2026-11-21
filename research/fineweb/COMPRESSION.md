@@ -109,6 +109,26 @@ The secondary target is loss at most 3.28. Report artifact size, construction co
 One favorable seed is preliminary. Fresh paired seeds are required before claiming a reliable improvement.
 No compression-arm validation result existed when this experiment was launched.
 
+## Current evidence and conditional replication
+
+The baseline completed 3,250 updates at **3.27822** validation loss, passing the 3.28 target.
+Both compression arms passed GPU smoke tests with identical initial parameter hashes.
+The full text run remains in progress; the full latent run follows it.
+The [interim record](results/compression/interim.json) contains timestamped matched-step comparisons, not a final compression result.
+The [baseline record](results/compression/baseline-result.json) contains its complete curve and input hashes.
+
+The [replication plan](replication-plan.json) was frozen while the text pilot was still running.
+The [replication controller](replicate.py) waits for both pilot arms to finish before it selects a candidate.
+It selects the lowest final loss only if that loss beats the paired baseline. Exact ties favor the cheaper text arm.
+It saves the selection before running a new baseline and the selected candidate with seed 42.
+The additional budget is at most two full runs, each with 3,250 updates on the same Spark.
+The controller verifies identical initialization within seed 42 and different initialization from seed 17.
+It reports failures and regressions without changing the selected recipe.
+If neither pilot arm improves, it records that outcome and submits no replication of an unsupported winner.
+
+This follow-up tests initialization dependence on the same validation text.
+It does not provide a fresh held-out corpus or establish a statistically confirmed record from two seeds.
+
 The code is covered by the repository license. The text derives from the pinned `kjj0/fineweb10B-gpt2` training release.
 Source revisions and per-shard hashes are included in the [artifact manifest](results/compression/manifest.json).
 Retain the upstream FineWeb dataset attribution and applicable dataset terms when redistributing derived text.

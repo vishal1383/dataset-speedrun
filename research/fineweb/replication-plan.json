@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "output": "runs/fineweb-compression-v1/replication42",
+  "pilot_plan_sha256": "a782d747280a8d1aa8572af7398ec5098d03a7a92a3c92e778d108b9fd8e6b99",
+  "source_sha256": {
+    "research/fineweb/launch.py": "1f974658b95a298d0ec2a173a803920b8d4bb0fac184481dc052dd449727f913",
+    "research/fineweb/latent.py": "8a5be4d41f30d302c5de55f350bfc0bc89dc735d9ce7fbab66493433cd45ecca",
+    "research/fineweb/compress.py": "0ad02a5909f9f9f105aa327b1697b2b143412678335075f124eeec15d42fee99",
+    "research/fineweb/compression_queue.py": "b40f39409ae87b67683bce24f190ef02b6ffc6f2faccd4dc66319f6efdd9df09",
+    "research/fineweb/run_pair.py": "77ccacb40b6a4d21c432f6b0e2de15aca53533005edafc9f2ce3e50dcdea4686",
+    "research/fineweb/pin.json": "daf6a35a1d2277a96e4532920eb8aaf7961aa44c21802fdeef267dc2a35dd066",
+    "research/fineweb/prepare.py": "668b75d76ec81d7e0f9bc5dd455d3b7239ef7a03c41f2d93a0b6c8562dc69b6c",
+    "research/fineweb/build_candidate.py": "a1d8f98a698e22fa78f63b861a9c1c54914598d60e5bfcecebac9030f661efcd",
+    "research/fineweb/upstream/train_gpt_simple.py": "d39470e5b0535baf9c6caf7dbcd15efa79d8eacc9badf6e7c45b536e8537deec",
+    "research/fineweb/replicate.py": "133761cb9bb4d57c7cb5c14650f38de0bb534fd4c68ff3397739e5a0046fc179"
+  },
+  "seed": 42,
+  "updates": 3250,
+  "maximum_additional_full_runs": 2,
+  "selection_rule": "Wait for both complete pilot arms. Select the lowest final validation loss only if it beats the baseline. Prefer text on exact ties. Freeze selection before seed 42.",
+  "no_improvement_action": "Save a no-improvement outcome without selecting a false winner. Inspect replay and objective ablations before a new recipe.",
+  "fixed_metrics": "Paired final loss at 3250 updates; 3.28 target; identical initialization within seed 42; different initialization from seed 17.",
+  "limits": "Fresh initialization only. Same public validation data. Pilot-based selection and two seeds do not establish a confirmed record.",
+  "hardware": "spark-a5a1 only; wait for the current GPU queue to complete."
+}
