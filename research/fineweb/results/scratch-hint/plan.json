@@ -1,0 +1,23 @@
+{
+  "seeds": [
+    17,
+    42
+  ],
+  "arms": [
+    "hard",
+    "ordinary",
+    "gold",
+    "shuffled"
+  ],
+  "steps": 24,
+  "refresh_updates": 4,
+  "context": 16,
+  "train_tokens_per_update": 4096,
+  "train_offset": 30000000,
+  "dev_offset": 12000000,
+  "dev_tokens": 65536,
+  "source_sha256": "a55f1009fca308297cb8fac82fc6ec8a4fd2879231bded71d8b72343a7563e9f",
+  "objective": "0.5 hard CE + 0.5 dense detached teacher CE, temperature 1",
+  "gate": "gold below hard, ordinary and shuffled at step 24 on both seeds",
+  "timing": "Includes periodic teacher copies, teacher forwards, student training and optimizer; excludes evaluation and initialization; shared host."
+}
