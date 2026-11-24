@@ -1,0 +1,17 @@
+{
+  "seed": 17,
+  "updates": 3250,
+  "global_batch_tokens": 524288,
+  "context": 1024,
+  "validation_tokens": 10485760,
+  "microbatch_sequences": 16,
+  "baseline_microbatch_sequences": 64,
+  "refresh_every": 4,
+  "teacher": "own student, detached, ordinary causal prefix",
+  "objective": "equal mix of hard CE and dense teacher CE at temperature 1",
+  "source_sha256": "7ff3ab1c1e72f1f5159b79ec6e24eb7533e1e8d3feda4354bfde866c9a97e3a9",
+  "launcher_sha256": "c0971b67d9721c6f76f37bdf5e3be9aae5a6777eed3ef856763c047b6d1908e0",
+  "baseline_record_sha256": "67c52ebb932c9aa68090e990b73b89da8d94944e3abd82522f03d0e4da9190f1",
+  "baseline_final_loss": 3.27822,
+  "expected_initial_state": "f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d"
+}
