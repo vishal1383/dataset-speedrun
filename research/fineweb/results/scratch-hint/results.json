@@ -1,0 +1,225 @@
+{
+  "passed_gate": false,
+  "runs": {
+    "17": {
+      "hard": {
+        "seed": 17,
+        "arm": "hard",
+        "init_sha256": "f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d",
+        "curve": [
+          {
+            "step": 0,
+            "loss": 10.825838088989258,
+            "train_seconds": 0.0
+          },
+          {
+            "step": 8,
+            "loss": 7.735962972044945,
+            "train_seconds": 10.113135196035728
+          },
+          {
+            "step": 16,
+            "loss": 7.419023305177689,
+            "train_seconds": 16.75947743305005
+          },
+          {
+            "step": 24,
+            "loss": 7.269671231508255,
+            "train_seconds": 23.383768757921644
+          }
+        ]
+      },
+      "ordinary": {
+        "seed": 17,
+        "arm": "ordinary",
+        "init_sha256": "f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d",
+        "curve": [
+          {
+            "step": 0,
+            "loss": 10.825838088989258,
+            "train_seconds": 0.0
+          },
+          {
+            "step": 8,
+            "loss": 7.567056655883789,
+            "train_seconds": 8.88182131596841
+          },
+          {
+            "step": 16,
+            "loss": 7.286612346768379,
+            "train_seconds": 17.908519634162076
+          },
+          {
+            "step": 24,
+            "loss": 7.206836625933647,
+            "train_seconds": 26.755607436876744
+          }
+        ]
+      },
+      "gold": {
+        "seed": 17,
+        "arm": "gold",
+        "init_sha256": "f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d",
+        "curve": [
+          {
+            "step": 0,
+            "loss": 10.825838088989258,
+            "train_seconds": 0.0
+          },
+          {
+            "step": 8,
+            "loss": 7.57037428021431,
+            "train_seconds": 20.551428950973786
+          },
+          {
+            "step": 16,
+            "loss": 7.293201953172684,
+            "train_seconds": 41.49786868086085
+          },
+          {
+            "step": 24,
+            "loss": 7.217869088053703,
+            "train_seconds": 62.53382868284825
+          }
+        ]
+      },
+      "shuffled": {
+        "seed": 17,
+        "arm": "shuffled",
+        "init_sha256": "f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d",
+        "curve": [
+          {
+            "step": 0,
+            "loss": 10.825838088989258,
+            "train_seconds": 0.0
+          },
+          {
+            "step": 8,
+            "loss": 7.570675119757652,
+            "train_seconds": 20.583350254804827
+          },
+          {
+            "step": 16,
+            "loss": 7.293169155716896,
+            "train_seconds": 41.256244161049835
+          },
+          {
+            "step": 24,
+            "loss": 7.218029946088791,
+            "train_seconds": 61.723814892815426
+          }
+        ]
+      }
+    },
+    "42": {
+      "hard": {
+        "seed": 42,
+        "arm": "hard",
+        "init_sha256": "874fdd0a3e9099b68899929a01a76807d5f06106dce512de596079498017ace4",
+        "curve": [
+          {
+            "step": 0,
+            "loss": 10.825838088989258,
+            "train_seconds": 0.0
+          },
+          {
+            "step": 8,
+            "loss": 7.745204225182533,
+            "train_seconds": 6.711886354023591
+          },
+          {
+            "step": 16,
+            "loss": 7.401975065469742,
+            "train_seconds": 13.4806766489055
+          },
+          {
+            "step": 24,
+            "loss": 7.266669973731041,
+            "train_seconds": 20.219821305712685
+          }
+        ]
+      },
+      "ordinary": {
+        "seed": 42,
+        "arm": "ordinary",
+        "init_sha256": "874fdd0a3e9099b68899929a01a76807d5f06106dce512de596079498017ace4",
+        "curve": [
+          {
+            "step": 0,
+            "loss": 10.825838088989258,
+            "train_seconds": 0.0
+          },
+          {
+            "step": 8,
+            "loss": 7.628876209259033,
+            "train_seconds": 8.969870632048696
+          },
+          {
+            "step": 16,
+            "loss": 7.294475421309471,
+            "train_seconds": 17.853503288235515
+          },
+          {
+            "step": 24,
+            "loss": 7.202696859836578,
+            "train_seconds": 27.025972950155847
+          }
+        ]
+      },
+      "gold": {
+        "seed": 42,
+        "arm": "gold",
+        "init_sha256": "874fdd0a3e9099b68899929a01a76807d5f06106dce512de596079498017ace4",
+        "curve": [
+          {
+            "step": 0,
+            "loss": 10.825838088989258,
+            "train_seconds": 0.0
+          },
+          {
+            "step": 8,
+            "loss": 7.634568005800247,
+            "train_seconds": 21.207447348861024
+          },
+          {
+            "step": 16,
+            "loss": 7.299960255622864,
+            "train_seconds": 42.210553856915794
+          },
+          {
+            "step": 24,
+            "loss": 7.210892409086227,
+            "train_seconds": 62.785043918993324
+          }
+        ]
+      },
+      "shuffled": {
+        "seed": 42,
+        "arm": "shuffled",
+        "init_sha256": "874fdd0a3e9099b68899929a01a76807d5f06106dce512de596079498017ace4",
+        "curve": [
+          {
+            "step": 0,
+            "loss": 10.825838088989258,
+            "train_seconds": 0.0
+          },
+          {
+            "step": 8,
+            "loss": 7.63468211889267,
+            "train_seconds": 20.51141601020936
+          },
+          {
+            "step": 16,
+            "loss": 7.300483465194702,
+            "train_seconds": 41.11484023812227
+          },
+          {
+            "step": 24,
+            "loss": 7.2103118896484375,
+            "train_seconds": 61.175508793327026
+          }
+        ]
+      }
+    }
+  }
+}

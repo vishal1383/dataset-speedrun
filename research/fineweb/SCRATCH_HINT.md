@@ -22,3 +22,12 @@ Run inside the pinned PyTorch container with the repository's FineWeb training a
 ```bash
 python -m torch.distributed.run --standalone --nproc-per-node=1 research/fineweb/scratch_hint.py runs/new-scratch-hint
 ```
+
+## Observed step-24 development loss
+
+| Seed | Hard labels | Ordinary | Correct hint | Shuffled hint |
+|---:|---:|---:|---:|---:|
+| 17 | 7.26967 | 7.20684 | 7.21787 | 7.21803 |
+| 42 | 7.26667 | 7.20270 | 7.21089 | 7.21031 |
+
+The correct hint did not pass the specified two-seed comparison. [Complete curves and measured costs](results/scratch-hint/results.json).
