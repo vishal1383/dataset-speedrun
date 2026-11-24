@@ -76,7 +76,7 @@ The selection recipe was fixed before either compression arm produced validation
 Baseline progress was already visible. This experiment is a pilot, not a prospectively sealed record attempt.
 
 The original FineWeb-Edu comparison was superseded at the user's explicit request.
-The running baseline continues with its original generated trainer and launcher.
+The baseline completed with its original generated trainer and launcher.
 An explicit source amendment makes the old controller reject its pending Edu run at the next frozen-source check.
 The new controller verifies that handoff before it submits another GPU process.
 
@@ -89,7 +89,8 @@ Execution order is:
 5. Train the latent arm for 3,250 updates.
 6. Save both baseline differences and the latent-minus-text difference.
 
-The controller uses only `spark-a5a1`. It refuses duplicate submission and stops on failed checks.
+This completed pilot used only `spark-a5a1`. Its controller refused duplicate submission and stopped on failed checks.
+Subsequent scheduling prefers two-host DDP, subject to the protected inference service on the second Spark.
 The original queue's expected source-check failure records cancellation of its pending Edu arm; it does not indicate baseline failure.
 The new queue writes its status and results under `runs/fineweb-compression-v1/comparison/`.
 
@@ -113,9 +114,21 @@ No compression-arm validation result existed when this experiment was launched.
 
 The baseline completed 3,250 updates at **3.27822** validation loss, passing the 3.28 target.
 Both compression arms passed GPU smoke tests with identical initial parameter hashes.
-The full text run remains in progress; the full latent run follows it.
-The [interim record](results/compression/interim.json) contains timestamped matched-step comparisons, not a final compression result.
-The [baseline record](results/compression/baseline-result.json) contains its complete curve and input hashes.
+Both full compression runs completed successfully. Neither improved final loss or reached the 3.28 target.
+
+| Arm | Final validation loss | Difference from baseline | Total run time |
+|---|---:|---:|---:|
+| Baseline | 3.27822 | — | 11.92 h |
+| Text compression | 3.28360 | +0.00538 | 11.76 h |
+| Text plus latent targets | 3.28474 | +0.00652 | 14.73 h |
+
+The text arm improved intermediate loss through step 2,750, then regressed relative to baseline by step 2,875.
+The latent arm ended 0.00114 above the text arm. These observations come from one paired seed.
+The timing difference for text does not establish a speedup because final quality differs.
+The [complete comparison](results/compression/comparison.json) contains matched-step differences.
+The [text record](results/compression/text-result.json), [latent record](results/compression/latent-result.json), and
+[baseline record](results/compression/baseline-result.json) contain complete curves and input hashes.
+The [interim record](results/compression/interim.json) remains a historical observation.
 
 The [replication plan](replication-plan.json) was frozen while the text pilot was still running.
 The [replication controller](replicate.py) waits for both pilot arms to finish before it selects a candidate.
@@ -125,6 +138,8 @@ The additional budget is at most two full runs, each with 3,250 updates on the s
 The controller verifies identical initialization within seed 42 and different initialization from seed 17.
 It reports failures and regressions without changing the selected recipe.
 If neither pilot arm improves, it records that outcome and submits no replication of an unsupported winner.
+That condition occurred: the [replication status](results/compression/replication-status.json) records `no_pilot_improvement`.
+No seed-42 training run was submitted.
 
 This follow-up tests initialization dependence on the same validation text.
 It does not provide a fresh held-out corpus or establish a statistically confirmed record from two seeds.

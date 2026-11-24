@@ -1,0 +1,411 @@
+{
+  "baseline_loss": 3.27822,
+  "arms": [
+    {
+      "arm": "text",
+      "final_loss": 3.2836,
+      "final_delta": 0.005379999999999718,
+      "below_3_28": false,
+      "beats_baseline": false,
+      "curve": [
+        {
+          "step": 0,
+          "loss": 10.82583,
+          "delta_from_baseline": 0.0
+        },
+        {
+          "step": 125,
+          "loss": 4.59485,
+          "delta_from_baseline": 0.008910000000000196
+        },
+        {
+          "step": 250,
+          "loss": 4.0977,
+          "delta_from_baseline": -0.0021300000000001873
+        },
+        {
+          "step": 375,
+          "loss": 3.92354,
+          "delta_from_baseline": -0.0033199999999999896
+        },
+        {
+          "step": 500,
+          "loss": 3.82316,
+          "delta_from_baseline": -0.0030799999999997496
+        },
+        {
+          "step": 625,
+          "loss": 3.76248,
+          "delta_from_baseline": -0.0005299999999999194
+        },
+        {
+          "step": 750,
+          "loss": 3.71107,
+          "delta_from_baseline": -0.010099999999999998
+        },
+        {
+          "step": 875,
+          "loss": 3.676,
+          "delta_from_baseline": -0.00719000000000003
+        },
+        {
+          "step": 1000,
+          "loss": 3.64465,
+          "delta_from_baseline": -0.008589999999999876
+        },
+        {
+          "step": 1125,
+          "loss": 3.6114,
+          "delta_from_baseline": -0.012109999999999843
+        },
+        {
+          "step": 1250,
+          "loss": 3.57997,
+          "delta_from_baseline": -0.013500000000000068
+        },
+        {
+          "step": 1375,
+          "loss": 3.55504,
+          "delta_from_baseline": -0.012420000000000098
+        },
+        {
+          "step": 1500,
+          "loss": 3.53197,
+          "delta_from_baseline": -0.004100000000000215
+        },
+        {
+          "step": 1625,
+          "loss": 3.50893,
+          "delta_from_baseline": -0.010650000000000048
+        },
+        {
+          "step": 1750,
+          "loss": 3.48716,
+          "delta_from_baseline": -0.008140000000000036
+        },
+        {
+          "step": 1875,
+          "loss": 3.46787,
+          "delta_from_baseline": -0.007140000000000146
+        },
+        {
+          "step": 2000,
+          "loss": 3.44954,
+          "delta_from_baseline": -0.00541999999999998
+        },
+        {
+          "step": 2125,
+          "loss": 3.4288,
+          "delta_from_baseline": -0.007160000000000277
+        },
+        {
+          "step": 2250,
+          "loss": 3.40975,
+          "delta_from_baseline": -0.007140000000000146
+        },
+        {
+          "step": 2375,
+          "loss": 3.39203,
+          "delta_from_baseline": -0.007169999999999899
+        },
+        {
+          "step": 2500,
+          "loss": 3.37312,
+          "delta_from_baseline": -0.006889999999999841
+        },
+        {
+          "step": 2625,
+          "loss": 3.35459,
+          "delta_from_baseline": -0.005770000000000053
+        },
+        {
+          "step": 2750,
+          "loss": 3.33703,
+          "delta_from_baseline": -0.0045199999999998575
+        },
+        {
+          "step": 2875,
+          "loss": 3.32371,
+          "delta_from_baseline": 0.0010500000000002174
+        },
+        {
+          "step": 2925,
+          "loss": 3.31854,
+          "delta_from_baseline": 0.0036599999999999966
+        },
+        {
+          "step": 2950,
+          "loss": 3.31586,
+          "delta_from_baseline": 0.0045799999999998064
+        },
+        {
+          "step": 2975,
+          "loss": 3.31469,
+          "delta_from_baseline": 0.006960000000000299
+        },
+        {
+          "step": 3000,
+          "loss": 3.31189,
+          "delta_from_baseline": 0.007439999999999891
+        },
+        {
+          "step": 3025,
+          "loss": 3.30989,
+          "delta_from_baseline": 0.009650000000000158
+        },
+        {
+          "step": 3050,
+          "loss": 3.30351,
+          "delta_from_baseline": 0.006569999999999965
+        },
+        {
+          "step": 3075,
+          "loss": 3.29876,
+          "delta_from_baseline": 0.005050000000000221
+        },
+        {
+          "step": 3100,
+          "loss": 3.29477,
+          "delta_from_baseline": 0.004170000000000229
+        },
+        {
+          "step": 3125,
+          "loss": 3.29162,
+          "delta_from_baseline": 0.003890000000000171
+        },
+        {
+          "step": 3150,
+          "loss": 3.28865,
+          "delta_from_baseline": 0.003730000000000011
+        },
+        {
+          "step": 3175,
+          "loss": 3.28609,
+          "delta_from_baseline": 0.003570000000000295
+        },
+        {
+          "step": 3200,
+          "loss": 3.28399,
+          "delta_from_baseline": 0.003490000000000215
+        },
+        {
+          "step": 3225,
+          "loss": 3.28238,
+          "delta_from_baseline": 0.003509999999999902
+        },
+        {
+          "step": 3250,
+          "loss": 3.2836,
+          "delta_from_baseline": 0.005379999999999718
+        }
+      ]
+    },
+    {
+      "arm": "latent",
+      "final_loss": 3.28474,
+      "final_delta": 0.006520000000000081,
+      "below_3_28": false,
+      "beats_baseline": false,
+      "curve": [
+        {
+          "step": 0,
+          "loss": 10.82583,
+          "delta_from_baseline": 0.0
+        },
+        {
+          "step": 125,
+          "loss": 4.59027,
+          "delta_from_baseline": 0.004330000000000389
+        },
+        {
+          "step": 250,
+          "loss": 4.10528,
+          "delta_from_baseline": 0.005449999999999733
+        },
+        {
+          "step": 375,
+          "loss": 3.93299,
+          "delta_from_baseline": 0.006130000000000191
+        },
+        {
+          "step": 500,
+          "loss": 3.83316,
+          "delta_from_baseline": 0.006920000000000037
+        },
+        {
+          "step": 625,
+          "loss": 3.76577,
+          "delta_from_baseline": 0.0027599999999998737
+        },
+        {
+          "step": 750,
+          "loss": 3.71915,
+          "delta_from_baseline": -0.0020199999999999108
+        },
+        {
+          "step": 875,
+          "loss": 3.67994,
+          "delta_from_baseline": -0.003249999999999975
+        },
+        {
+          "step": 1000,
+          "loss": 3.65442,
+          "delta_from_baseline": 0.001180000000000181
+        },
+        {
+          "step": 1125,
+          "loss": 3.61802,
+          "delta_from_baseline": -0.005489999999999995
+        },
+        {
+          "step": 1250,
+          "loss": 3.58635,
+          "delta_from_baseline": -0.007120000000000015
+        },
+        {
+          "step": 1375,
+          "loss": 3.56209,
+          "delta_from_baseline": -0.005370000000000097
+        },
+        {
+          "step": 1500,
+          "loss": 3.5352,
+          "delta_from_baseline": -0.0008699999999999264
+        },
+        {
+          "step": 1625,
+          "loss": 3.5132,
+          "delta_from_baseline": -0.006380000000000052
+        },
+        {
+          "step": 1750,
+          "loss": 3.49143,
+          "delta_from_baseline": -0.00387000000000004
+        },
+        {
+          "step": 1875,
+          "loss": 3.47197,
+          "delta_from_baseline": -0.0030400000000003757
+        },
+        {
+          "step": 2000,
+          "loss": 3.45307,
+          "delta_from_baseline": -0.0018899999999999473
+        },
+        {
+          "step": 2125,
+          "loss": 3.43384,
+          "delta_from_baseline": -0.002120000000000122
+        },
+        {
+          "step": 2250,
+          "loss": 3.41289,
+          "delta_from_baseline": -0.0040000000000000036
+        },
+        {
+          "step": 2375,
+          "loss": 3.39482,
+          "delta_from_baseline": -0.0043799999999998285
+        },
+        {
+          "step": 2500,
+          "loss": 3.37574,
+          "delta_from_baseline": -0.004269999999999996
+        },
+        {
+          "step": 2625,
+          "loss": 3.35691,
+          "delta_from_baseline": -0.003449999999999953
+        },
+        {
+          "step": 2750,
+          "loss": 3.33865,
+          "delta_from_baseline": -0.0028999999999999027
+        },
+        {
+          "step": 2875,
+          "loss": 3.3254,
+          "delta_from_baseline": 0.0027400000000001867
+        },
+        {
+          "step": 2925,
+          "loss": 3.31975,
+          "delta_from_baseline": 0.00486999999999993
+        },
+        {
+          "step": 2950,
+          "loss": 3.31736,
+          "delta_from_baseline": 0.006079999999999863
+        },
+        {
+          "step": 2975,
+          "loss": 3.31578,
+          "delta_from_baseline": 0.008050000000000335
+        },
+        {
+          "step": 3000,
+          "loss": 3.31337,
+          "delta_from_baseline": 0.008919999999999817
+        },
+        {
+          "step": 3025,
+          "loss": 3.31124,
+          "delta_from_baseline": 0.01100000000000012
+        },
+        {
+          "step": 3050,
+          "loss": 3.30474,
+          "delta_from_baseline": 0.007799999999999585
+        },
+        {
+          "step": 3075,
+          "loss": 3.29982,
+          "delta_from_baseline": 0.00611000000000006
+        },
+        {
+          "step": 3100,
+          "loss": 3.29595,
+          "delta_from_baseline": 0.005349999999999966
+        },
+        {
+          "step": 3125,
+          "loss": 3.29278,
+          "delta_from_baseline": 0.005050000000000221
+        },
+        {
+          "step": 3150,
+          "loss": 3.28989,
+          "delta_from_baseline": 0.004970000000000141
+        },
+        {
+          "step": 3175,
+          "loss": 3.28722,
+          "delta_from_baseline": 0.0047000000000001485
+        },
+        {
+          "step": 3200,
+          "loss": 3.28512,
+          "delta_from_baseline": 0.0046200000000000685
+        },
+        {
+          "step": 3225,
+          "loss": 3.28347,
+          "delta_from_baseline": 0.0045999999999999375
+        },
+        {
+          "step": 3250,
+          "loss": 3.28474,
+          "delta_from_baseline": 0.006520000000000081
+        }
+      ]
+    }
+  ],
+  "latent_minus_text": 0.001140000000000363,
+  "interpretation": "One paired seed. Fixed updates and validation; latent training objective differs. No confirmed record or end-to-end speed claim.",
+  "artifacts": {
+    "text_artifact_bytes": 3000009321,
+    "latent_arm_artifact_bytes": 3006301781,
+    "construction_seconds": 36.25693403900368
+  },
+  "plan_sha256": "a782d747280a8d1aa8572af7398ec5098d03a7a92a3c92e778d108b9fd8e6b99"
+}

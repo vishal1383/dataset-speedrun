@@ -1,0 +1,414 @@
+{
+  "status": "complete",
+  "record_eligible": false,
+  "plan": {
+    "output": "/workspace/runs/signal-screen20261123-v5",
+    "steps": 64,
+    "warmup": 64,
+    "batch": 64,
+    "microbatch": 16,
+    "dev_tokens": 262144,
+    "arms": [
+      "fresh",
+      "replay4",
+      "cache2",
+      "cache4",
+      "extrapolate2",
+      "teacher_top8"
+    ],
+    "eager": false,
+    "track": "development_signal_screen",
+    "record_eligible": false,
+    "seed": 17,
+    "architecture": {
+      "vocab_size": 50304,
+      "num_layers": 12,
+      "model_dim": 768
+    },
+    "source_sha256": "49ce8c9d2afd70e0ec7ee109a6087fd999fc9d3f4c0e85d7834c9fa1b8a17962",
+    "upstream_sha256": "d39470e5b0535baf9c6caf7dbcd15efa79d8eacc9badf6e7c45b536e8537deec",
+    "train_sha256": "771fa4a99b9fe0946ffb6e848b4ba5c6a9b0fe87860ebf03bc2c1c7e45f8178e",
+    "validation_sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640",
+    "teacher_checkpoint_sha256": "c7afc4406240b818a34780f6e2c9527963e8df57f330901874a187ff004ec242",
+    "teacher_training_seconds": 42917.52989718999,
+    "initial_state_sha256": "f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d",
+    "loss_scale": 8.0,
+    "schedule": "constant original plateau LR; all steps below cooldown",
+    "changes": "Reduced statistical batch; sum loss rescaled to original batch magnitude. Cached gradients change the training signal.",
+    "selection_split": "first 262144 canonical validation tokens; development only",
+    "confirmation": "fresh data order; same shared initialization, not a fresh model seed",
+    "ddp_exception": "Second Spark retains protected 100GiB service; 14GiB available versus prior 35GiB training allocation",
+    "torch_version": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "gpu": "NVIDIA GB10"
+  },
+  "initial_dev_loss": 5.979402840137482,
+  "selection": "teacher_top8",
+  "results": [
+    {
+      "arm": "fresh",
+      "data_order": 0,
+      "shared_checkpoint_sha256": "a667fda1f02ee109d6b11714b7fcaf675aa8219ffccf64b02fce74505303efca",
+      "curve": [
+        {
+          "step": 0,
+          "loss": 5.979402840137482,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 16,
+          "loss": 5.796755015850067,
+          "train_seconds": 34.76650268235244
+        },
+        {
+          "step": 32,
+          "loss": 5.653891384601593,
+          "train_seconds": 69.79654676117934
+        },
+        {
+          "step": 48,
+          "loss": 5.54622608423233,
+          "train_seconds": 105.12945634417702
+        },
+        {
+          "step": 64,
+          "loss": 5.442153185606003,
+          "train_seconds": 140.9065546641359
+        }
+      ],
+      "construction": {},
+      "source_start_token": 4194304,
+      "backward_calls": 64,
+      "cached_gradient_bytes": 0,
+      "status": "complete",
+      "final_loss": 5.442153185606003,
+      "train_seconds": 140.9065546641359,
+      "peak_allocated_bytes": 16303556096,
+      "student_tokens": 4194304,
+      "microbatch_backward_calls": 256,
+      "unique_source_tokens": 4194304,
+      "total_seconds_excluding_teacher_training": 140.9065546641359
+    },
+    {
+      "arm": "replay4",
+      "data_order": 0,
+      "shared_checkpoint_sha256": "a667fda1f02ee109d6b11714b7fcaf675aa8219ffccf64b02fce74505303efca",
+      "curve": [
+        {
+          "step": 0,
+          "loss": 5.979402840137482,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 16,
+          "loss": 6.408793866634369,
+          "train_seconds": 35.71150336123537
+        },
+        {
+          "step": 32,
+          "loss": 6.490000635385513,
+          "train_seconds": 71.06676283071283
+        },
+        {
+          "step": 48,
+          "loss": 6.519146174192429,
+          "train_seconds": 106.09412064950448
+        },
+        {
+          "step": 64,
+          "loss": 6.608758598566055,
+          "train_seconds": 141.57732079655398
+        }
+      ],
+      "construction": {},
+      "source_start_token": 4194304,
+      "backward_calls": 64,
+      "cached_gradient_bytes": 0,
+      "status": "complete",
+      "final_loss": 6.608758598566055,
+      "train_seconds": 141.57732079655398,
+      "peak_allocated_bytes": 16303556096,
+      "student_tokens": 4194304,
+      "microbatch_backward_calls": 256,
+      "unique_source_tokens": 1048576,
+      "total_seconds_excluding_teacher_training": 141.57732079655398
+    },
+    {
+      "arm": "cache2",
+      "data_order": 0,
+      "shared_checkpoint_sha256": "a667fda1f02ee109d6b11714b7fcaf675aa8219ffccf64b02fce74505303efca",
+      "curve": [
+        {
+          "step": 0,
+          "loss": 5.979402840137482,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 16,
+          "loss": 6.136215299367905,
+          "train_seconds": 19.241074726218358
+        },
+        {
+          "step": 32,
+          "loss": 6.03296223282814,
+          "train_seconds": 38.56547900813166
+        },
+        {
+          "step": 48,
+          "loss": 5.921652764081955,
+          "train_seconds": 57.92797783133574
+        },
+        {
+          "step": 64,
+          "loss": 5.817542254924774,
+          "train_seconds": 77.12541328545194
+        }
+      ],
+      "construction": {},
+      "source_start_token": 4194304,
+      "backward_calls": 32,
+      "cached_gradient_bytes": 572152320,
+      "status": "complete",
+      "final_loss": 5.817542254924774,
+      "train_seconds": 77.12541328545194,
+      "peak_allocated_bytes": 16872759296,
+      "student_tokens": 2097152,
+      "microbatch_backward_calls": 128,
+      "unique_source_tokens": 2097152,
+      "total_seconds_excluding_teacher_training": 77.12541328545194
+    },
+    {
+      "arm": "cache4",
+      "data_order": 0,
+      "shared_checkpoint_sha256": "a667fda1f02ee109d6b11714b7fcaf675aa8219ffccf64b02fce74505303efca",
+      "curve": [
+        {
+          "step": 0,
+          "loss": 5.979402840137482,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 16,
+          "loss": 7.318522244691849,
+          "train_seconds": 11.089230202836916
+        },
+        {
+          "step": 32,
+          "loss": 6.7256834506988525,
+          "train_seconds": 22.12047293584328
+        },
+        {
+          "step": 48,
+          "loss": 6.4627193212509155,
+          "train_seconds": 33.30516071990132
+        },
+        {
+          "step": 64,
+          "loss": 6.404435485601425,
+          "train_seconds": 43.8415166111663
+        }
+      ],
+      "construction": {},
+      "source_start_token": 4194304,
+      "backward_calls": 16,
+      "cached_gradient_bytes": 572152320,
+      "status": "complete",
+      "final_loss": 6.404435485601425,
+      "train_seconds": 43.8415166111663,
+      "peak_allocated_bytes": 16872759296,
+      "student_tokens": 1048576,
+      "microbatch_backward_calls": 64,
+      "unique_source_tokens": 1048576,
+      "total_seconds_excluding_teacher_training": 43.8415166111663
+    },
+    {
+      "arm": "extrapolate2",
+      "data_order": 0,
+      "shared_checkpoint_sha256": "a667fda1f02ee109d6b11714b7fcaf675aa8219ffccf64b02fce74505303efca",
+      "curve": [
+        {
+          "step": 0,
+          "loss": 5.979402840137482,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 16,
+          "loss": 6.103019833564758,
+          "train_seconds": 18.37425915291533
+        },
+        {
+          "step": 32,
+          "loss": 5.977331727743149,
+          "train_seconds": 36.83335497765802
+        },
+        {
+          "step": 48,
+          "loss": 5.870242327451706,
+          "train_seconds": 55.46698807668872
+        },
+        {
+          "step": 64,
+          "loss": 5.770528316497803,
+          "train_seconds": 74.28115957498085
+        }
+      ],
+      "construction": {},
+      "source_start_token": 4194304,
+      "backward_calls": 32,
+      "cached_gradient_bytes": 1144304640,
+      "status": "complete",
+      "final_loss": 5.770528316497803,
+      "train_seconds": 74.28115957498085,
+      "peak_allocated_bytes": 17438161408,
+      "student_tokens": 2097152,
+      "microbatch_backward_calls": 128,
+      "unique_source_tokens": 2097152,
+      "total_seconds_excluding_teacher_training": 74.28115957498085
+    },
+    {
+      "arm": "teacher_top8",
+      "data_order": 0,
+      "shared_checkpoint_sha256": "a667fda1f02ee109d6b11714b7fcaf675aa8219ffccf64b02fce74505303efca",
+      "curve": [
+        {
+          "step": 0,
+          "loss": 5.979402840137482,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 16,
+          "loss": 5.7581507563591,
+          "train_seconds": 34.60118526115548
+        },
+        {
+          "step": 32,
+          "loss": 5.592125207185745,
+          "train_seconds": 68.75831212231424
+        },
+        {
+          "step": 48,
+          "loss": 5.483832806348801,
+          "train_seconds": 102.69707962952089
+        },
+        {
+          "step": 64,
+          "loss": 5.361376017332077,
+          "train_seconds": 136.6980612872867
+        }
+      ],
+      "construction": {
+        "construction_seconds": 162.7510196119547,
+        "artifact_bytes": 201363497,
+        "teacher_training_seconds_excluded_from_construction": 42917.52989718999
+      },
+      "source_start_token": 4194304,
+      "backward_calls": 64,
+      "cached_gradient_bytes": 0,
+      "status": "complete",
+      "final_loss": 5.361376017332077,
+      "train_seconds": 136.6980612872867,
+      "peak_allocated_bytes": 16307029504,
+      "student_tokens": 4194304,
+      "microbatch_backward_calls": 256,
+      "unique_source_tokens": 4194304,
+      "total_seconds_excluding_teacher_training": 299.4490808992414
+    },
+    {
+      "arm": "fresh",
+      "data_order": 1,
+      "shared_checkpoint_sha256": "a667fda1f02ee109d6b11714b7fcaf675aa8219ffccf64b02fce74505303efca",
+      "curve": [
+        {
+          "step": 0,
+          "loss": 5.979402840137482,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 16,
+          "loss": 5.784412324428558,
+          "train_seconds": 34.4136507823132
+        },
+        {
+          "step": 32,
+          "loss": 5.644325017929077,
+          "train_seconds": 69.87852822709829
+        },
+        {
+          "step": 48,
+          "loss": 5.532949388027191,
+          "train_seconds": 106.38315804908052
+        },
+        {
+          "step": 64,
+          "loss": 5.428926765918732,
+          "train_seconds": 140.73016561497934
+        }
+      ],
+      "construction": {},
+      "source_start_token": 12582912,
+      "backward_calls": 64,
+      "cached_gradient_bytes": 0,
+      "status": "complete",
+      "final_loss": 5.428926765918732,
+      "train_seconds": 140.73016561497934,
+      "peak_allocated_bytes": 16305194496,
+      "student_tokens": 4194304,
+      "microbatch_backward_calls": 256,
+      "unique_source_tokens": 4194304,
+      "total_seconds_excluding_teacher_training": 140.73016561497934
+    },
+    {
+      "arm": "teacher_top8",
+      "data_order": 1,
+      "shared_checkpoint_sha256": "a667fda1f02ee109d6b11714b7fcaf675aa8219ffccf64b02fce74505303efca",
+      "curve": [
+        {
+          "step": 0,
+          "loss": 5.979402840137482,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 16,
+          "loss": 5.747547745704651,
+          "train_seconds": 33.94986026303377
+        },
+        {
+          "step": 32,
+          "loss": 5.5894240736961365,
+          "train_seconds": 67.31310509121977
+        },
+        {
+          "step": 48,
+          "loss": 5.457788497209549,
+          "train_seconds": 101.33098581526428
+        },
+        {
+          "step": 64,
+          "loss": 5.351896107196808,
+          "train_seconds": 137.43328994617332
+        }
+      ],
+      "construction": {
+        "construction_seconds": 176.12610045494512,
+        "artifact_bytes": 201363497,
+        "teacher_training_seconds_excluded_from_construction": 42917.52989718999
+      },
+      "source_start_token": 12582912,
+      "backward_calls": 64,
+      "cached_gradient_bytes": 0,
+      "status": "complete",
+      "final_loss": 5.351896107196808,
+      "train_seconds": 137.43328994617332,
+      "peak_allocated_bytes": 16309323264,
+      "student_tokens": 4194304,
+      "microbatch_backward_calls": 256,
+      "unique_source_tokens": 4194304,
+      "total_seconds_excluding_teacher_training": 313.55939040111843
+    }
+  ],
+  "limitations": [
+    "Reduced-batch short-horizon development screen",
+    "One shared initialization",
+    "Teacher training cost must be included in any end-to-end speed claim",
+    "Cached gradients are a separate training-signal intervention"
+  ]
+}

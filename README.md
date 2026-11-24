@@ -14,7 +14,12 @@ A new [FineWeb data track](research/fineweb/README.md) freezes the upstream modd
 It now compares original FineWeb, a 25% smaller text coreset with a curriculum, and that coreset plus compressed latent supervision.
 All arms use the same 162.35M-parameter model, optimizer, 3,250 updates, and canonical FineWeb evaluation.
 The latent arm changes training targets; the text arm preserves the original objective.
-Read the [methods and frozen execution plan](research/fineweb/COMPRESSION.md). No FineWeb improvement is claimed yet.
+The completed pilot reached 3.27822 loss for the baseline, 3.28360 for text compression, and 3.28474 for latent supervision.
+Neither compression arm improved final loss. Read the [methods and complete evidence](research/fineweb/COMPRESSION.md).
+
+A separate [64-update development screen](research/fineweb/SIGNAL_SCREEN.md) tested gradient reuse, extrapolation, and full-context teacher targets.
+Teacher targets improved early loss on two training windows, but target construction prevented an end-to-end speed claim.
+Raw-gradient reuse and four-batch gradient averaging failed in this screen.
 
 ## Enter the dataset compression challenge
 

@@ -1,0 +1,140 @@
+{
+  "status": "complete",
+  "record_eligible": false,
+  "plan": {
+    "output": "/workspace/runs/signal-oracle20261123-v2",
+    "steps": 64,
+    "warmup": 64,
+    "batch": 64,
+    "microbatch": 16,
+    "dev_tokens": 262144,
+    "arms": [
+      "fresh",
+      "cache4_large"
+    ],
+    "shared_checkpoint": "runs/signal-screen20261123-v5/shared.pt",
+    "gradient_diagnostic": true,
+    "eager": false,
+    "track": "development_signal_screen",
+    "record_eligible": false,
+    "seed": 17,
+    "architecture": {
+      "vocab_size": 50304,
+      "num_layers": 12,
+      "model_dim": 768
+    },
+    "source_sha256": "043c7aac319d0b40680f89a8e0d0274456eb32bb7edc7fce2f620e1611c7c443",
+    "upstream_sha256": "d39470e5b0535baf9c6caf7dbcd15efa79d8eacc9badf6e7c45b536e8537deec",
+    "train_sha256": "771fa4a99b9fe0946ffb6e848b4ba5c6a9b0fe87860ebf03bc2c1c7e45f8178e",
+    "validation_sha256": "5b95c8e0966f0861685b307b23dc5ae42b228ef74b28cb499784ae021f201640",
+    "teacher_checkpoint_sha256": "c7afc4406240b818a34780f6e2c9527963e8df57f330901874a187ff004ec242",
+    "teacher_training_seconds": 42917.52989718999,
+    "initial_state_sha256": "f070301b2c172cf617984a3fffff10b02ce6767602d630138c469bfed96e102d",
+    "loss_scale": 8.0,
+    "schedule": "constant original plateau LR; all steps below cooldown",
+    "changes": "Reduced statistical batch; sum loss rescaled to original batch magnitude. Cached gradients change the training signal.",
+    "selection_split": "first 262144 canonical validation tokens; development only",
+    "confirmation": "fresh data order; same shared initialization, not a fresh model seed",
+    "ddp_exception": "Second Spark retains protected 100GiB service; 14GiB available versus prior 35GiB training allocation",
+    "torch_version": "2.11.0a0+a6c236b9fd.nv26.03.46836102",
+    "gpu": "NVIDIA GB10"
+  },
+  "initial_dev_loss": 5.979402840137482,
+  "selection": null,
+  "results": [
+    {
+      "arm": "fresh",
+      "data_order": 0,
+      "shared_checkpoint_sha256": "a667fda1f02ee109d6b11714b7fcaf675aa8219ffccf64b02fce74505303efca",
+      "curve": [
+        {
+          "step": 0,
+          "loss": 5.979402840137482,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 16,
+          "loss": 5.796878546476364,
+          "train_seconds": 33.68465599196497
+        },
+        {
+          "step": 32,
+          "loss": 5.654017597436905,
+          "train_seconds": 69.16831465216819
+        },
+        {
+          "step": 48,
+          "loss": 5.544610470533371,
+          "train_seconds": 104.74711137718987
+        },
+        {
+          "step": 64,
+          "loss": 5.439667075872421,
+          "train_seconds": 139.2437218404375
+        }
+      ],
+      "construction": {},
+      "source_start_token": 4194304,
+      "backward_calls": 64,
+      "cached_gradient_bytes": 0,
+      "status": "complete",
+      "final_loss": 5.439667075872421,
+      "train_seconds": 139.2437218404375,
+      "peak_allocated_bytes": 16666691072,
+      "student_tokens": 4194304,
+      "microbatch_backward_calls": 256,
+      "unique_source_tokens": 4194304,
+      "total_seconds_excluding_teacher_training": 139.2437218404375
+    },
+    {
+      "arm": "cache4_large",
+      "data_order": 0,
+      "shared_checkpoint_sha256": "a667fda1f02ee109d6b11714b7fcaf675aa8219ffccf64b02fce74505303efca",
+      "curve": [
+        {
+          "step": 0,
+          "loss": 5.979402840137482,
+          "train_seconds": 0.0
+        },
+        {
+          "step": 16,
+          "loss": 7.016148090362549,
+          "train_seconds": 33.53995006997138
+        },
+        {
+          "step": 32,
+          "loss": 6.474255234003067,
+          "train_seconds": 66.5600176716689
+        },
+        {
+          "step": 48,
+          "loss": 6.150207728147507,
+          "train_seconds": 100.33164534764364
+        },
+        {
+          "step": 64,
+          "loss": 6.059995412826538,
+          "train_seconds": 133.83474975894205
+        }
+      ],
+      "construction": {},
+      "source_start_token": 4194304,
+      "backward_calls": 64,
+      "cached_gradient_bytes": 572152320,
+      "status": "complete",
+      "final_loss": 6.059995412826538,
+      "train_seconds": 133.83474975894205,
+      "peak_allocated_bytes": 17242775552,
+      "student_tokens": 4194304,
+      "microbatch_backward_calls": 256,
+      "unique_source_tokens": 4194304,
+      "total_seconds_excluding_teacher_training": 133.83474975894205
+    }
+  ],
+  "limitations": [
+    "Reduced-batch short-horizon development screen",
+    "One shared initialization",
+    "Teacher training cost must be included in any end-to-end speed claim",
+    "Cached gradients are a separate training-signal intervention"
+  ]
+}

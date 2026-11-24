@@ -1,0 +1,6 @@
+{
+  "status": "usage_limit",
+  "requested_model": "claude-opus-5-5",
+  "interpretation": "No additional scientific review was received.",
+  "scientific_review_received": false
+}

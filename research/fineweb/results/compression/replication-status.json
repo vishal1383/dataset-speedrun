@@ -1,0 +1,10 @@
+{
+  "status": "no_pilot_improvement",
+  "pid": 1,
+  "started_unix": 1795230604.7294092,
+  "plan_sha256": "8fe3ff79bb0b1cada6c8fba85367613369ccc2247346422a0314344bf9e7c7de",
+  "active": null,
+  "completed": [],
+  "updated_unix": 1795299079.6960118,
+  "next_action": "Inspect text replay and latent-minus-text curves before changing the recipe. No unsupported winner was submitted."
+}

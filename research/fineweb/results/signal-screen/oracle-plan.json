@@ -1,0 +1,52 @@
+{
+  "status": "prepared_before_launch",
+  "arms": [
+    "fresh",
+    "cache4_large"
+  ],
+  "shared_checkpoint": "runs/signal-screen20261123-v5/shared.pt",
+  "shared_checkpoint_sha256": "a667fda1f02ee109d6b11714b7fcaf675aa8219ffccf64b02fce74505303efca",
+  "source_sha256": "043c7aac319d0b40680f89a8e0d0274456eb32bb7edc7fce2f620e1611c7c443",
+  "updates": 64,
+  "statistical_batch_sequences": 64,
+  "microbatch_sequences": 16,
+  "dev_tokens": 262144,
+  "reference_batches_per_refresh": 4,
+  "refresh_interval": 4,
+  "gradient_scaling": "mean of four gradients, each with the same original-batch loss scaling",
+  "total_real_backward_batches_each_arm": 64,
+  "total_optimizer_updates_each_arm": 64,
+  "source_window": "same 64 real batches, beginning after the shared warmup data",
+  "interpretation": "Richer-gradient reuse diagnostic. Construction is real and counted; no cheap synthetic batch or speedup assumed.",
+  "claude_followup": "Attempted; account usage limit returned no additional review.",
+  "confirmation_rule": "Repeat fresh and selected candidate on another data window only if candidate improves by at least 0.02.",
+  "gradient_diagnostic": {
+    "fixed_source_batches": 4,
+    "probe_ages": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "parameters": [
+      "blocks.0.attn.q.weight",
+      "blocks.5.mlp.fc.weight",
+      "blocks.11.mlp.proj.weight",
+      "proj.weight"
+    ],
+    "metrics": [
+      "raw gradient cosine",
+      "Muon update cosine including current momentum and weight decay"
+    ],
+    "cost": "Reported separately; restores shared state before candidate tests.",
+    "head_update": "Standard FP32 AdamW equations with current first/second moments and weight decay",
+    "head_formula_check": "Compare predicted head update with actual fused AdamW step; require relative error < 0.001."
+  },
+  "launch_history": [
+    {
+      "container": "dataset-signal-oracle20261123",
+      "exit_code": 1,
+      "stage": "Python parse error; no training ran"
+    }
+  ]
+}

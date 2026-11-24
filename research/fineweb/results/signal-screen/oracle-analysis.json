@@ -1,0 +1,60 @@
+{
+  "record_eligible": false,
+  "initial_dev_loss": 5.979402840137482,
+  "rows": [
+    {
+      "arm": "fresh",
+      "data_order": 0,
+      "status": "complete",
+      "final_loss": 5.439667075872421,
+      "delta_at_fixed_updates": 0.0,
+      "student_seconds": 139.2437218404375,
+      "construction_plus_student_seconds": 139.2437218404375,
+      "teacher_training_seconds_additional": 0,
+      "backward_batches": 64,
+      "unique_source_tokens": 4194304,
+      "payload_bytes": 0,
+      "baseline_point_at_or_before_candidate_cost": {
+        "step": 64,
+        "loss": 5.439667075872421,
+        "train_seconds": 139.2437218404375
+      },
+      "baseline_point_at_or_after_candidate_cost": {
+        "step": 64,
+        "loss": 5.439667075872421,
+        "train_seconds": 139.2437218404375
+      },
+      "interpretation": "Matched-update development comparison; observed baseline points bracket the cost comparison."
+    },
+    {
+      "arm": "cache4_large",
+      "data_order": 0,
+      "status": "complete",
+      "final_loss": 6.059995412826538,
+      "delta_at_fixed_updates": 0.6203283369541168,
+      "student_seconds": 133.83474975894205,
+      "construction_plus_student_seconds": 133.83474975894205,
+      "teacher_training_seconds_additional": 0,
+      "backward_batches": 64,
+      "unique_source_tokens": 4194304,
+      "payload_bytes": 572152320,
+      "baseline_point_at_or_before_candidate_cost": {
+        "step": 48,
+        "loss": 5.544610470533371,
+        "train_seconds": 104.74711137718987
+      },
+      "baseline_point_at_or_after_candidate_cost": {
+        "step": 64,
+        "loss": 5.439667075872421,
+        "train_seconds": 139.2437218404375
+      },
+      "interpretation": "Matched-update development comparison; observed baseline points bracket the cost comparison."
+    }
+  ],
+  "limitations": [
+    "Reduced-batch short-horizon development screen",
+    "One shared initialization",
+    "Teacher training cost must be included in any end-to-end speed claim",
+    "Cached gradients are a separate training-signal intervention"
+  ]
+}

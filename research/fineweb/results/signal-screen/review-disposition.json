@@ -1,0 +1,11 @@
+{
+  "initialization": "Preserved upstream zero initialization for all projection weights. Verified original parameter hash after matching RNG consumption.",
+  "forward": "Added sparse-target versus dense-target loss/gradient tests and full-model zero-strength checks.",
+  "reset": "Verified exact model and optimizer-state restoration after an update.",
+  "gradient_cache": "Verified independent cache storage because Muon mutates gradients.",
+  "checkpoint": "Strict load passed. Teacher training cost is read from its completed run record.",
+  "cost": "Target construction includes loading, generation, and serialization. Prior teacher training cost is separate.",
+  "failure_records": "Preserved setup history and runtime status records.",
+  "optimizer_changes": "Did not apply proposed LR retuning or AdamW counter/moment changes. All arms keep the original optimizer settings.",
+  "qualification": "Short reduced-batch development evidence only; no full-budget compression or speed record."
+}

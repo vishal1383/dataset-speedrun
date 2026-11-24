@@ -1,0 +1,192 @@
+{
+  "record_eligible": false,
+  "initial_dev_loss": 5.979402840137482,
+  "rows": [
+    {
+      "arm": "fresh",
+      "data_order": 0,
+      "status": "complete",
+      "final_loss": 5.442153185606003,
+      "delta_at_fixed_updates": 0.0,
+      "student_seconds": 140.9065546641359,
+      "construction_plus_student_seconds": 140.9065546641359,
+      "teacher_training_seconds_additional": 0,
+      "backward_batches": 64,
+      "unique_source_tokens": 4194304,
+      "payload_bytes": 0,
+      "baseline_point_at_or_before_candidate_cost": {
+        "step": 64,
+        "loss": 5.442153185606003,
+        "train_seconds": 140.9065546641359
+      },
+      "baseline_point_at_or_after_candidate_cost": {
+        "step": 64,
+        "loss": 5.442153185606003,
+        "train_seconds": 140.9065546641359
+      },
+      "interpretation": "Matched-update development comparison; observed baseline points bracket the cost comparison."
+    },
+    {
+      "arm": "replay4",
+      "data_order": 0,
+      "status": "complete",
+      "final_loss": 6.608758598566055,
+      "delta_at_fixed_updates": 1.1666054129600525,
+      "student_seconds": 141.57732079655398,
+      "construction_plus_student_seconds": 141.57732079655398,
+      "teacher_training_seconds_additional": 0,
+      "backward_batches": 64,
+      "unique_source_tokens": 1048576,
+      "payload_bytes": 0,
+      "baseline_point_at_or_before_candidate_cost": {
+        "step": 64,
+        "loss": 5.442153185606003,
+        "train_seconds": 140.9065546641359
+      },
+      "baseline_point_at_or_after_candidate_cost": null,
+      "interpretation": "Matched-update development comparison; observed baseline points bracket the cost comparison."
+    },
+    {
+      "arm": "cache2",
+      "data_order": 0,
+      "status": "complete",
+      "final_loss": 5.817542254924774,
+      "delta_at_fixed_updates": 0.37538906931877136,
+      "student_seconds": 77.12541328545194,
+      "construction_plus_student_seconds": 77.12541328545194,
+      "teacher_training_seconds_additional": 0,
+      "backward_batches": 32,
+      "unique_source_tokens": 2097152,
+      "payload_bytes": 572152320,
+      "baseline_point_at_or_before_candidate_cost": {
+        "step": 32,
+        "loss": 5.653891384601593,
+        "train_seconds": 69.79654676117934
+      },
+      "baseline_point_at_or_after_candidate_cost": {
+        "step": 48,
+        "loss": 5.54622608423233,
+        "train_seconds": 105.12945634417702
+      },
+      "interpretation": "Matched-update development comparison; observed baseline points bracket the cost comparison."
+    },
+    {
+      "arm": "cache4",
+      "data_order": 0,
+      "status": "complete",
+      "final_loss": 6.404435485601425,
+      "delta_at_fixed_updates": 0.9622822999954224,
+      "student_seconds": 43.8415166111663,
+      "construction_plus_student_seconds": 43.8415166111663,
+      "teacher_training_seconds_additional": 0,
+      "backward_batches": 16,
+      "unique_source_tokens": 1048576,
+      "payload_bytes": 572152320,
+      "baseline_point_at_or_before_candidate_cost": {
+        "step": 16,
+        "loss": 5.796755015850067,
+        "train_seconds": 34.76650268235244
+      },
+      "baseline_point_at_or_after_candidate_cost": {
+        "step": 32,
+        "loss": 5.653891384601593,
+        "train_seconds": 69.79654676117934
+      },
+      "interpretation": "Matched-update development comparison; observed baseline points bracket the cost comparison."
+    },
+    {
+      "arm": "extrapolate2",
+      "data_order": 0,
+      "status": "complete",
+      "final_loss": 5.770528316497803,
+      "delta_at_fixed_updates": 0.3283751308917999,
+      "student_seconds": 74.28115957498085,
+      "construction_plus_student_seconds": 74.28115957498085,
+      "teacher_training_seconds_additional": 0,
+      "backward_batches": 32,
+      "unique_source_tokens": 2097152,
+      "payload_bytes": 1144304640,
+      "baseline_point_at_or_before_candidate_cost": {
+        "step": 32,
+        "loss": 5.653891384601593,
+        "train_seconds": 69.79654676117934
+      },
+      "baseline_point_at_or_after_candidate_cost": {
+        "step": 48,
+        "loss": 5.54622608423233,
+        "train_seconds": 105.12945634417702
+      },
+      "interpretation": "Matched-update development comparison; observed baseline points bracket the cost comparison."
+    },
+    {
+      "arm": "teacher_top8",
+      "data_order": 0,
+      "status": "complete",
+      "final_loss": 5.361376017332077,
+      "delta_at_fixed_updates": -0.08077716827392578,
+      "student_seconds": 136.6980612872867,
+      "construction_plus_student_seconds": 299.4490808992414,
+      "teacher_training_seconds_additional": 42917.52989718999,
+      "backward_batches": 64,
+      "unique_source_tokens": 4194304,
+      "payload_bytes": 201363497,
+      "baseline_point_at_or_before_candidate_cost": {
+        "step": 64,
+        "loss": 5.442153185606003,
+        "train_seconds": 140.9065546641359
+      },
+      "baseline_point_at_or_after_candidate_cost": null,
+      "interpretation": "Matched-update development comparison; observed baseline points bracket the cost comparison."
+    },
+    {
+      "arm": "fresh",
+      "data_order": 1,
+      "status": "complete",
+      "final_loss": 5.428926765918732,
+      "delta_at_fixed_updates": 0.0,
+      "student_seconds": 140.73016561497934,
+      "construction_plus_student_seconds": 140.73016561497934,
+      "teacher_training_seconds_additional": 0,
+      "backward_batches": 64,
+      "unique_source_tokens": 4194304,
+      "payload_bytes": 0,
+      "baseline_point_at_or_before_candidate_cost": {
+        "step": 64,
+        "loss": 5.428926765918732,
+        "train_seconds": 140.73016561497934
+      },
+      "baseline_point_at_or_after_candidate_cost": {
+        "step": 64,
+        "loss": 5.428926765918732,
+        "train_seconds": 140.73016561497934
+      },
+      "interpretation": "Matched-update development comparison; observed baseline points bracket the cost comparison."
+    },
+    {
+      "arm": "teacher_top8",
+      "data_order": 1,
+      "status": "complete",
+      "final_loss": 5.351896107196808,
+      "delta_at_fixed_updates": -0.07703065872192383,
+      "student_seconds": 137.43328994617332,
+      "construction_plus_student_seconds": 313.55939040111843,
+      "teacher_training_seconds_additional": 42917.52989718999,
+      "backward_batches": 64,
+      "unique_source_tokens": 4194304,
+      "payload_bytes": 201363497,
+      "baseline_point_at_or_before_candidate_cost": {
+        "step": 64,
+        "loss": 5.428926765918732,
+        "train_seconds": 140.73016561497934
+      },
+      "baseline_point_at_or_after_candidate_cost": null,
+      "interpretation": "Matched-update development comparison; observed baseline points bracket the cost comparison."
+    }
+  ],
+  "limitations": [
+    "Reduced-batch short-horizon development screen",
+    "One shared initialization",
+    "Teacher training cost must be included in any end-to-end speed claim",
+    "Cached gradients are a separate training-signal intervention"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "source_batches": 4,
+  "gradient_evaluation_batches": 16,
+  "seconds": 32.28017511696089,
+  "observations": [
+    {
+      "cached_updates_since_refresh": 0,
+      "layers": [
+        {
+          "parameter": "blocks.0.attn.q.weight",
+          "gradient_cosine": 1.0,
+          "update_cosine_including_momentum_and_decay": 1.0000001192092896
+        },
+        {
+          "parameter": "blocks.5.mlp.fc.weight",
+          "gradient_cosine": 1.0000001192092896,
+          "update_cosine_including_momentum_and_decay": 0.9999999403953552
+        },
+        {
+          "parameter": "blocks.11.mlp.proj.weight",
+          "gradient_cosine": 1.0,
+          "update_cosine_including_momentum_and_decay": 0.9999999403953552
+        },
+        {
+          "parameter": "proj.weight",
+          "gradient_cosine": 0.9999998807907104,
+          "update_cosine_including_momentum_and_decay": 1.0000001192092896,
+          "optimizer": "AdamW",
+          "direction_calculation": "standard AdamW equations in FP32"
+        }
+      ]
+    },
+    {
+      "cached_updates_since_refresh": 1,
+      "layers": [
+        {
+          "parameter": "blocks.0.attn.q.weight",
+          "gradient_cosine": -0.3416022062301636,
+          "update_cosine_including_momentum_and_decay": 0.9244470000267029
+        },
+        {
+          "parameter": "blocks.5.mlp.fc.weight",
+          "gradient_cosine": -0.05429217964410782,
+          "update_cosine_including_momentum_and_decay": 0.932012677192688
+        },
+        {
+          "parameter": "blocks.11.mlp.proj.weight",
+          "gradient_cosine": 0.0894467681646347,
+          "update_cosine_including_momentum_and_decay": 0.9689893126487732
+        },
+        {
+          "parameter": "proj.weight",
+          "gradient_cosine": 0.24800704419612885,
+          "update_cosine_including_momentum_and_decay": 0.9899027943611145,
+          "optimizer": "AdamW",
+          "direction_calculation": "standard AdamW equations in FP32"
+        }
+      ]
+    },
+    {
+      "cached_updates_since_refresh": 2,
+      "layers": [
+        {
+          "parameter": "blocks.0.attn.q.weight",
+          "gradient_cosine": -0.7050718665122986,
+          "update_cosine_including_momentum_and_decay": 0.7828777432441711
+        },
+        {
+          "parameter": "blocks.5.mlp.fc.weight",
+          "gradient_cosine": -0.4473440945148468,
+          "update_cosine_including_momentum_and_decay": 0.8025122880935669
+        },
+        {
+          "parameter": "blocks.11.mlp.proj.weight",
+          "gradient_cosine": -0.3220829367637634,
+          "update_cosine_including_momentum_and_decay": 0.9088267683982849
+        },
+        {
+          "parameter": "proj.weight",
+          "gradient_cosine": -0.33824145793914795,
+          "update_cosine_including_momentum_and_decay": 0.9662087559700012,
+          "optimizer": "AdamW",
+          "direction_calculation": "standard AdamW equations in FP32"
+        }
+      ]
+    },
+    {
+      "cached_updates_since_refresh": 4,
+      "layers": [
+        {
+          "parameter": "blocks.0.attn.q.weight",
+          "gradient_cosine": -0.5187451243400574,
+          "update_cosine_including_momentum_and_decay": 0.6198874115943909
+        },
+        {
+          "parameter": "blocks.5.mlp.fc.weight",
+          "gradient_cosine": -0.20325016975402832,
+          "update_cosine_including_momentum_and_decay": 0.7042564153671265
+        },
+        {
+          "parameter": "blocks.11.mlp.proj.weight",
+          "gradient_cosine": -0.1992926299571991,
+          "update_cosine_including_momentum_and_decay": 0.8550657033920288
+        },
+        {
+          "parameter": "proj.weight",
+          "gradient_cosine": -0.18884646892547607,
+          "update_cosine_including_momentum_and_decay": 0.9015268683433533,
+          "optimizer": "AdamW",
+          "direction_calculation": "standard AdamW equations in FP32"
+        }
+      ]
+    }
+  ],
+  "adam_direction_relative_error_against_actual_fused_step": 1.2773155049217166e-06,
+  "interpretation": "Same four data batches at each probe. Differences measure model drift, not changing batch composition.",
+  "timing": "Separate diagnostic cost; excluded from candidate timing and reported here."
+}

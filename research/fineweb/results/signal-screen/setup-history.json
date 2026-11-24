@@ -1,0 +1,82 @@
+[
+  {
+    "container": "dataset-signal-screen-smoke20261123",
+    "reason": "Functional eager smoke; not used for quality claims",
+    "status": "exited",
+    "exit_code": 0,
+    "oom_killed": false,
+    "started_at_utc": "2026-11-24T04:35:18.271640557Z",
+    "finished_at_utc": "2026-11-24T04:36:10.531368673Z",
+    "used_for_quality_claims": false
+  },
+  {
+    "container": "dataset-signal-screen20261123",
+    "reason": "Stopped during setup to correct RNG initialization order",
+    "status": "exited",
+    "exit_code": 1,
+    "oom_killed": false,
+    "started_at_utc": "2026-11-24T04:36:59.64220978Z",
+    "finished_at_utc": "2026-11-24T04:37:58.112476638Z",
+    "used_for_quality_claims": false
+  },
+  {
+    "container": "dataset-signal-screen20261123-v2",
+    "reason": "Initialization hash check failed before training; zero-variance normal initialization was corrected",
+    "status": "exited",
+    "exit_code": 1,
+    "oom_killed": false,
+    "started_at_utc": "2026-11-24T04:38:22.184367987Z",
+    "finished_at_utc": "2026-11-24T04:38:31.165323535Z",
+    "used_for_quality_claims": false
+  },
+  {
+    "container": "dataset-signal-screen20261123-v3",
+    "reason": "Stopped during compiled setup because of memory pressure",
+    "status": "exited",
+    "exit_code": 1,
+    "oom_killed": false,
+    "started_at_utc": "2026-11-24T04:39:03.184971584Z",
+    "finished_at_utc": "2026-11-24T04:41:36.691775029Z",
+    "used_for_quality_claims": false
+  },
+  {
+    "container": "dataset-signal-screen20261123-v4",
+    "reason": "Eager warmup stopped before candidate comparisons to use validated smaller compiled microbatches",
+    "status": "exited",
+    "exit_code": 1,
+    "oom_killed": false,
+    "started_at_utc": "2026-11-24T04:41:42.919993874Z",
+    "finished_at_utc": "2026-11-24T04:45:15.53509009Z",
+    "used_for_quality_claims": false
+  },
+  {
+    "container": "dataset-signal-compile-smoke20261123",
+    "reason": "Gradient elementwise check rejected BF16 reduction variation; replaced with reported relative-norm check",
+    "status": "exited",
+    "exit_code": 1,
+    "oom_killed": false,
+    "started_at_utc": "2026-11-24T04:45:23.096880809Z",
+    "finished_at_utc": "2026-11-24T04:46:21.549233016Z",
+    "used_for_quality_claims": false
+  },
+  {
+    "container": "dataset-signal-compile-smoke20261123-v2",
+    "reason": "Compiled functional smoke passed",
+    "status": "exited",
+    "exit_code": 0,
+    "oom_killed": false,
+    "started_at_utc": "2026-11-24T04:47:20.769895484Z",
+    "finished_at_utc": "2026-11-24T04:47:45.673737444Z",
+    "used_for_quality_claims": false
+  },
+  {
+    "container": "dataset-signal-oracle20261123",
+    "reason": "Python parse error in diagnostic; no training ran",
+    "status": "exited",
+    "exit_code": 1,
+    "oom_killed": false,
+    "started_at_utc": "2026-11-24T05:13:31.986628789Z",
+    "finished_at_utc": "2026-11-24T05:13:34.200182505Z",
+    "used_for_quality_claims": false
+  }
+]

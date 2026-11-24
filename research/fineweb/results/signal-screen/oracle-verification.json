@@ -1,0 +1,10 @@
+{
+  "zero_strength_matches_upstream_loss_and_selected_gradients": true,
+  "selected_gradient_relative_errors": [
+    0.00415883818641305,
+    0.004380891099572182,
+    0.0
+  ],
+  "gradient_relative_tolerance": 0.005,
+  "restored_model_and_all_optimizer_states_exactly_equal": true
+}

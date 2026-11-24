@@ -2,11 +2,11 @@
 
 This track changes training data while preserving a published modded-nanoGPT learner.
 
-**Current experiment:** original FineWeb versus text compression and latent supervision.
+**Completed pilot:** original FineWeb versus text compression and latent supervision. Neither compression arm improved final loss.
 Read [COMPRESSION.md](COMPRESSION.md) and the [frozen compression plan](compression-plan.json).
 The text artifact is 25% smaller. The latent arm adds a 6.29 MB conditional target table.
 The earlier FineWeb-Edu arm was canceled before training at the user's request.
-The baseline already in progress remains the reference. The construction history below is retained for audit.
+The completed baseline remains the reference. The construction history below is retained for audit.
 It uses the upstream optimization benchmark's tuned Muon+AdamW baseline, identified as result 36.
 The source commit, source hash, and dataset revisions are recorded in [pin.json](pin.json).
 The upstream source and MIT license are preserved under [upstream](upstream/).
