@@ -1,0 +1,51 @@
+{
+  "teacher_kind": "frozen_student",
+  "width": 16,
+  "updates": 16,
+  "examples_per_step": 256,
+  "dev_tokens": 65536,
+  "dev_offset": 2000000,
+  "train_offset": 20000000,
+  "loss_steps": [
+    0,
+    8,
+    16
+  ],
+  "curves": {
+    "hard": [
+      6.095957651734352,
+      6.41333594918251,
+      6.407899618148804
+    ],
+    "ordinary": [
+      6.095957651734352,
+      6.383716732263565,
+      6.362861767411232
+    ],
+    "answer": [
+      6.095957651734352,
+      6.38720440864563,
+      6.366454005241394
+    ],
+    "shuffled": [
+      6.095957651734352,
+      6.387184888124466,
+      6.366361185908318
+    ]
+  },
+  "teacher_statistics": {
+    "ordinary": {
+      "mean_gold_probability": 0.05899815103475703,
+      "gold_top1": 0.1520843505859375
+    },
+    "answer": {
+      "mean_gold_probability": 0.0642748949903762,
+      "gold_top1": 0.16790771484375
+    },
+    "shuffled": {
+      "mean_gold_probability": 0.05791812947427388,
+      "gold_top1": 0.14837646484375
+    }
+  },
+  "joint_target_construction_seconds": 88.11986416205764
+}
