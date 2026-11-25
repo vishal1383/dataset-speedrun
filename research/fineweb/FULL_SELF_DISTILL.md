@@ -1,5 +1,7 @@
 # Ordinary self-distillation at the full FineWeb budget
 
+The seed-17 run finished at **3.28839** validation loss after 3,250 updates. The hard-label baseline reached **3.27822** at the same update. Self-distillation missed 3.28 at every evaluation. Total elapsed time was 19.35 hours against 11.92 hours for the baseline. These timings include the execution differences described below. [Completed run and validation curve](results/full-self-distill/result.json).
+
 The 24-update pilot favored ordinary self-distillation on both seeds. This experiment tests that objective on the full 162M-parameter seed-17 benchmark. The student starts at the baseline's random initialization. The teacher is a detached copy of the same student and refreshes before updates 1, 5, 9 and every fourth update thereafter. Both see the same causal prefix. Each optimizer step minimizes an equal mixture of hard-label and dense teacher cross-entropy at temperature one.
 
 The run uses all 3,250 original optimizer updates, context 1,024, a global batch of 524,288 tokens and the pinned FineWeb stream. Each evaluation measures ordinary hard-label loss on 10,485,760 tokens. The launcher checks the upstream trainer, all shard hashes and the initial model hash. It records the complete validation curve and the first observed crossing of 3.28.
